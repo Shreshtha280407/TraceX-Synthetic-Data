@@ -1,0 +1,11 @@
+WHOLLY FICTIONAL SYNTHETIC ACCEPTANCE FIXTURE. Human review required. No real-world claim.
+Case case-operation-nightfall. Fictional evidence handling exercise.
+All relationships are case-local reviewable observations.
+PER: SYN-PER-NF-01, SYN-PER-NF-02, SYN-PER-NF-03, SYN-PER-NF-04, SYN-PER-NF-05, SYN-PER-NF-06, SYN-PER-NF-07, SYN-PER-NF-08, SYN-PER-NF-09, SYN-PER-NF-10
+VEH: SYN-VEH-NF-1001, SYN-VEH-NF-02, SYN-VEH-NF-03, SYN-VEH-NF-04, SYN-VEH-NF-05, SYN-VEH-NF-06
+PHONE: SYN-PHONE-NF-01, SYN-PHONE-NF-02, SYN-PHONE-NF-03, SYN-PHONE-NF-04, SYN-PHONE-NF-05, SYN-PHONE-NF-06
+ACC: SYN-ACC-NF-01, SYN-ACC-NF-02, SYN-ACC-NF-03, SYN-ACC-NF-04, SYN-ACC-NF-05
+LOC: SYN-LOC-NF-01, SYN-LOC-NF-02, SYN-LOC-NF-03
+CDR, transactions, social, audio and illustrated scenes refer to this inventory.
+Entity identity is keyed by case ID plus synthetic identifier.
+No automated relationship is a guilt conclusion.

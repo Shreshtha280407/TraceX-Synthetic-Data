@@ -1,0 +1,80 @@
+{
+  "annotation_origin": "authored scene schedule; not model detection output",
+  "annotations": [
+    {
+      "annotation_id": "SYN-VIS-NF-01",
+      "bbox_format": "x_y_width_height; label panel including padding",
+      "case_id": "case-operation-nightfall",
+      "device_id": "SYN-PHONE-NF-01",
+      "end_seconds": 9,
+      "label_bbox_normalized": [
+        0.25,
+        0.5555555555555556,
+        0.5,
+        0.08888888888888889
+      ],
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-01",
+      "source": "offline_authored_fixture",
+      "start_seconds": 0,
+      "still_path": "visual/still-01.png",
+      "style": "sedan",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:00Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "annotation_id": "SYN-VIS-NF-02",
+      "bbox_format": "x_y_width_height; label panel including padding",
+      "case_id": "case-operation-nightfall",
+      "device_id": "SYN-PHONE-NF-02",
+      "end_seconds": 18,
+      "label_bbox_normalized": [
+        0.25,
+        0.5555555555555556,
+        0.5,
+        0.08888888888888889
+      ],
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-02",
+      "source": "offline_authored_fixture",
+      "start_seconds": 9,
+      "still_path": "visual/still-02.png",
+      "style": "van",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:09Z",
+      "vehicle_id": "SYN-VEH-NF-02"
+    },
+    {
+      "annotation_id": "SYN-VIS-NF-03",
+      "bbox_format": "x_y_width_height; label panel including padding",
+      "case_id": "case-operation-nightfall",
+      "device_id": "SYN-PHONE-NF-03",
+      "end_seconds": 27,
+      "label_bbox_normalized": [
+        0.25,
+        0.5555555555555556,
+        0.5,
+        0.08888888888888889
+      ],
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-03",
+      "source": "offline_authored_fixture",
+      "start_seconds": 18,
+      "still_path": "visual/still-03.png",
+      "style": "truck",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:18Z",
+      "vehicle_id": "SYN-VEH-NF-03"
+    }
+  ],
+  "banner": "SYNTHETIC TEST FOOTAGE — NOT REAL SURVEILLANCE",
+  "case_id": "case-operation-nightfall",
+  "duration_seconds": 27,
+  "height": 720,
+  "model_detection_required": false,
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "video_path": "visual/footage.mp4",
+  "width": 1280
+}

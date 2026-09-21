@@ -1,0 +1,13 @@
+WHOLLY FICTIONAL SYNTHETIC ACCEPTANCE FIXTURE. Human review required. No real-world claim.
+Case case-operation-echo. Fictional evidence handling exercise.
+All relationships are case-local reviewable observations.
+PER: SYN-PER-ECHO-01, SYN-PER-ECHO-02, SYN-PER-ECHO-03, SYN-PER-ECHO-04, SYN-PER-ECHO-05, SYN-PER-ECHO-06, SYN-PER-ECHO-07, SYN-PER-ECHO-08
+VEH: SYN-VEH-ECHO-01, SYN-VEH-ECHO-02, SYN-VEH-ECHO-03, SYN-VEH-ECHO-04, SYN-VEH-ECHO-05
+PHONE: SYN-PHONE-ECHO-01, SYN-PHONE-ECHO-02, SYN-PHONE-ECHO-03, SYN-PHONE-ECHO-04, SYN-PHONE-ECHO-05, SYN-PHONE-ECHO-06
+ACC: SYN-ACC-ECHO-01, SYN-ACC-ECHO-02, SYN-ACC-ECHO-03, SYN-ACC-ECHO-04, SYN-ACC-ECHO-05
+LOC: SYN-LOC-ECHO-01, SYN-LOC-ECHO-02, SYN-LOC-ECHO-03
+CDR, transactions, social, audio and illustrated scenes refer to this inventory.
+Entity identity is keyed by case ID plus synthetic identifier.
+No automated relationship is a guilt conclusion.
+Similar alias tokens refer to distinct persons at conflicting locations.
+The candidate link must remain review_required or be rejected. Never merge.

@@ -1,0 +1,216 @@
+{
+  "case_id": "case-operation-echo",
+  "entities": [
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-01",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-02",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-03",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-04",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-05",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-06",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-07",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-07",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PER-ECHO-08",
+      "entity_type": "PER",
+      "identity_key": "case-operation-echo:SYN-PER-ECHO-08",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-VEH-ECHO-01",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-echo:SYN-VEH-ECHO-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-VEH-ECHO-02",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-echo:SYN-VEH-ECHO-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-VEH-ECHO-03",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-echo:SYN-VEH-ECHO-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-VEH-ECHO-04",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-echo:SYN-VEH-ECHO-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-VEH-ECHO-05",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-echo:SYN-VEH-ECHO-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-01",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-02",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-03",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-04",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-05",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-PHONE-ECHO-06",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-echo:SYN-PHONE-ECHO-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-ACC-ECHO-01",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-echo:SYN-ACC-ECHO-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-ACC-ECHO-02",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-echo:SYN-ACC-ECHO-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-ACC-ECHO-03",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-echo:SYN-ACC-ECHO-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-ACC-ECHO-04",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-echo:SYN-ACC-ECHO-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-ACC-ECHO-05",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-echo:SYN-ACC-ECHO-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-LOC-ECHO-01",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-echo:SYN-LOC-ECHO-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-LOC-ECHO-02",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-echo:SYN-LOC-ECHO-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "entity_id": "SYN-LOC-ECHO-03",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-echo:SYN-LOC-ECHO-03",
+      "synthetic": true
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "speakers": [
+    {
+      "identity_key": "case-operation-echo:SYN-SPEAKER-ALPHA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "voice": "en-us+m3"
+    },
+    {
+      "identity_key": "case-operation-echo:SYN-SPEAKER-BETA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "voice": "en-gb+f3"
+    },
+    {
+      "identity_key": "case-operation-echo:SYN-SPEAKER-GAMMA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "voice": "en-sc+m7"
+    }
+  ],
+  "synthetic": true
+}

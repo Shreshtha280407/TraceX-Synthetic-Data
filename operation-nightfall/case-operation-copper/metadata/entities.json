@@ -1,0 +1,216 @@
+{
+  "case_id": "case-operation-copper",
+  "entities": [
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-01",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-02",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-03",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-04",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-05",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-06",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-07",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-07",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PER-COP-08",
+      "entity_type": "PER",
+      "identity_key": "case-operation-copper:SYN-PER-COP-08",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-VEH-NF-1001",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-copper:SYN-VEH-NF-1001",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-VEH-COP-02",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-copper:SYN-VEH-COP-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-VEH-COP-03",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-copper:SYN-VEH-COP-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-VEH-COP-04",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-copper:SYN-VEH-COP-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-VEH-COP-05",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-copper:SYN-VEH-COP-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-01",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-02",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-03",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-04",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-05",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-PHONE-COP-06",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-copper:SYN-PHONE-COP-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-ACC-COP-01",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-copper:SYN-ACC-COP-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-ACC-COP-02",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-copper:SYN-ACC-COP-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-ACC-COP-03",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-copper:SYN-ACC-COP-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-ACC-COP-04",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-copper:SYN-ACC-COP-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-ACC-COP-05",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-copper:SYN-ACC-COP-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-LOC-COP-01",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-copper:SYN-LOC-COP-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-LOC-COP-02",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-copper:SYN-LOC-COP-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "entity_id": "SYN-LOC-COP-03",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-copper:SYN-LOC-COP-03",
+      "synthetic": true
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "speakers": [
+    {
+      "identity_key": "case-operation-copper:SYN-SPEAKER-ALPHA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "voice": "en-us+m3"
+    },
+    {
+      "identity_key": "case-operation-copper:SYN-SPEAKER-BETA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "voice": "en-gb+f3"
+    },
+    {
+      "identity_key": "case-operation-copper:SYN-SPEAKER-GAMMA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "voice": "en-sc+m7"
+    }
+  ],
+  "synthetic": true
+}

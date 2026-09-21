@@ -1,0 +1,237 @@
+{
+  "case_id": "case-operation-nightfall",
+  "entities": [
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-01",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-02",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-03",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-04",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-05",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-06",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-07",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-07",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-08",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-08",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-09",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-09",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-10",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-10",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-1001",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-1001",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-02",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-03",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-04",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-05",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-VEH-NF-06",
+      "entity_type": "VEH",
+      "identity_key": "case-operation-nightfall:SYN-VEH-NF-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-01",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-02",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-03",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-04",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-05",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PHONE-NF-06",
+      "entity_type": "PHONE",
+      "identity_key": "case-operation-nightfall:SYN-PHONE-NF-06",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-ACC-NF-01",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-nightfall:SYN-ACC-NF-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-ACC-NF-02",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-nightfall:SYN-ACC-NF-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-ACC-NF-03",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-nightfall:SYN-ACC-NF-03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-ACC-NF-04",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-nightfall:SYN-ACC-NF-04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-ACC-NF-05",
+      "entity_type": "ACC",
+      "identity_key": "case-operation-nightfall:SYN-ACC-NF-05",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-LOC-NF-01",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-nightfall:SYN-LOC-NF-01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-LOC-NF-02",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-nightfall:SYN-LOC-NF-02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-LOC-NF-03",
+      "entity_type": "LOC",
+      "identity_key": "case-operation-nightfall:SYN-LOC-NF-03",
+      "synthetic": true
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "speakers": [
+    {
+      "identity_key": "case-operation-nightfall:SYN-SPEAKER-ALPHA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "voice": "en-us+m3"
+    },
+    {
+      "identity_key": "case-operation-nightfall:SYN-SPEAKER-BETA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "voice": "en-gb+f3"
+    },
+    {
+      "identity_key": "case-operation-nightfall:SYN-SPEAKER-GAMMA",
+      "scope": "case_local_audio_role",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "voice": "en-sc+m7"
+    }
+  ],
+  "synthetic": true
+}

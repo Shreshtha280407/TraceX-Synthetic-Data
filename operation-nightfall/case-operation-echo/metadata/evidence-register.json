@@ -1,0 +1,239 @@
+{
+  "case_id": "case-operation-echo",
+  "files": [
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-001",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "expected_result",
+      "path": "expected-results/case-operation-echo.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "audio/wav",
+      "evidence_id": "SYN-EVID-ECHO-002",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/discussion.wav",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-ECHO-003",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/speakers.rttm",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-ECHO-004",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/transcript.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-005",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/turns.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-ECHO-006",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/briefing.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-ECHO-007",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/briefing.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-ECHO-008",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/chronology.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-ECHO-009",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/chronology.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-010",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/entities.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-011",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/events.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-012",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/evidence-register.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-013",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "social",
+      "path": "operation-nightfall/case-operation-echo/social/messages.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-014",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/candidate-links.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-015",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/cdr-metadata.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-ECHO-016",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/cdr.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-017",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/sightings.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-ECHO-018",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/transactions.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "video/mp4",
+      "evidence_id": "SYN-EVID-ECHO-019",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/footage.mp4",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-ECHO-020",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-01.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-ECHO-021",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-02.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-ECHO-022",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-03.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-ECHO-023",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/timeline.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    }
+  ],
+  "hash_authority": "manifests/operation-nightfall.v1.json",
+  "self_entry_policy": "register and expected-result records reference their own paths; hashes live in the global manifest",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

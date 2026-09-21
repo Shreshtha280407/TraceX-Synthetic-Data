@@ -1,0 +1,14 @@
+{
+  "case_id": "case-operation-copper",
+  "context": "vehicle context is an authored case-local fixture, not a telecom inference",
+  "records_path": "structured/cdr.csv",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "vehicles": [
+    "SYN-VEH-NF-1001",
+    "SYN-VEH-COP-02",
+    "SYN-VEH-COP-03",
+    "SYN-VEH-COP-04",
+    "SYN-VEH-COP-05"
+  ]
+}

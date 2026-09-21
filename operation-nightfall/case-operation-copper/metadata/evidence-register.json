@@ -1,0 +1,229 @@
+{
+  "case_id": "case-operation-copper",
+  "files": [
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-001",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "expected_result",
+      "path": "expected-results/case-operation-copper.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "audio/wav",
+      "evidence_id": "SYN-EVID-COP-002",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/discussion.wav",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-COP-003",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/speakers.rttm",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-COP-004",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/transcript.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-005",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/turns.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-COP-006",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/briefing.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-COP-007",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/briefing.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-COP-008",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/chronology.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-COP-009",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/chronology.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-010",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/entities.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-011",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/events.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-012",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/evidence-register.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-013",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "social",
+      "path": "operation-nightfall/case-operation-copper/social/messages.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-014",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/cdr-metadata.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-COP-015",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/cdr.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-016",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/sightings.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-COP-017",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/transactions.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "video/mp4",
+      "evidence_id": "SYN-EVID-COP-018",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/footage.mp4",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-COP-019",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-01.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-COP-020",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-02.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "evidence_id": "SYN-EVID-COP-021",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-03.png",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-022",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/timeline.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    }
+  ],
+  "hash_authority": "manifests/operation-nightfall.v1.json",
+  "self_entry_policy": "register and expected-result records reference their own paths; hashes live in the global manifest",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

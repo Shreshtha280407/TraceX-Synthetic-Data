@@ -1,0 +1,11 @@
+WHOLLY FICTIONAL SYNTHETIC ACCEPTANCE FIXTURE. Human review required. No real-world claim.
+Case case-operation-nightfall. Authored offline TTS script; not worker output.
+[0.249977 - 5.293696] SYN-SPEAKER-ALPHA: Synthetic review. Please register vehicle SYN-VEH-NF-1001 with the case evidence list.
+[9.249977 - 14.140363] SYN-SPEAKER-BETA: Person SYN-PER-NF-01 checks the fictional inventory. Keep every source available for review.
+[18.249977 - 23.108209] SYN-SPEAKER-GAMMA: Device SYN-PHONE-NF-01 belongs in the synthetic call table. This is a handling exercise.
+[27.249977 - 32.220635] SYN-SPEAKER-ALPHA: Account SYN-ACC-NF-01 references a fictional transfer. Please retain its source metadata.
+[36.249977 - 41.609977] SYN-SPEAKER-BETA: Vehicle SYN-VEH-NF-02 appears on the second illustrated card. Preserve that timeline annotation.
+[45.249977 - 50.031066] SYN-SPEAKER-GAMMA: Location SYN-LOC-NF-01 is a fictional token. Please check its event timestamp.
+[54.249977 - 58.995918] SYN-SPEAKER-ALPHA: Vehicle SYN-VEH-NF-03 appears on the final card. Keep the label available for review.
+[63.249977 - 68.346893] SYN-SPEAKER-BETA: Person SYN-PER-NF-02 checks the notes. Any apparent relationship still requires human review.
+[72.249977 - 77.982993] SYN-SPEAKER-GAMMA: Close the fictional handling exercise. Preserve case boundaries and provenance. Never merge identities automatically.

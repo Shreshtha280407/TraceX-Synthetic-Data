@@ -1,0 +1,16 @@
+{
+  "profile_id": "synthetic-scale-v1",
+  "description": "Fully fictional structured-data scale input for controlled TraceX Phase 8 testing.",
+  "case_count": 25,
+  "counts": {
+    "entities": 10000,
+    "observations": 50000,
+    "cdr": 100000,
+    "transactions": 75000,
+    "social": 25000,
+    "vehicle_sightings": 10000,
+    "intelligence_text": 2000
+  },
+  "cross_case_isolation_fixture_count": 5,
+  "default_seed": 8242026
+}

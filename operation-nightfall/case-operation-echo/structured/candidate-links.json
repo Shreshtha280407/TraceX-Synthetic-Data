@@ -1,0 +1,25 @@
+{
+  "automated_result_proves_guilt": false,
+  "automatic_cross_case_linking": false,
+  "automatic_identity_merge": false,
+  "candidates": [
+    {
+      "automatic_merge_allowed": false,
+      "candidate_id": "SYN-LINK-ECHO-01",
+      "conflict": "distinct case-local persons, simultaneous incompatible location contexts",
+      "disposition": "review_required",
+      "left_alias": "SYN-ALIAS-ECHO-01O",
+      "left_id": "SYN-PER-ECHO-01",
+      "left_location": "SYN-LOC-ECHO-01",
+      "left_timestamp": "2031-03-01T00:00:00Z",
+      "right_alias": "SYN-ALIAS-ECHO-010",
+      "right_id": "SYN-PER-ECHO-02",
+      "right_location": "SYN-LOC-ECHO-03",
+      "right_timestamp": "2031-03-01T00:00:00Z",
+      "signal": "superficially similar O/0 alias text"
+    }
+  ],
+  "case_id": "case-operation-echo",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

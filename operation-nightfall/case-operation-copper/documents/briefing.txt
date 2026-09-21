@@ -1,0 +1,12 @@
+WHOLLY FICTIONAL SYNTHETIC ACCEPTANCE FIXTURE. Human review required. No real-world claim.
+Case case-operation-copper. Fictional evidence handling exercise.
+All relationships are case-local reviewable observations.
+PER: SYN-PER-COP-01, SYN-PER-COP-02, SYN-PER-COP-03, SYN-PER-COP-04, SYN-PER-COP-05, SYN-PER-COP-06, SYN-PER-COP-07, SYN-PER-COP-08
+VEH: SYN-VEH-NF-1001, SYN-VEH-COP-02, SYN-VEH-COP-03, SYN-VEH-COP-04, SYN-VEH-COP-05
+PHONE: SYN-PHONE-COP-01, SYN-PHONE-COP-02, SYN-PHONE-COP-03, SYN-PHONE-COP-04, SYN-PHONE-COP-05, SYN-PHONE-COP-06
+ACC: SYN-ACC-COP-01, SYN-ACC-COP-02, SYN-ACC-COP-03, SYN-ACC-COP-04, SYN-ACC-COP-05
+LOC: SYN-LOC-COP-01, SYN-LOC-COP-02, SYN-LOC-COP-03
+CDR, transactions, social, audio and illustrated scenes refer to this inventory.
+Entity identity is keyed by case ID plus synthetic identifier.
+No automated relationship is a guilt conclusion.
+The shared vehicle token is solely an isolation test. Other cases remain invisible.

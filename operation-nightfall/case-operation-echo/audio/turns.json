@@ -1,0 +1,159 @@
+{
+  "case_id": "case-operation-echo",
+  "contains_speech": true,
+  "diarization_expectation": "ingestion and reviewable speaker turns; perfect diarization is not required",
+  "duration_seconds": 81,
+  "recording_id": "SYN-AUD-ECHO-01",
+  "sample_rate": 22050,
+  "source": "offline_authored_fixture",
+  "speaker_identity_scope": "case_local_audio_role; shared role names never imply shared person identity",
+  "synthetic": true,
+  "transcript_origin": "authored TTS script; not an ASR or diarization worker result",
+  "turns": [
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 108705,
+      "end_seconds": 4.929932,
+      "entity_refs": [
+        "SYN-VEH-ECHO-01"
+      ],
+      "segment_id": "SYN-SEG-ECHO-01",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "start_sample": 5512,
+      "start_seconds": 0.249977,
+      "synthetic": true,
+      "text": "Synthetic review. Please register vehicle SYN-VEH-ECHO-01 with the case evidence list.",
+      "voice": "en-us+m3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 311669,
+      "end_seconds": 14.134649,
+      "entity_refs": [
+        "SYN-PER-ECHO-01"
+      ],
+      "segment_id": "SYN-SEG-ECHO-02",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "start_sample": 203962,
+      "start_seconds": 9.249977,
+      "synthetic": true,
+      "text": "Person SYN-PER-ECHO-01 checks the fictional inventory. Keep every source available for review.",
+      "voice": "en-gb+f3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 509634,
+      "end_seconds": 23.112653,
+      "entity_refs": [
+        "SYN-PHONE-ECHO-01"
+      ],
+      "segment_id": "SYN-SEG-ECHO-03",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "start_sample": 402412,
+      "start_seconds": 18.249977,
+      "synthetic": true,
+      "text": "Device SYN-PHONE-ECHO-01 belongs in the synthetic call table. This is a handling exercise.",
+      "voice": "en-sc+m7"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 709904,
+      "end_seconds": 32.195193,
+      "entity_refs": [
+        "SYN-ACC-ECHO-01"
+      ],
+      "segment_id": "SYN-SEG-ECHO-04",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "start_sample": 600862,
+      "start_seconds": 27.249977,
+      "synthetic": true,
+      "text": "Account SYN-ACC-ECHO-01 references a fictional transfer. Please retain its source metadata.",
+      "voice": "en-us+m3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 917595,
+      "end_seconds": 41.614286,
+      "entity_refs": [
+        "SYN-VEH-ECHO-02"
+      ],
+      "segment_id": "SYN-SEG-ECHO-05",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "start_sample": 799312,
+      "start_seconds": 36.249977,
+      "synthetic": true,
+      "text": "Vehicle SYN-VEH-ECHO-02 appears on the second illustrated card. Preserve that timeline annotation.",
+      "voice": "en-gb+f3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 1103050,
+      "end_seconds": 50.024943,
+      "entity_refs": [
+        "SYN-LOC-ECHO-01"
+      ],
+      "segment_id": "SYN-SEG-ECHO-06",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "start_sample": 997762,
+      "start_seconds": 45.249977,
+      "synthetic": true,
+      "text": "Location SYN-LOC-ECHO-01 is a fictional token. Please check its event timestamp.",
+      "voice": "en-sc+m7"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 1300302,
+      "end_seconds": 58.970612,
+      "entity_refs": [
+        "SYN-VEH-ECHO-03"
+      ],
+      "segment_id": "SYN-SEG-ECHO-07",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-ALPHA",
+      "start_sample": 1196212,
+      "start_seconds": 54.249977,
+      "synthetic": true,
+      "text": "Vehicle SYN-VEH-ECHO-03 appears on the final card. Keep the label available for review.",
+      "voice": "en-us+m3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 1506925,
+      "end_seconds": 68.34127,
+      "entity_refs": [
+        "SYN-PER-ECHO-02"
+      ],
+      "segment_id": "SYN-SEG-ECHO-08",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-BETA",
+      "start_sample": 1394662,
+      "start_seconds": 63.249977,
+      "synthetic": true,
+      "text": "Person SYN-PER-ECHO-02 checks the notes. Any apparent relationship still requires human review.",
+      "voice": "en-gb+f3"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "end_sample": 1719769,
+      "end_seconds": 77.994059,
+      "entity_refs": [
+        "SYN-PER-ECHO-01",
+        "SYN-PER-ECHO-02"
+      ],
+      "segment_id": "SYN-SEG-ECHO-09",
+      "source": "offline_authored_fixture",
+      "speaker_id": "SYN-SPEAKER-GAMMA",
+      "start_sample": 1593112,
+      "start_seconds": 72.249977,
+      "synthetic": true,
+      "text": "The similar alias has conflicting locations. Keep the candidate under review. Never merge identities automatically.",
+      "voice": "en-sc+m7"
+    }
+  ]
+}

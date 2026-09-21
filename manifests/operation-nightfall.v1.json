@@ -1,0 +1,692 @@
+{
+  "automated_result_proves_guilt": false,
+  "automatic_cross_case_linking": false,
+  "automatic_identity_merge": false,
+  "case_ids": [
+    "case-operation-nightfall",
+    "case-operation-copper",
+    "case-operation-echo"
+  ],
+  "corpus_id": "SYN-CORPUS-OPERATION-NIGHTFALL-V1",
+  "files": [
+    {
+      "bytes": 15200,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "expected_result",
+      "path": "expected-results/case-operation-nightfall.json",
+      "sha256": "27cb0c8e81cf68bde0c01eaefa5033aca476f6612a3fb311891e8296fb2ebd84"
+    },
+    {
+      "bytes": 3572144,
+      "case_id": "case-operation-nightfall",
+      "content_type": "audio/wav",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-nightfall/audio/discussion.wav",
+      "sha256": "d0e12623925d76d5ddcc10845bf399495fc54fee477b50dc9debc5f0ecac1784"
+    },
+    {
+      "bytes": 724,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-nightfall/audio/speakers.rttm",
+      "sha256": "baf1487e5da39b210231b7fc9579c4dca0957f7824c49c3f31eb436ad42173bb"
+    },
+    {
+      "bytes": 1384,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-nightfall/audio/transcript.txt",
+      "sha256": "cf907a83a5dda1efa7720a1cfe511a78d86cd5946d51212086cd88c2f92dfc6a"
+    },
+    {
+      "bytes": 5249,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-nightfall/audio/turns.json",
+      "sha256": "ea26e4211e1092648fc53509cbb72258f2c2fdebe52736822fb776df40f3835d"
+    },
+    {
+      "bytes": 1606,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-nightfall/documents/briefing.pdf",
+      "sha256": "0654ec910f08291ec981d7c8d11081e317b37e73c1f74a27b5f8db826717848c"
+    },
+    {
+      "bytes": 897,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-nightfall/documents/briefing.txt",
+      "sha256": "e216495f2d0b9214f8d5a5cffd9c68fb28f17e0c958d61e47d278fd8e7897b28"
+    },
+    {
+      "bytes": 2654,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-nightfall/documents/chronology.pdf",
+      "sha256": "7523c0048564d93d37eeeb09ebd82d68d37582bb3543d4cb71c0779969531744"
+    },
+    {
+      "bytes": 1801,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-nightfall/documents/chronology.txt",
+      "sha256": "54671318f5bbb963362cd17b0cab47dec00e7a39ed805db8328b55c78f946276"
+    },
+    {
+      "bytes": 7047,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/entities.json",
+      "sha256": "db86b59da3ce7991de92238ceb0fa5a07345ebf1658f1340b1ba5d1efa49be3a"
+    },
+    {
+      "bytes": 5472,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/events.json",
+      "sha256": "a18614b70848c32a150918bb66d2b0db1787e5b82ee17788af2c2a6561a08841"
+    },
+    {
+      "bytes": 9150,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/evidence-register.json",
+      "sha256": "49a8b8662d8e6a086b1e2b18e10412989137f895cc673305eb9f269d2f39219b"
+    },
+    {
+      "bytes": 32624,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "social",
+      "path": "operation-nightfall/case-operation-nightfall/social/messages.json",
+      "sha256": "ed37bca8d88804cf7033bb02c4f3e310de41d587bce610d4936a1c9f427a4c9f"
+    },
+    {
+      "bytes": 384,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/cdr-metadata.json",
+      "sha256": "53e24c451c2f6f41738979daad09cba892a73ecb906bae940fa6e50d6062d351"
+    },
+    {
+      "bytes": 24301,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/cdr.csv",
+      "sha256": "adca33044763d66d980bd46d977019e5c078fc4ebb2127bf8c7805658c52a38c"
+    },
+    {
+      "bytes": 6592,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/sightings.json",
+      "sha256": "ef3a09f7ed492ceea4f49335a95e078a145c67e03a6a0e9c0f4cccbb7f87e4b3"
+    },
+    {
+      "bytes": 18712,
+      "case_id": "case-operation-nightfall",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/transactions.csv",
+      "sha256": "c50af19f08a3e3153e32d435b5997684163c7612867dde902d6066ec8b2ed7f8"
+    },
+    {
+      "bytes": 63527,
+      "case_id": "case-operation-nightfall",
+      "content_type": "video/mp4",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-nightfall/visual/footage.mp4",
+      "sha256": "1ee8c349c1b827e625564ac9116b23a9be18f74d2d92841cb15c4fd7e281f6ed"
+    },
+    {
+      "bytes": 44770,
+      "case_id": "case-operation-nightfall",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-nightfall/visual/still-01.png",
+      "sha256": "a1034228501440480852529ebc1809922f1569631e27b16103f44ba3d2fb4951"
+    },
+    {
+      "bytes": 44110,
+      "case_id": "case-operation-nightfall",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-nightfall/visual/still-02.png",
+      "sha256": "899eef481a0092594acc3f1da32a05ffe46635a7865c665a20ec90f65a251394"
+    },
+    {
+      "bytes": 44732,
+      "case_id": "case-operation-nightfall",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-nightfall/visual/still-03.png",
+      "sha256": "121ec3912a49b844950c327f40deaabd4001ed29ed921211f30754b3264fdb49"
+    },
+    {
+      "bytes": 2424,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-nightfall/visual/timeline.json",
+      "sha256": "1bb03ad6c125505fdb82f99af6bac898c8e0c5102035449ab20eb10127e2a7a0"
+    },
+    {
+      "bytes": 15065,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "expected_result",
+      "path": "expected-results/case-operation-copper.json",
+      "sha256": "e89b69565c8d242307adc7ecc9099ae8e8a8d2245d1251c4272b6f411f6f3116"
+    },
+    {
+      "bytes": 3572144,
+      "case_id": "case-operation-copper",
+      "content_type": "audio/wav",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/discussion.wav",
+      "sha256": "16963759c2309fc2b44718829447fa2b4bff496984fef174fd65e13062505d72"
+    },
+    {
+      "bytes": 733,
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/speakers.rttm",
+      "sha256": "d9cf70b434d28936b7e8d76892b823fe21652ff17cd30dd3f1037a501731fa0f"
+    },
+    {
+      "bytes": 1388,
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/transcript.txt",
+      "sha256": "b6e8e648d2ac9e68e239ddf78a94921916383954d651b8236571697ba4dda3f4"
+    },
+    {
+      "bytes": 5245,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-copper/audio/turns.json",
+      "sha256": "0b56b196273c1f2f353f423c77e5528585de56db629cc45dfeb1ec49fbe23541"
+    },
+    {
+      "bytes": 1666,
+      "case_id": "case-operation-copper",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/briefing.pdf",
+      "sha256": "238a6be9710e92da59cb2b38a3c557d262894bd64741238be49d44a82170ab12"
+    },
+    {
+      "bytes": 959,
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/briefing.txt",
+      "sha256": "fa1b51cf97d341753499a03ae468ea0c6a0dcc233c9dbfb3c8533c5daf508c1c"
+    },
+    {
+      "bytes": 2714,
+      "case_id": "case-operation-copper",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/chronology.pdf",
+      "sha256": "776cafcc94ca02a29c92f4e9683fc63931d9f92fb30eb556364605604fb011ee"
+    },
+    {
+      "bytes": 1856,
+      "case_id": "case-operation-copper",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-copper/documents/chronology.txt",
+      "sha256": "63527d6e7172764c7b42f7135b479344511ed2329d73dc66889358275cdd6535"
+    },
+    {
+      "bytes": 6295,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/entities.json",
+      "sha256": "009defd830b47c37da78cab7a11e93b53a907df3bb35e7cdd42c1a53a01ed7e3"
+    },
+    {
+      "bytes": 5497,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/events.json",
+      "sha256": "77ed7b73a1c5e53ede950d76210a0ebda38fc12b52517ad6da9c884c22e86470"
+    },
+    {
+      "bytes": 8971,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/evidence-register.json",
+      "sha256": "16bf0c15e679520b0c922dc36d0c526d0f184d2d8feca76f6d35ee6276721ca9"
+    },
+    {
+      "bytes": 32905,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "social",
+      "path": "operation-nightfall/case-operation-copper/social/messages.json",
+      "sha256": "80054cd994b53ac308b8cf31a45394b39d5edd085bb71898bc935ee83fc09acd"
+    },
+    {
+      "bytes": 364,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/cdr-metadata.json",
+      "sha256": "eb2aa4111571795ca40c5b9da2e99b41e3ed9b47753be10cbec5cd2d53860170"
+    },
+    {
+      "bytes": 24765,
+      "case_id": "case-operation-copper",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/cdr.csv",
+      "sha256": "2d06c36b87ba217ab5e78331545b16fbc1221d896162bec98dc4c5c33a20a00d"
+    },
+    {
+      "bytes": 6605,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/sightings.json",
+      "sha256": "8f00d007cce5ca3a4e5ed0c02dc2fedf396435585f327af32e347d089aa3717c"
+    },
+    {
+      "bytes": 19060,
+      "case_id": "case-operation-copper",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-copper/structured/transactions.csv",
+      "sha256": "eea0968b98a3e35eaf3492c0dfa8a2f02f15b7e79d7365a7b58ec74c0243d42f"
+    },
+    {
+      "bytes": 66466,
+      "case_id": "case-operation-copper",
+      "content_type": "video/mp4",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/footage.mp4",
+      "sha256": "bb97b8f4392830036fcf21f6823d86b8ffbb6e194de591fe16e69b5f7a2b75b6"
+    },
+    {
+      "bytes": 45200,
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-01.png",
+      "sha256": "6953037617c9138f4a76a6889a40b76a8629fbb1e829ec344968e3b15a1e6cda"
+    },
+    {
+      "bytes": 45778,
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-02.png",
+      "sha256": "d7be2e2295bdc1f40d68dc5a1ecc1508999ccf6d1e94e120f6692e36cdc5701f"
+    },
+    {
+      "bytes": 46056,
+      "case_id": "case-operation-copper",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/still-03.png",
+      "sha256": "e860a6a1b80f47b06ad5280d05b50dc3480b97175f0e27aae4f08d7931890c12"
+    },
+    {
+      "bytes": 2426,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-copper/visual/timeline.json",
+      "sha256": "4d191ba129e4fe76887b633ab7b0c454e6eaa5cc7741b2d6dac03ed8cfbe8034"
+    },
+    {
+      "bytes": 15013,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "expected_result",
+      "path": "expected-results/case-operation-echo.json",
+      "sha256": "2a25e4adb41fdf7c1e21e0078c5aa584f3d731807e9601999b3187a56d30f141"
+    },
+    {
+      "bytes": 3572144,
+      "case_id": "case-operation-echo",
+      "content_type": "audio/wav",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/discussion.wav",
+      "sha256": "6f0e54d71d122a874f649928b72356faa0eabed5fa753ea399892a051a0eb968"
+    },
+    {
+      "bytes": 742,
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/speakers.rttm",
+      "sha256": "40835f7cb70835c0a69f39901ab1076ea2ee014137dd21366187da00eabfcede"
+    },
+    {
+      "bytes": 1391,
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/transcript.txt",
+      "sha256": "a846ccd547bb588d1a58a4d27774fc38d16640a8fe3f07f83cf5bc16335381ff"
+    },
+    {
+      "bytes": 5248,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-nightfall/case-operation-echo/audio/turns.json",
+      "sha256": "e6692ee0326da161425ee793474777ab44a9c44e9da1abec89cf8a76b9f0e97b"
+    },
+    {
+      "bytes": 1781,
+      "case_id": "case-operation-echo",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/briefing.pdf",
+      "sha256": "777bc497c090d51f5bcb817b399267c8864bc6601cfb2425f36e8799688302ac"
+    },
+    {
+      "bytes": 1048,
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/briefing.txt",
+      "sha256": "a5f2328e2784ea1aaa4800b3678478407f008fb1d96d9d37ca5c1688fe3c3325"
+    },
+    {
+      "bytes": 2772,
+      "case_id": "case-operation-echo",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/chronology.pdf",
+      "sha256": "04082653a277bc6a89f551bd118620494b6c8ee735d2fa1cefbba322e6554c8b"
+    },
+    {
+      "bytes": 1912,
+      "case_id": "case-operation-echo",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-nightfall/case-operation-echo/documents/chronology.txt",
+      "sha256": "e125f35c16acf56fff00e158d476c90719580b609848c61bc06b2a3a7b35ca06"
+    },
+    {
+      "bytes": 6231,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/entities.json",
+      "sha256": "521634d844c754c0aa931becff1413efde14cfa127d60811e67067554bdcc8a6"
+    },
+    {
+      "bytes": 5533,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/events.json",
+      "sha256": "91f11f7c29b76dca768a48e806917ea7fe35b05bb884ac06235840a59f345cc5"
+    },
+    {
+      "bytes": 9264,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-echo/metadata/evidence-register.json",
+      "sha256": "10878e4fc198ce486f12119c8172bfc36291faaa10a4698b581d66c383a70cd5"
+    },
+    {
+      "bytes": 33239,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "social",
+      "path": "operation-nightfall/case-operation-echo/social/messages.json",
+      "sha256": "7ab2488a62ffef0fb159d84bde016dc6051475f3f962e4531951f12d3c522898"
+    },
+    {
+      "bytes": 866,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/candidate-links.json",
+      "sha256": "c76d097a47aad0519152fb0cb2b75bfead4893d8a83e24fe9b071f0ae871d665"
+    },
+    {
+      "bytes": 366,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/cdr-metadata.json",
+      "sha256": "8bec11efe5bd689f4b89c0609ddc9716213d45a6723ef948bd896d524961a89b"
+    },
+    {
+      "bytes": 25341,
+      "case_id": "case-operation-echo",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/cdr.csv",
+      "sha256": "44459b68a580a8b3792904fd322516ec631c001f02a25dbf35fe68e20567f649"
+    },
+    {
+      "bytes": 6635,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/sightings.json",
+      "sha256": "0390019bd8696ecc44447ca50191fe24f8344992d099b90fe38bd8c63cf0ede9"
+    },
+    {
+      "bytes": 19492,
+      "case_id": "case-operation-echo",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-echo/structured/transactions.csv",
+      "sha256": "26ae78a6dc931d33fec39aeaf23113f5af8c3c2e58cd5fd3889bc510ccbe27d3"
+    },
+    {
+      "bytes": 65715,
+      "case_id": "case-operation-echo",
+      "content_type": "video/mp4",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/footage.mp4",
+      "sha256": "03c4f107a4abbd4ccaa3e47a1f92dd00c4d2faa91a379e2f76309e891c591ff0"
+    },
+    {
+      "bytes": 46570,
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-01.png",
+      "sha256": "e9c7a5e151920f3c042b9f4d615de3ef4bab40cc7d9fedb9edd7ce307fd8e24e"
+    },
+    {
+      "bytes": 47611,
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-02.png",
+      "sha256": "09b3d2949337932b5bedcd6e9497182d0f6a1afabdce14bc7bea025cf079d58f"
+    },
+    {
+      "bytes": 47663,
+      "case_id": "case-operation-echo",
+      "content_type": "image/png",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/still-03.png",
+      "sha256": "5c2f7566fd516106d37e8658e9186a6ecce96634fd244b539f882440fd46e434"
+    },
+    {
+      "bytes": 2432,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-nightfall/case-operation-echo/visual/timeline.json",
+      "sha256": "b0a6e0077078c97ed079ef1a5ce586324613f1e1070afde07ca6fb0ed5c966d2"
+    }
+  ],
+  "purpose": "controlled fictional acceptance testing only",
+  "schema_version": 2,
+  "seed": 8242026,
+  "toolchain": {
+    "espeak_ng": "eSpeak NG text-to-speech: 1.52.0  Data at: /usr/share/espeak-ng-data",
+    "ffmpeg": "ffmpeg version n8.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "font_name": "NotoSansMono-Regular.ttf",
+    "font_sha256": "65b5e2b2c4a1fba9ae8be1f026cb35b03dcb8886d9b2a4147054fde12f7e767d"
+  }
+}

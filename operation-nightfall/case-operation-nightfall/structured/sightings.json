@@ -1,0 +1,205 @@
+{
+  "case_id": "case-operation-nightfall",
+  "records": [
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-01",
+      "record_id": "SYN-SIGHT-NF-001",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:00Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-02",
+      "record_id": "SYN-SIGHT-NF-002",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:09Z",
+      "vehicle_id": "SYN-VEH-NF-02"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-03",
+      "record_id": "SYN-SIGHT-NF-003",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:18Z",
+      "vehicle_id": "SYN-VEH-NF-03"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-04",
+      "record_id": "SYN-SIGHT-NF-004",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:27Z",
+      "vehicle_id": "SYN-VEH-NF-04"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-05",
+      "record_id": "SYN-SIGHT-NF-005",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:36Z",
+      "vehicle_id": "SYN-VEH-NF-05"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-06",
+      "record_id": "SYN-SIGHT-NF-006",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:45Z",
+      "vehicle_id": "SYN-VEH-NF-06"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-07",
+      "record_id": "SYN-SIGHT-NF-007",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:00:54Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-08",
+      "record_id": "SYN-SIGHT-NF-008",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:03Z",
+      "vehicle_id": "SYN-VEH-NF-02"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-09",
+      "record_id": "SYN-SIGHT-NF-009",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:12Z",
+      "vehicle_id": "SYN-VEH-NF-03"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-10",
+      "record_id": "SYN-SIGHT-NF-010",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:21Z",
+      "vehicle_id": "SYN-VEH-NF-04"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-01",
+      "record_id": "SYN-SIGHT-NF-011",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:30Z",
+      "vehicle_id": "SYN-VEH-NF-05"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-02",
+      "record_id": "SYN-SIGHT-NF-012",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:39Z",
+      "vehicle_id": "SYN-VEH-NF-06"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-03",
+      "record_id": "SYN-SIGHT-NF-013",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:48Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-04",
+      "record_id": "SYN-SIGHT-NF-014",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:01:57Z",
+      "vehicle_id": "SYN-VEH-NF-02"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-05",
+      "record_id": "SYN-SIGHT-NF-015",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:02:06Z",
+      "vehicle_id": "SYN-VEH-NF-03"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-01",
+      "person_id": "SYN-PER-NF-06",
+      "record_id": "SYN-SIGHT-NF-016",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:02:15Z",
+      "vehicle_id": "SYN-VEH-NF-04"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-02",
+      "person_id": "SYN-PER-NF-07",
+      "record_id": "SYN-SIGHT-NF-017",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:02:24Z",
+      "vehicle_id": "SYN-VEH-NF-05"
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-NF-03",
+      "person_id": "SYN-PER-NF-08",
+      "record_id": "SYN-SIGHT-NF-018",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-01-01T00:02:33Z",
+      "vehicle_id": "SYN-VEH-NF-06"
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

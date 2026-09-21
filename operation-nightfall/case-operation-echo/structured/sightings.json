@@ -1,0 +1,205 @@
+{
+  "case_id": "case-operation-echo",
+  "records": [
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-01",
+      "record_id": "SYN-SIGHT-ECHO-001",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:00Z",
+      "vehicle_id": "SYN-VEH-ECHO-01"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-02",
+      "record_id": "SYN-SIGHT-ECHO-002",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:09Z",
+      "vehicle_id": "SYN-VEH-ECHO-02"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-03",
+      "record_id": "SYN-SIGHT-ECHO-003",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:18Z",
+      "vehicle_id": "SYN-VEH-ECHO-03"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-04",
+      "record_id": "SYN-SIGHT-ECHO-004",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:27Z",
+      "vehicle_id": "SYN-VEH-ECHO-04"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-05",
+      "record_id": "SYN-SIGHT-ECHO-005",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:36Z",
+      "vehicle_id": "SYN-VEH-ECHO-05"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-06",
+      "record_id": "SYN-SIGHT-ECHO-006",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:45Z",
+      "vehicle_id": "SYN-VEH-ECHO-01"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-07",
+      "record_id": "SYN-SIGHT-ECHO-007",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:00:54Z",
+      "vehicle_id": "SYN-VEH-ECHO-02"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-08",
+      "record_id": "SYN-SIGHT-ECHO-008",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:03Z",
+      "vehicle_id": "SYN-VEH-ECHO-03"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-01",
+      "record_id": "SYN-SIGHT-ECHO-009",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:12Z",
+      "vehicle_id": "SYN-VEH-ECHO-04"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-02",
+      "record_id": "SYN-SIGHT-ECHO-010",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:21Z",
+      "vehicle_id": "SYN-VEH-ECHO-05"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-03",
+      "record_id": "SYN-SIGHT-ECHO-011",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:30Z",
+      "vehicle_id": "SYN-VEH-ECHO-01"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-04",
+      "record_id": "SYN-SIGHT-ECHO-012",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:39Z",
+      "vehicle_id": "SYN-VEH-ECHO-02"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-05",
+      "record_id": "SYN-SIGHT-ECHO-013",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:48Z",
+      "vehicle_id": "SYN-VEH-ECHO-03"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-06",
+      "record_id": "SYN-SIGHT-ECHO-014",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:01:57Z",
+      "vehicle_id": "SYN-VEH-ECHO-04"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-07",
+      "record_id": "SYN-SIGHT-ECHO-015",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:02:06Z",
+      "vehicle_id": "SYN-VEH-ECHO-05"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-01",
+      "person_id": "SYN-PER-ECHO-08",
+      "record_id": "SYN-SIGHT-ECHO-016",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:02:15Z",
+      "vehicle_id": "SYN-VEH-ECHO-01"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-02",
+      "person_id": "SYN-PER-ECHO-01",
+      "record_id": "SYN-SIGHT-ECHO-017",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:02:24Z",
+      "vehicle_id": "SYN-VEH-ECHO-02"
+    },
+    {
+      "case_id": "case-operation-echo",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-ECHO-03",
+      "person_id": "SYN-PER-ECHO-02",
+      "record_id": "SYN-SIGHT-ECHO-018",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-03-01T00:02:33Z",
+      "vehicle_id": "SYN-VEH-ECHO-03"
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

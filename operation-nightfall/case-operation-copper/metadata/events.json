@@ -1,0 +1,188 @@
+{
+  "case_id": "case-operation-copper",
+  "events": [
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T00:14:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-01",
+        "SYN-VEH-NF-1001",
+        "SYN-PHONE-COP-01",
+        "SYN-ACC-COP-01",
+        "SYN-LOC-COP-01"
+      ],
+      "event_id": "SYN-EVENT-COP-01",
+      "event_type": "call",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T00:00:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T00:29:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-02",
+        "SYN-VEH-COP-02",
+        "SYN-PHONE-COP-02",
+        "SYN-ACC-COP-02",
+        "SYN-LOC-COP-02"
+      ],
+      "event_id": "SYN-EVENT-COP-02",
+      "event_type": "transfer",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T00:15:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T00:44:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-03",
+        "SYN-VEH-COP-03",
+        "SYN-PHONE-COP-03",
+        "SYN-ACC-COP-03",
+        "SYN-LOC-COP-03"
+      ],
+      "event_id": "SYN-EVENT-COP-03",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T00:30:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T00:59:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-04",
+        "SYN-VEH-COP-04",
+        "SYN-PHONE-COP-04",
+        "SYN-ACC-COP-04",
+        "SYN-LOC-COP-01"
+      ],
+      "event_id": "SYN-EVENT-COP-04",
+      "event_type": "handling_meeting",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T00:45:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T01:14:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-05",
+        "SYN-VEH-COP-05",
+        "SYN-PHONE-COP-05",
+        "SYN-ACC-COP-05",
+        "SYN-LOC-COP-02"
+      ],
+      "event_id": "SYN-EVENT-COP-05",
+      "event_type": "message",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T01:00:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T01:29:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-06",
+        "SYN-VEH-NF-1001",
+        "SYN-PHONE-COP-06",
+        "SYN-ACC-COP-01",
+        "SYN-LOC-COP-03"
+      ],
+      "event_id": "SYN-EVENT-COP-06",
+      "event_type": "call",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T01:15:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T01:44:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-07",
+        "SYN-VEH-COP-02",
+        "SYN-PHONE-COP-01",
+        "SYN-ACC-COP-02",
+        "SYN-LOC-COP-01"
+      ],
+      "event_id": "SYN-EVENT-COP-07",
+      "event_type": "transfer",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T01:30:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T01:59:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-08",
+        "SYN-VEH-COP-03",
+        "SYN-PHONE-COP-02",
+        "SYN-ACC-COP-03",
+        "SYN-LOC-COP-02"
+      ],
+      "event_id": "SYN-EVENT-COP-08",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T01:45:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T02:14:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-01",
+        "SYN-VEH-COP-04",
+        "SYN-PHONE-COP-03",
+        "SYN-ACC-COP-04",
+        "SYN-LOC-COP-03"
+      ],
+      "event_id": "SYN-EVENT-COP-09",
+      "event_type": "handling_meeting",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T02:00:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "claim": "fictional evidence handling association only",
+      "disposition": "review_required",
+      "end": "2031-02-01T02:29:59Z",
+      "entity_refs": [
+        "SYN-PER-COP-02",
+        "SYN-VEH-COP-05",
+        "SYN-PHONE-COP-04",
+        "SYN-ACC-COP-05",
+        "SYN-LOC-COP-01"
+      ],
+      "event_id": "SYN-EVENT-COP-10",
+      "event_type": "message",
+      "source": "offline_authored_fixture",
+      "start": "2031-02-01T02:15:00Z",
+      "synthetic": true
+    }
+  ],
+  "seed": 8242026,
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

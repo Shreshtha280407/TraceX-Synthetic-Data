@@ -1,0 +1,205 @@
+{
+  "case_id": "case-operation-copper",
+  "records": [
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-01",
+      "record_id": "SYN-SIGHT-COP-001",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:00Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-02",
+      "record_id": "SYN-SIGHT-COP-002",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:09Z",
+      "vehicle_id": "SYN-VEH-COP-02"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-03",
+      "record_id": "SYN-SIGHT-COP-003",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:18Z",
+      "vehicle_id": "SYN-VEH-COP-03"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-04",
+      "record_id": "SYN-SIGHT-COP-004",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:27Z",
+      "vehicle_id": "SYN-VEH-COP-04"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-05",
+      "record_id": "SYN-SIGHT-COP-005",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:36Z",
+      "vehicle_id": "SYN-VEH-COP-05"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-06",
+      "record_id": "SYN-SIGHT-COP-006",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:45Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-07",
+      "record_id": "SYN-SIGHT-COP-007",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:00:54Z",
+      "vehicle_id": "SYN-VEH-COP-02"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-08",
+      "record_id": "SYN-SIGHT-COP-008",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:03Z",
+      "vehicle_id": "SYN-VEH-COP-03"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-01",
+      "record_id": "SYN-SIGHT-COP-009",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:12Z",
+      "vehicle_id": "SYN-VEH-COP-04"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-02",
+      "record_id": "SYN-SIGHT-COP-010",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:21Z",
+      "vehicle_id": "SYN-VEH-COP-05"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-03",
+      "record_id": "SYN-SIGHT-COP-011",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:30Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-04",
+      "record_id": "SYN-SIGHT-COP-012",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:39Z",
+      "vehicle_id": "SYN-VEH-COP-02"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-05",
+      "record_id": "SYN-SIGHT-COP-013",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:48Z",
+      "vehicle_id": "SYN-VEH-COP-03"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-06",
+      "record_id": "SYN-SIGHT-COP-014",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:01:57Z",
+      "vehicle_id": "SYN-VEH-COP-04"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-07",
+      "record_id": "SYN-SIGHT-COP-015",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:02:06Z",
+      "vehicle_id": "SYN-VEH-COP-05"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-01",
+      "person_id": "SYN-PER-COP-08",
+      "record_id": "SYN-SIGHT-COP-016",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:02:15Z",
+      "vehicle_id": "SYN-VEH-NF-1001"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-02",
+      "person_id": "SYN-PER-COP-01",
+      "record_id": "SYN-SIGHT-COP-017",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:02:24Z",
+      "vehicle_id": "SYN-VEH-COP-02"
+    },
+    {
+      "case_id": "case-operation-copper",
+      "disposition": "review_required",
+      "location_id": "SYN-LOC-COP-03",
+      "person_id": "SYN-PER-COP-02",
+      "record_id": "SYN-SIGHT-COP-018",
+      "source": "offline_authored_fixture",
+      "synthetic": true,
+      "timestamp": "2031-02-01T00:02:33Z",
+      "vehicle_id": "SYN-VEH-COP-03"
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

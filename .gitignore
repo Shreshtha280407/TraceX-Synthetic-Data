@@ -1,0 +1,8 @@
+# Large deterministic outputs are regenerated locally and never committed.
+generated/
+artifacts/
+results/
+
+# Python runtime debris.
+__pycache__/
+*.py[cod]

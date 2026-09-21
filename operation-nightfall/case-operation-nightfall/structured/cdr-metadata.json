@@ -1,0 +1,15 @@
+{
+  "case_id": "case-operation-nightfall",
+  "context": "vehicle context is an authored case-local fixture, not a telecom inference",
+  "records_path": "structured/cdr.csv",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "vehicles": [
+    "SYN-VEH-NF-1001",
+    "SYN-VEH-NF-02",
+    "SYN-VEH-NF-03",
+    "SYN-VEH-NF-04",
+    "SYN-VEH-NF-05",
+    "SYN-VEH-NF-06"
+  ]
+}

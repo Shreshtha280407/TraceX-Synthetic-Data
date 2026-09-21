@@ -1,0 +1,14 @@
+{
+  "case_id": "case-operation-echo",
+  "context": "vehicle context is an authored case-local fixture, not a telecom inference",
+  "records_path": "structured/cdr.csv",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "vehicles": [
+    "SYN-VEH-ECHO-01",
+    "SYN-VEH-ECHO-02",
+    "SYN-VEH-ECHO-03",
+    "SYN-VEH-ECHO-04",
+    "SYN-VEH-ECHO-05"
+  ]
+}
