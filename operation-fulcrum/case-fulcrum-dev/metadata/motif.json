@@ -1,0 +1,23 @@
+{
+  "case_id": "case-fulcrum-dev",
+  "chain": [
+    "call",
+    "transfer",
+    "sighting",
+    "handling_meeting"
+  ],
+  "event_ids": [
+    "SYN-EVENT-FULD-01",
+    "SYN-EVENT-FULD-02",
+    "SYN-EVENT-FULD-03",
+    "SYN-EVENT-FULD-04"
+  ],
+  "motif_id": "SYN-MOTIF-FULD-01",
+  "narrative": "A call between the two clusters precedes a fund transfer, a vehicle movement, and a handling meeting, all inside one documented window, chained through the ambiguous bridge identity.",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "window": {
+    "end": "2032-01-01T00:40:00Z",
+    "start": "2032-01-01T00:00:00Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "case-fulcrum-val",
+  "media_present": false,
+  "note": "Metadata-only fixture for development/validation; no rendered audio.",
+  "recording_id": "SYN-AUD-FULV-01",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "turns": [
+    {
+      "entity_refs": [
+        "SYN-PER-FULV-BRIDGE",
+        "SYN-PHONE-FULV-A01",
+        "SYN-PHONE-FULV-B01"
+      ],
+      "event_id": "SYN-EVENT-FULV-01",
+      "segment_id": "SYN-SEG-FULV-01",
+      "text": "Fictional scripted call turn; metadata only, not rendered."
+    }
+  ]
+}

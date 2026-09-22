@@ -1,0 +1,189 @@
+{
+  "case_id": "case-fulcrum-dev",
+  "files": [
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-001",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "expected_result",
+      "path": "expected-results/case-fulcrum-dev.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-002",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "audio",
+      "path": "operation-fulcrum/case-fulcrum-dev/audio/turns.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-FULD-003",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/briefing.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-FULD-004",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/briefing.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/pdf",
+      "evidence_id": "SYN-EVID-FULD-005",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/chronology.pdf",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/plain",
+      "evidence_id": "SYN-EVID-FULD-006",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/chronology.txt",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-007",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "entity_resolution_truth",
+      "path": "operation-fulcrum/case-fulcrum-dev/entity_resolution_truth.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-008",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/communities.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-009",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/entities.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-010",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/events.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-011",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/evidence-register.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-012",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/motif.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-013",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "social",
+      "path": "operation-fulcrum/case-fulcrum-dev/social/messages.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-FULD-014",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/cdr.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-015",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/contradictions.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-016",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/sightings.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/csv",
+      "evidence_id": "SYN-EVID-FULD-017",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/transactions.csv",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-FULD-018",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "modality": "visual",
+      "path": "operation-fulcrum/case-fulcrum-dev/visual/timeline.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    }
+  ],
+  "hash_authority": "manifests/operation-nightfall.v2.json",
+  "self_entry_policy": "register and expected-result records reference their own paths; hashes live in the global v2 manifest",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

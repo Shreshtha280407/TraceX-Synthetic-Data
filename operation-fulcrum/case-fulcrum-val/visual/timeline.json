@@ -1,0 +1,17 @@
+{
+  "annotations": [
+    {
+      "annotation_id": "SYN-VIS-FULV-01",
+      "event_id": "SYN-EVENT-FULV-03",
+      "location_id": "SYN-LOC-FULV-B01",
+      "timestamp": "2032-02-01T00:20:00Z",
+      "vehicle_id": "SYN-VEH-FULV-A01"
+    }
+  ],
+  "case_id": "case-fulcrum-val",
+  "media_present": false,
+  "note": "Metadata-only fixture for development/validation; no rendered video/stills.",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "video_path": null
+}

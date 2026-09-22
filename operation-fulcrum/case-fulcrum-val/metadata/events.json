@@ -1,0 +1,120 @@
+{
+  "case_id": "case-fulcrum-val",
+  "events": [
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T00:04:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-BRIDGE",
+        "SYN-PHONE-FULV-A01",
+        "SYN-PHONE-FULV-B01"
+      ],
+      "event_id": "SYN-EVENT-FULV-01",
+      "event_type": "call",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T00:00:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T00:14:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-BRIDGE",
+        "SYN-ACC-FULV-A01",
+        "SYN-ACC-FULV-B01"
+      ],
+      "event_id": "SYN-EVENT-FULV-02",
+      "event_type": "transfer",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T00:10:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T00:24:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-BRIDGE",
+        "SYN-VEH-FULV-A01",
+        "SYN-LOC-FULV-B01"
+      ],
+      "event_id": "SYN-EVENT-FULV-03",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T00:20:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T00:34:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-BRIDGE",
+        "SYN-PER-FULV-A01",
+        "SYN-PER-FULV-B01",
+        "SYN-LOC-FULV-B01"
+      ],
+      "event_id": "SYN-EVENT-FULV-04",
+      "event_type": "handling_meeting",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T00:30:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T01:04:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-A02",
+        "SYN-PHONE-FULV-A02"
+      ],
+      "event_id": "SYN-EVENT-FULV-05",
+      "event_type": "message",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T01:00:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T01:34:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-B02",
+        "SYN-VEH-FULV-B02",
+        "SYN-LOC-FULV-A02"
+      ],
+      "event_id": "SYN-EVENT-FULV-06",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T01:30:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-val",
+      "claim": "fictional graph-truth development/validation event",
+      "disposition": "review_required",
+      "end": "2032-02-01T05:04:59Z",
+      "entity_refs": [
+        "SYN-PER-FULV-A02",
+        "SYN-LOC-FULV-A01",
+        "SYN-LOC-FULV-B02"
+      ],
+      "event_id": "SYN-EVENT-FULV-07",
+      "event_type": "message",
+      "source": "offline_authored_fixture",
+      "start": "2032-02-01T05:00:00Z",
+      "synthetic": true
+    }
+  ],
+  "seed": 8242028,
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

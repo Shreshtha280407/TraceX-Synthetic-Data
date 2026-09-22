@@ -16,6 +16,8 @@ from pathlib import Path
 from generate_operation_nightfall import (
     CASES, SHARED, SPEAKERS, SAFE, MANIFEST, NOTICE, authored_files, checked_path,
     content_type, digest, entities_for, envelope, expectation, provenance_records, run, scene_plan, speech_plan,
+    FULCRUM_CASES, FULCRUM_SEEDS, FULCRUM_MOTIF_CHAIN, MANIFEST_V2, SYN_CORPUS_FULCRUM,
+    fulcrum_authored_files, fulcrum_provenance_records,
 )
 
 
@@ -164,11 +166,15 @@ def verify(root, quiet=False):
     require(entries and len({e["path"] for e in entries}) == len(entries), "empty/duplicate manifest paths")
     paths = {e["path"] for e in entries}
     actual = set()
-    for tree in (root / "operation-nightfall", root / "expected-results"):
-        for path in tree.rglob("*"):
-            checked_path(root, path.relative_to(root).as_posix())
-            if path.is_file():
-                actual.add(path.relative_to(root).as_posix())
+    for path in (root / "operation-nightfall").rglob("*"):
+        checked_path(root, path.relative_to(root).as_posix())
+        if path.is_file():
+            actual.add(path.relative_to(root).as_posix())
+    for case_id in CASES:
+        # expected-results/ is shared with the v2 corpus; only claim this case's own file.
+        expected_path = root / f"expected-results/{case_id}.json"
+        if expected_path.is_file():
+            actual.add(f"expected-results/{case_id}.json")
     require(actual == paths, f"manifest coverage mismatch: {sorted(actual ^ paths)}")
     total = (root / MANIFEST).stat().st_size
     per_case = {case: [] for case in CASES}
@@ -295,11 +301,166 @@ def verify(root, quiet=False):
     return len(entries), total
 
 
+def verify_v2(root, quiet=False):
+    """Development/validation graph-truth corpus: referential integrity, community/bridge
+    disjointness, and the motif's one documented time window."""
+    root = root.resolve()
+    manifest = load(checked_path(root, MANIFEST_V2))
+    require(manifest["schema_version"] == "operation-nightfall.v2" and manifest["corpus_id"] == SYN_CORPUS_FULCRUM,
+            "wrong v2 corpus schema")
+    require(manifest["case_ids"] == list(FULCRUM_CASES), "wrong v2 corpus cases")
+    require(all(manifest.get(key) is value for key, value in SAFE.items()), "unsafe v2 manifest assertions")
+    entries = manifest["files"]
+    require(entries and len({e["path"] for e in entries}) == len(entries), "empty/duplicate v2 manifest paths")
+    paths = {e["path"] for e in entries}
+    actual = set()
+    for path in (root / "operation-fulcrum").rglob("*"):
+        checked_path(root, path.relative_to(root).as_posix())
+        if path.is_file():
+            actual.add(path.relative_to(root).as_posix())
+    for case_id in FULCRUM_CASES:
+        expected_path = root / f"expected-results/{case_id}.json"
+        if expected_path.is_file():
+            actual.add(f"expected-results/{case_id}.json")
+    require(actual == paths, f"v2 manifest coverage mismatch: {sorted(actual ^ paths)}")
+
+    total = 0
+    per_case = {case: [] for case in FULCRUM_CASES}
+    for entry in entries:
+        case = entry["case_id"]
+        require(case in FULCRUM_CASES, "unexpected v2 manifest case")
+        relative = entry["path"]
+        require(relative.startswith(f"operation-fulcrum/{case}/") or relative == f"expected-results/{case}.json",
+                "v2 artifact assigned to wrong case")
+        path = checked_path(root, relative)
+        require(path.is_file(), f"missing v2 artifact: {relative}")
+        data = path.read_bytes()
+        require(digest(data) == entry["sha256"] and len(data) == entry["bytes"], f"v2 hash/size mismatch: {relative}")
+        require(entry["content_type"] == content_type(relative), "wrong v2 content type")
+        require(entry["generated_synthetic_data"] is True, "missing v2 synthetic marker")
+        require(entry["expected_result_path"] == f"expected-results/{case}.json", "wrong v2 expected result link")
+        if path.suffix == ".json":
+            synthetic_fields(load(path), case)
+        total += len(data)
+        per_case[case].append(entry)
+    require(total < 100_000_000, f"v2 corpus exceeds 100 MB: {total}")
+
+    ref_fields = {"person_id", "source_id", "target_id", "vehicle_context", "location_id", "device_id",
+                  "from_account", "to_account", "author_id", "vehicle_id"}
+    inventories = {}
+    for case_id, code in FULCRUM_CASES.items():
+        directory = root / "operation-fulcrum" / case_id
+        files, meta = fulcrum_authored_files(case_id, FULCRUM_SEEDS[case_id])
+        for relative, expected_bytes in files.items():
+            require((directory / relative).read_bytes() == expected_bytes,
+                    f"v2 content deviates from closed template: {case_id}/{relative}")
+
+        entity_rows = load(directory / "metadata/entities.json")["entities"]
+        ids = {row["entity_id"] for row in entity_rows}
+        require(len(ids) == len(entity_rows), "duplicate v2 entity ID")
+        require(SHARED not in ids, "Nightfall/Copper shared vehicle token leaked into Fulcrum entities")
+        inventories[case_id] = ids
+
+        cdr = records(directory / "structured/cdr.csv")
+        transactions = records(directory / "structured/transactions.csv")
+        sightings = load(directory / "structured/sightings.json")["records"]
+        social = load(directory / "social/messages.json")["records"]
+        require(len(cdr) >= 10 and len(transactions) >= 8 and len(sightings) >= 6 and len(social) >= 8,
+                "v2 record minimums not met")
+        events = load(directory / "metadata/events.json")["events"]
+        event_map = {event["event_id"]: event for event in events}
+        for event in events:
+            require(set(event["entity_refs"]) <= ids, "foreign entity in v2 event")
+            require(datetime.fromisoformat(event["start"]) < datetime.fromisoformat(event["end"]),
+                    "invalid v2 event time window")
+        for row in cdr + transactions + sightings + social:
+            synthetic_fields(row, case_id)
+            require(row["case_id"] == case_id, "foreign case in v2 records")
+            for key in ref_fields.intersection(row):
+                if key == "source_id" and str(row[key]).startswith("SYN-SOURCE-"):
+                    continue
+                require(row[key] in ids, f"foreign v2 entity reference: {row[key]}")
+            if "event_id" in row:
+                event = event_map[row["event_id"]]
+                moment = datetime.fromisoformat(row["timestamp"])
+                require(datetime.fromisoformat(event["start"]) <= moment <= datetime.fromisoformat(event["end"]),
+                        "v2 record outside referenced event")
+
+        communities = load(directory / "metadata/communities.json")
+        a_ids, b_ids = set(communities["community_a"]["entity_ids"]), set(communities["community_b"]["entity_ids"])
+        bridge = communities["bridge_entity_id"]
+        require(a_ids <= ids and b_ids <= ids, "community roster references unknown entity")
+        require(a_ids & b_ids == {bridge}, "communities are not disjoint except at the bridge")
+        require(bridge == meta["bridge_id"], "bridge entity mismatch between communities.json and template")
+
+        motif = load(directory / "metadata/motif.json")
+        require(motif["chain"] == FULCRUM_MOTIF_CHAIN, "wrong motif chain")
+        window_start = datetime.fromisoformat(motif["window"]["start"])
+        window_end = datetime.fromisoformat(motif["window"]["end"])
+        require(window_start < window_end, "invalid motif window")
+        motif_events = [event_map[event_id] for event_id in motif["event_ids"]]
+        require([e["event_type"] for e in motif_events] == FULCRUM_MOTIF_CHAIN, "motif events out of chain order")
+        motif_starts = [datetime.fromisoformat(e["start"]) for e in motif_events]
+        motif_ends = [datetime.fromisoformat(e["end"]) for e in motif_events]
+        require(all(window_start <= s < e <= window_end for s, e in zip(motif_starts, motif_ends)),
+                "motif event lands outside its one documented time window")
+        require(motif_starts == sorted(motif_starts), "motif events are not in chronological order")
+
+        contradiction = load(directory / "structured/contradictions.json")
+        require(contradiction["disposition"] == "review_required", "unsafe v2 contradiction disposition")
+        claim, conflict = contradiction["claim"], contradiction["conflicting_evidence"]
+        require(claim["entity_id"] == conflict["entity_id"], "contradiction does not share a common entity")
+        require(claim["location_id"] != conflict["location_id"], "contradiction locations must differ")
+        require(claim["timestamp"] == conflict["timestamp"], "contradiction must overlap in time")
+        require({claim["entity_id"], claim["location_id"], conflict["location_id"]} <= ids,
+                "contradiction references an unknown entity")
+        require(claim["record_id"] in {r["record_id"] for r in social}, "contradiction claim record missing")
+        require(conflict["record_id"] in {r["record_id"] for r in sightings}, "contradiction evidence record missing")
+
+        truth = load(directory / "entity_resolution_truth.json")
+        require(truth["schema_version"] == "entity_resolution_truth.v1", "wrong entity_resolution_truth schema")
+        require(truth["case_id"] == case_id, "entity_resolution_truth case mismatch")
+        require(isinstance(truth["entity_pairs"], list), "entity_resolution_truth.entity_pairs must be a list")
+        if truth.get("pending_ingestion"):
+            require(truth["entity_pairs"] == [], "pending entity_resolution_truth must not invent pairs")
+        else:
+            for pair in truth["entity_pairs"]:
+                require(pair["label"] in {"same", "different"}, "bad entity_resolution_truth label")
+                require(isinstance(pair["left_entity_id"], str) and isinstance(pair["right_entity_id"], str),
+                        "bad entity_resolution_truth entity id")
+
+        text_blob = "\n".join(p.read_text() for p in directory.rglob("*")
+                              if p.is_file() and p.suffix in {".txt", ".json", ".csv"})
+        require(SHARED not in text_blob, "shared Nightfall/Copper vehicle token leaked into Fulcrum")
+
+        register = load(directory / "metadata/evidence-register.json")
+        owned = {entry["path"] for entry in per_case[case_id]}
+        registered_register, registered_expected = fulcrum_provenance_records(
+            case_id, owned, meta["bridge_id"], meta["motif_id"], meta["contradiction_id"])
+        require(register == registered_register, "v2 register differs from authored provenance assertions")
+        expected = load(root / f"expected-results/{case_id}.json")
+        require(expected == registered_expected, "v2 expected result differs from authored safe assertions")
+
+        if not quiet:
+            print(f"verified {case_id}: {len(ids)} entities across 2 clusters, bridge={bridge}, "
+                  f"motif={motif['motif_id']}, contradiction={contradiction['contradiction_id']}, "
+                  f"{len(events)} events, {len(cdr)} calls, {len(transactions)} transactions, "
+                  f"{len(sightings)} sightings, {len(social)} messages")
+
+    dev, val = (inventories[case] for case in FULCRUM_CASES)
+    require(not dev & val, "undeclared entity sharing between Fulcrum dev and validation splits")
+    if not quiet:
+        print(f"PASS v2: {len(entries)} artifacts + manifest, {total} bytes; graph truth "
+              "(communities/bridge/motif/contradiction) verified")
+    return len(entries), total
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=".")
     args = parser.parse_args()
     verify(Path(args.root))
+    verify_v2(Path(args.root))
     return 0
 
 

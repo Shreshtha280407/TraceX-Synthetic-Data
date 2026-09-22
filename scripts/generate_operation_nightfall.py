@@ -390,6 +390,314 @@ def toolchain():
                   "font_sha256": digest(Path(font).read_bytes()), "font_name": Path(font).name}
 
 
+SYN_CORPUS_FULCRUM = "SYN-CORPUS-OPERATION-FULCRUM-V1"
+FULCRUM_CASES = {"case-fulcrum-dev": "FULD", "case-fulcrum-val": "FULV"}
+FULCRUM_SEEDS = {"case-fulcrum-dev": DEFAULT_SEED + 1, "case-fulcrum-val": DEFAULT_SEED + 2}
+MANIFEST_V2 = "manifests/operation-nightfall.v2.json"
+FULCRUM_MOTIF_CHAIN = ["call", "transfer", "sighting", "handling_meeting"]
+
+
+def fulcrum_time_at(case_id, seconds):
+    """A distinct year/month space from v1's time_at, so timestamps never collide."""
+    month = list(FULCRUM_CASES).index(case_id) + 1
+    return (datetime(2032, month, 1, tzinfo=timezone.utc) + timedelta(seconds=seconds)).isoformat().replace("+00:00", "Z")
+
+
+def fulcrum_entities(case_id):
+    """Two small disjoint community rosters sharing exactly one bridge person."""
+    code = FULCRUM_CASES[case_id]
+    sizes = {"PER": 4, "VEH": 2, "ACC": 2, "PHONE": 3, "LOC": 2}
+    def roster(prefix):
+        return {kind: [f"SYN-{kind}-{code}-{prefix}{i:02d}" for i in range(1, n + 1)] for kind, n in sizes.items()}
+    community_a, community_b = roster("A"), roster("B")
+    bridge_id = f"SYN-PER-{code}-BRIDGE"
+    community_a["PER"].append(bridge_id)
+    community_b["PER"].append(bridge_id)
+    return community_a, community_b, bridge_id
+
+
+def fulcrum_all_entities(case_id):
+    community_a, community_b, bridge_id = fulcrum_entities(case_id)
+    combined = {kind: list(dict.fromkeys(community_a[kind] + community_b[kind])) for kind in community_a}
+    return combined, community_a, community_b, bridge_id
+
+
+def fulcrum_modality(path, expected_path):
+    if path == expected_path:
+        return "expected_result"
+    if path.endswith("entity_resolution_truth.json"):
+        return "entity_resolution_truth"
+    return Path(path).parts[2]
+
+
+def fulcrum_expectation(case_id, path):
+    return {"path": path, "case_id": case_id, "record_type": "human_authored_acceptance_assertion",
+            "assertion_origin": "authored acceptance specification; not worker or model output",
+            "expected_outcome": "review_required", "preserve_provenance": True, "case_scoped_graph": True,
+            "model_detection_required": False, **SAFE}
+
+
+def fulcrum_provenance_records(case_id, paths, bridge_id, motif_id, contradiction_id):
+    """Authored register and expected results for the v2 development/validation corpus."""
+    expected_path = f"expected-results/{case_id}.json"
+    paths = sorted(paths)
+    entries = [{"path": p, "case_id": case_id, "evidence_id": f"SYN-EVID-{FULCRUM_CASES[case_id]}-{i+1:03d}",
+                "modality": fulcrum_modality(p, expected_path), "content_type": content_type(p), "synthetic": True,
+                "source": "offline_procedural_generator", "expected_result_path": expected_path}
+               for i, p in enumerate(paths)]
+    register = envelope(case_id, files=entries, hash_authority=MANIFEST_V2,
+        self_entry_policy="register and expected-result records reference their own paths; hashes live in the global v2 manifest")
+    expected = envelope(case_id, record_type="human_authored_acceptance_assertion",
+        assertion_origin="human-authored task requirements expressed as acceptance assertions; not worker or model output",
+        expected_outcome="review_required", **SAFE,
+        artifact_expectations=[fulcrum_expectation(case_id, p) for p in paths],
+        graph_truth={"bridge_entity_id": bridge_id, "motif_id": motif_id, "contradiction_id": contradiction_id,
+                     "communities_disjoint_except_bridge": True},
+        entity_resolution_truth_status="pending_live_ingestion")
+    return register, expected
+
+
+def fulcrum_authored_files(case_id, seed):
+    """Closed vocabulary authored input templates for Operation Fulcrum (dev/validation only)."""
+    code = FULCRUM_CASES[case_id]
+    combined, community_a, community_b, bridge_id = fulcrum_all_entities(case_id)
+    files = {}
+    def add(path, data):
+        files[path] = data if isinstance(data, bytes) else encoded(data)
+
+    entity_rows = [dict(entity_id=identifier, entity_type=kind, synthetic=True,
+                        case_id=case_id, identity_key=f"{case_id}:{identifier}")
+                   for kind, values in combined.items() for identifier in values]
+    add("metadata/entities.json", envelope(case_id, entities=entity_rows))
+
+    community_a_ids = sorted({i for values in community_a.values() for i in values})
+    community_b_ids = sorted({i for values in community_b.values() for i in values})
+    add("metadata/communities.json", envelope(case_id,
+        community_a={"label": "Cluster Alpha", "entity_ids": community_a_ids},
+        community_b={"label": "Cluster Bravo", "entity_ids": community_b_ids},
+        bridge_entity_id=bridge_id, disposition="review_required",
+        bridge_ambiguity="Evidence conflicts on whether this identity is a genuine member of both "
+                         "clusters or a coincidental data-quality overlap; automatic cross-cluster "
+                         "linking is prohibited pending human review."))
+
+    per_a, veh_a, acc_a, phone_a, loc_a = (community_a[k] for k in ("PER", "VEH", "ACC", "PHONE", "LOC"))
+    per_b, veh_b, acc_b, phone_b, loc_b = (community_b[k] for k in ("PER", "VEH", "ACC", "PHONE", "LOC"))
+
+    # The motif chain (call -> transfer -> sighting -> handling_meeting) plus deliberately
+    # unrelated noise events and one alibi window that seeds the contradictory clue below.
+    event_specs = [
+        ("call", 0, [bridge_id, phone_a[0], phone_b[0]]),
+        ("transfer", 600, [bridge_id, acc_a[0], acc_b[0]]),
+        ("sighting", 1200, [bridge_id, veh_a[0], loc_b[0]]),
+        ("handling_meeting", 1800, [bridge_id, per_a[0], per_b[0], loc_b[0]]),
+        ("message", 3600, [per_a[1], phone_a[1]]),
+        ("sighting", 5400, [per_b[1], veh_b[1], loc_a[1]]),
+        ("message", 18000, [per_a[1], loc_a[0], loc_b[1]]),
+    ]
+    events = [envelope(case_id, event_id=f"SYN-EVENT-{code}-{i+1:02d}",
+                       start=fulcrum_time_at(case_id, start), end=fulcrum_time_at(case_id, start + 299),
+                       event_type=event_type, entity_refs=refs, disposition="review_required",
+                       claim="fictional graph-truth development/validation event")
+              for i, (event_type, start, refs) in enumerate(event_specs)]
+    call_event, transfer_event, sighting_event, meeting_event, noise_message_event, noise_sighting_event, alibi_event = events
+    starts = [spec[1] for spec in event_specs]
+    add("metadata/events.json", envelope(case_id, events=events, seed=seed))
+
+    motif_id = f"SYN-MOTIF-{code}-01"
+    add("metadata/motif.json", envelope(case_id, motif_id=motif_id, chain=FULCRUM_MOTIF_CHAIN,
+        event_ids=[call_event["event_id"], transfer_event["event_id"], sighting_event["event_id"], meeting_event["event_id"]],
+        window={"start": fulcrum_time_at(case_id, 0), "end": fulcrum_time_at(case_id, 2400)},
+        narrative="A call between the two clusters precedes a fund transfer, a vehicle movement, and a "
+                  "handling meeting, all inside one documented window, chained through the ambiguous "
+                  "bridge identity."))
+
+    claim_person, claim_location, conflict_location = per_a[1], loc_a[0], loc_b[1]
+    contradiction_id = f"SYN-CONTRA-{code}-01"
+    contradiction_timestamp = fulcrum_time_at(case_id, 18100)
+    claim_record_id = f"SYN-SOC-{code}-0002"
+    evidence_record_id = f"SYN-SIGHT-{code}-002"
+
+    cdr = [dict(case_id=case_id, record_id=f"SYN-CDR-{code}-0001", person_id=bridge_id,
+                source_id=phone_a[0], target_id=phone_b[0], vehicle_context=veh_a[0], location_id=loc_a[0],
+                event_id=call_event["event_id"], timestamp=call_event["start"], duration_seconds=180,
+                synthetic="true", source="offline_authored_fixture", disposition="review_required")]
+    transactions = [dict(case_id=case_id, record_id=f"SYN-TXN-{code}-0001", person_id=bridge_id,
+                          from_account=acc_a[0], to_account=acc_b[0], device_id=phone_a[0], vehicle_context=veh_b[0],
+                          event_id=transfer_event["event_id"], timestamp=transfer_event["start"], amount="500.00",
+                          currency="SYN", synthetic="true", source="offline_authored_fixture", disposition="review_required")]
+    sightings = [dict(case_id=case_id, record_id=f"SYN-SIGHT-{code}-001", vehicle_id=veh_a[0], person_id=bridge_id,
+                       location_id=loc_b[0], event_id=sighting_event["event_id"], timestamp=sighting_event["start"],
+                       synthetic=True, source="offline_authored_fixture", disposition="review_required"),
+                 dict(case_id=case_id, record_id=evidence_record_id, vehicle_id=veh_a[0], person_id=claim_person,
+                      location_id=conflict_location, event_id=alibi_event["event_id"], timestamp=contradiction_timestamp,
+                      synthetic=True, source="offline_authored_fixture", disposition="review_required")]
+    social = [envelope(case_id, record_id=f"SYN-SOC-{code}-0001", author_id=bridge_id, device_id=phone_b[0],
+                        vehicle_id=veh_a[0], location_id=loc_b[0], event_id=meeting_event["event_id"],
+                        timestamp=meeting_event["start"], source_id=f"SYN-SOURCE-{code}-CHAT",
+                        message=f"Fictional handling meeting note: {per_a[0]} and {per_b[0]} met via the bridge; "
+                                "retain provenance, request human review."),
+              envelope(case_id, record_id=claim_record_id, author_id=claim_person, device_id=phone_a[1],
+                       vehicle_id=veh_a[0], location_id=claim_location, event_id=alibi_event["event_id"],
+                       timestamp=contradiction_timestamp, source_id=f"SYN-SOURCE-{code}-CHAT",
+                       message=f"Fictional alibi note: {claim_person} states they were at {claim_location} "
+                               "at this time.")]
+
+    persons_all, phones_all, vehicles_all = per_a + per_b, phone_a + phone_b, veh_a + veh_b
+    accounts_all, locations_all = acc_a + acc_b, loc_a + loc_b
+    for i in range(15):
+        idx = i % len(events)
+        cdr.append(dict(case_id=case_id, record_id=f"SYN-CDR-{code}-{i+2:04d}",
+            person_id=persons_all[i % len(persons_all)],
+            source_id=phones_all[i % len(phones_all)], target_id=phones_all[(i + 1) % len(phones_all)],
+            vehicle_context=vehicles_all[i % len(vehicles_all)], location_id=locations_all[i % len(locations_all)],
+            event_id=events[idx]["event_id"], timestamp=fulcrum_time_at(case_id, starts[idx] + 10 + (i * 13) % 250),
+            duration_seconds=15 + (i + seed) % 40, synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(11):
+        idx = i % len(events)
+        transactions.append(dict(case_id=case_id, record_id=f"SYN-TXN-{code}-{i+2:04d}",
+            person_id=persons_all[i % len(persons_all)],
+            from_account=accounts_all[i % len(accounts_all)], to_account=accounts_all[(i + 1) % len(accounts_all)],
+            device_id=phones_all[i % len(phones_all)], vehicle_context=vehicles_all[i % len(vehicles_all)],
+            event_id=events[idx]["event_id"], timestamp=fulcrum_time_at(case_id, starts[idx] + 20 + (i * 17) % 240),
+            amount=f"{10 + (i + seed) % 60}.50", currency="SYN", synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(6):
+        idx = i % len(events)
+        sightings.append(dict(case_id=case_id, record_id=f"SYN-SIGHT-{code}-{i+3:03d}",
+            vehicle_id=vehicles_all[i % len(vehicles_all)], person_id=persons_all[i % len(persons_all)],
+            location_id=locations_all[i % len(locations_all)], event_id=events[idx]["event_id"],
+            timestamp=fulcrum_time_at(case_id, starts[idx] + 30 + (i * 19) % 230), synthetic=True,
+            source="offline_authored_fixture", disposition="review_required"))
+    for i in range(9):
+        idx = i % len(events)
+        social.append(envelope(case_id, record_id=f"SYN-SOC-{code}-{i+3:04d}",
+            author_id=persons_all[i % len(persons_all)], device_id=phones_all[i % len(phones_all)],
+            vehicle_id=vehicles_all[i % len(vehicles_all)], location_id=locations_all[i % len(locations_all)],
+            event_id=events[idx]["event_id"], timestamp=fulcrum_time_at(case_id, starts[idx] + 40 + (i * 23) % 220),
+            source_id=f"SYN-SOURCE-{code}-CHAT",
+            message=f"Fictional handling note for {vehicles_all[i % len(vehicles_all)]}; retain provenance "
+                    "and request human review."))
+
+    add("structured/cdr.csv", csv_data(cdr))
+    add("structured/transactions.csv", csv_data(transactions))
+    add("structured/sightings.json", envelope(case_id, records=sightings))
+    add("social/messages.json", envelope(case_id, records=social))
+    add("structured/contradictions.json", envelope(case_id, contradiction_id=contradiction_id,
+        claim={"source": "social_message", "record_id": claim_record_id, "entity_id": claim_person,
+               "location_id": claim_location, "timestamp": contradiction_timestamp,
+               "assertion": f"{claim_person} was at {claim_location}"},
+        conflicting_evidence={"source": "sighting", "record_id": evidence_record_id, "entity_id": claim_person,
+               "location_id": conflict_location, "timestamp": contradiction_timestamp,
+               "assertion": f"{claim_person} observed at {conflict_location}"},
+        disposition="review_required",
+        note="Deliberately conflicting fixture clue for contradiction-detection testing; not a data error."))
+
+    note = [NOTICE, f"Case {case_id}. Fictional graph-truth development/validation fixture.",
+            f"Cluster Alpha: {', '.join(community_a_ids)}", f"Cluster Bravo: {', '.join(community_b_ids)}",
+            f"Bridge identity: {bridge_id} (ambiguous cross-cluster role; review_required).",
+            f"Motif {motif_id}: call -> transfer -> vehicle movement -> handling meeting, window "
+            f"{fulcrum_time_at(case_id, 0)} to {fulcrum_time_at(case_id, 2400)}.",
+            f"Contradiction {contradiction_id}: {claim_person} reported at two conflicting locations at "
+            "the same time; human review required.",
+            "No automated relationship is a guilt conclusion. Never merge identities automatically."]
+    chronology = [NOTICE, f"Case {case_id}. Review chronology."]
+    for event in events:
+        chronology.extend([f"{event['event_id']} {event['start']} to {event['end']}",
+                           f"{event['event_type']}: {', '.join(event['entity_refs'])}; review required."])
+    for name, lines in (("briefing", note), ("chronology", chronology)):
+        add(f"documents/{name}.txt", ("\n".join(lines) + "\n").encode())
+        add(f"documents/{name}.pdf", pdf_data(lines))
+
+    add("audio/turns.json", envelope(case_id, media_present=False, recording_id=f"SYN-AUD-{code}-01",
+        note="Metadata-only fixture for development/validation; no rendered audio.",
+        turns=[{"segment_id": f"SYN-SEG-{code}-01", "event_id": call_event["event_id"],
+                "entity_refs": call_event["entity_refs"],
+                "text": "Fictional scripted call turn; metadata only, not rendered."}]))
+    add("visual/timeline.json", envelope(case_id, media_present=False, video_path=None,
+        note="Metadata-only fixture for development/validation; no rendered video/stills.",
+        annotations=[{"annotation_id": f"SYN-VIS-{code}-01", "event_id": sighting_event["event_id"],
+                      "vehicle_id": veh_a[0], "location_id": loc_b[0], "timestamp": sighting_event["start"]}]))
+
+    add("entity_resolution_truth.json", {
+        "schema_version": "entity_resolution_truth.v1",
+        "case_id": case_id,
+        "pending_ingestion": True,
+        "blocked_reason": "Probed a live tracex-api instance: auth (register/login) and evidence upload "
+                          "work, but this build exposes no entity-resolution read surface. "
+                          "ExtractedEntityMention (the only entity-shaped object it produces) is documented "
+                          "as a raw, unresolved mention with no id field; there is no /entities or "
+                          "observation-listing endpoint for a client to read back resolved entities; and "
+                          "there is no case-creation endpoint at all (evidence upload 403s without "
+                          "pre-existing case membership, which nothing here can grant). This is a missing "
+                          "capability on TraceX's side, not a reachability problem.",
+        "todo": f"Once TraceX ships case creation and an entity-resolution read endpoint, run "
+                f"scripts/generate_entity_resolution_truth.py --case {case_id} --tracex-api "
+                "$TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs.",
+        "entity_pairs": [],
+    })
+
+    meta = dict(bridge_id=bridge_id, motif_id=motif_id, contradiction_id=contradiction_id,
+                community_a_ids=community_a_ids, community_b_ids=community_b_ids)
+    return files, meta
+
+
+def fulcrum_add_register(directory, case_id, bridge_id, motif_id, contradiction_id):
+    """Authored register and expected results; no inference is performed here."""
+    prefix = f"operation-fulcrum/{case_id}/"
+    paths = [prefix + p.relative_to(directory).as_posix() for p in directory.rglob("*") if p.is_file()]
+    paths += [prefix + "metadata/evidence-register.json", f"expected-results/{case_id}.json"]
+    register, expected = fulcrum_provenance_records(case_id, paths, bridge_id, motif_id, contradiction_id)
+    (directory / "metadata/evidence-register.json").write_bytes(encoded(register))
+    return expected
+
+
+def load_old_manifest(parser, root, manifest_path, valid_path_check):
+    old_paths = set()
+    if manifest_path.exists():
+        old = json.loads(manifest_path.read_text())
+        for entry in old["files"]:
+            path = entry["path"]
+            checked_path(root, path)
+            if not valid_path_check(path):
+                parser.error("existing manifest lists an unmanaged path")
+            if (root / path).exists() and digest((root / path).read_bytes()) != entry["sha256"]:
+                parser.error(f"existing managed file was modified; preserve/reconcile it first: {path}")
+            old_paths.add(path)
+    return old_paths
+
+
+def finalize_manifest(parser, root, stage, manifest_relative, new_paths, old_paths, existing_tree_paths):
+    """Reconcile + replace + backup for one manifest's managed files (v1 or v2)."""
+    unlisted = existing_tree_paths - old_paths
+    if unlisted:
+        parser.error(f"unregistered existing files require reconciliation: {sorted(unlisted)}")
+    for relative in sorted(new_paths | {manifest_relative}):
+        destination = checked_path(root, relative)
+        if destination.exists() and relative not in old_paths | {manifest_relative}:
+            parser.error(f"refusing to overwrite an unrecognized file: {relative}")
+    obsolete = sorted(old_paths - new_paths)
+    # Keep replaced/obsolete managed originals in an ignored, local recovery directory.
+    if old_paths:
+        backup_parent = root / "artifacts"
+        checked_path(root, "artifacts")
+        backup_parent.mkdir(exist_ok=True)
+        backup = Path(tempfile.mkdtemp(prefix="nightfall-previous-", dir=backup_parent))
+        for relative in sorted(old_paths | {manifest_relative}):
+            if (root / relative).exists():
+                target = backup / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(root / relative, target)
+        for relative in obsolete:
+            if (root / relative).exists():
+                (root / relative).unlink()
+        print(f"previous managed files recoverable at {backup}; retired {len(obsolete)} obsolete artifacts", flush=True)
+    for relative in sorted(new_paths) + [manifest_relative]:
+        destination = checked_path(root, relative)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        os.replace(stage / relative, destination)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-root", default=".")
@@ -400,24 +708,29 @@ def main():
     if root.is_symlink() or root.resolve() in {Path(root.anchor), Path.home()}:
         parser.error("unsafe output root")
     root = root.resolve()
-    manifest_path = checked_path(root, MANIFEST)
-    old_paths = set()
-    if manifest_path.exists():
-        old = json.loads(manifest_path.read_text())
-        for entry in old["files"]:
-            path = entry["path"]
-            checked_path(root, path)
-            if not (any(path.startswith(f"operation-nightfall/{case}/") for case in CASES)
-                    or path in {f"expected-results/{case}.json" for case in CASES}):
-                parser.error("existing manifest lists an unmanaged path")
-            if (root / path).exists() and digest((root / path).read_bytes()) != entry["sha256"]:
-                parser.error(f"existing managed file was modified; preserve/reconcile it first: {path}")
-            old_paths.add(path)
-    existing = list((root / "operation-nightfall").rglob("*")) if (root / "operation-nightfall").exists() else []
-    for path in existing:
-        checked_path(root, path.relative_to(root).as_posix())
-    if (existing or manifest_path.exists()) and not args.force:
+
+    corpora = [
+        ("operation-nightfall", MANIFEST,
+         lambda path: any(path.startswith(f"operation-nightfall/{case}/") for case in CASES)
+                      or path in {f"expected-results/{case}.json" for case in CASES}),
+        ("operation-fulcrum", MANIFEST_V2,
+         lambda path: any(path.startswith(f"operation-fulcrum/{case}/") for case in FULCRUM_CASES)
+                      or path in {f"expected-results/{case}.json" for case in FULCRUM_CASES}),
+    ]
+    old_paths_by_manifest, existing_tree_paths_by_manifest, existing_any = {}, {}, False
+    for tree_name, manifest_relative, valid_path_check in corpora:
+        manifest_path = checked_path(root, manifest_relative)
+        old_paths_by_manifest[manifest_relative] = load_old_manifest(parser, root, manifest_path, valid_path_check)
+        tree = root / tree_name
+        existing = list(tree.rglob("*")) if tree.exists() else []
+        for path in existing:
+            checked_path(root, path.relative_to(root).as_posix())
+        existing_tree_paths_by_manifest[manifest_relative] = {p.relative_to(root).as_posix() for p in existing if p.is_file()}
+        if existing or manifest_path.exists():
+            existing_any = True
+    if existing_any and not args.force:
         parser.error("output already exists; use --force for managed replacement")
+
     font, versions = toolchain()
     root.mkdir(parents=True, exist_ok=True)
     # Stage within the requested repository/output directory, validate before replacing any file.
@@ -450,38 +763,50 @@ def main():
                         purpose="controlled fictional acceptance testing only", **SAFE)
         (stage / "manifests").mkdir()
         (stage / MANIFEST).write_bytes(encoded(manifest))
-        from verify_operation_nightfall import verify
+
+        entries_v2 = []
+        for case_id in FULCRUM_CASES:
+            directory = stage / "operation-fulcrum" / case_id
+            seed = FULCRUM_SEEDS[case_id]
+            files, meta = fulcrum_authored_files(case_id, seed)
+            for relative, data in files.items():
+                path = directory / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(data)
+            expected = stage / f"expected-results/{case_id}.json"
+            expected.parent.mkdir(exist_ok=True)
+            expected.write_bytes(encoded(fulcrum_add_register(directory, case_id, meta["bridge_id"],
+                                                               meta["motif_id"], meta["contradiction_id"])))
+            for path in sorted([p for p in directory.rglob("*") if p.is_file()] + [expected]):
+                relative = path.relative_to(stage).as_posix()
+                entries_v2.append(dict(path=relative, case_id=case_id,
+                    modality=fulcrum_modality(relative, f"expected-results/{case_id}.json"),
+                    content_type=content_type(path), bytes=path.stat().st_size,
+                    sha256=digest(path.read_bytes()), generated_synthetic_data=True,
+                    expected_result_path=f"expected-results/{case_id}.json"))
+            print(f"built {case_id}: 2 clusters + 1 bridge, motif chain, 1 contradiction "
+                  "(development/validation fixture)", flush=True)
+        manifest_v2 = dict(schema_version="operation-nightfall.v2", corpus_id=SYN_CORPUS_FULCRUM,
+                           base_corpus="SYN-CORPUS-OPERATION-NIGHTFALL-V1", case_ids=list(FULCRUM_CASES),
+                           seeds=FULCRUM_SEEDS, files=entries_v2,
+                           purpose="development/validation graph-truth tuning corpus; never used for the "
+                                   "Nightfall holdout evaluation", **SAFE)
+        (stage / MANIFEST_V2).write_bytes(encoded(manifest_v2))
+
+        from verify_operation_nightfall import verify, verify_v2
         verify(stage, quiet=True)
+        verify_v2(stage, quiet=True)
+
         new_paths = {entry["path"] for entry in entries}
-        for relative in sorted(new_paths | {MANIFEST}):
-            destination = checked_path(root, relative)
-            if destination.exists() and relative not in old_paths | {MANIFEST}:
-                parser.error(f"refusing to overwrite an unrecognized file: {relative}")
-        unlisted = {p.relative_to(root).as_posix() for p in existing if p.is_file()} - old_paths
-        if unlisted:
-            parser.error(f"unregistered existing files require reconciliation: {sorted(unlisted)}")
-        obsolete = sorted(old_paths - new_paths)
-        # Keep replaced/obsolete managed originals in an ignored, local recovery directory.
-        if old_paths:
-            backup_parent = root / "artifacts"
-            checked_path(root, "artifacts")
-            backup_parent.mkdir(exist_ok=True)
-            backup = Path(tempfile.mkdtemp(prefix="nightfall-previous-", dir=backup_parent))
-            for relative in sorted(old_paths | {MANIFEST}):
-                if (root / relative).exists():
-                    target = backup / relative
-                    target.parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(root / relative, target)
-            for relative in obsolete:
-                if (root / relative).exists():
-                    (root / relative).unlink()
-            print(f"previous managed files recoverable at {backup}; retired {len(obsolete)} obsolete artifacts", flush=True)
-        for relative in sorted(new_paths) + [MANIFEST]:
-            destination = checked_path(root, relative)
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            os.replace(stage / relative, destination)
-        total = sum(entry["bytes"] for entry in entries) + manifest_path.stat().st_size
-        print(f"generated {len(entries)} artifacts + manifest, {total} bytes; seed={args.seed}")
+        new_paths_v2 = {entry["path"] for entry in entries_v2}
+        finalize_manifest(parser, root, stage, MANIFEST, new_paths, old_paths_by_manifest[MANIFEST],
+                          existing_tree_paths_by_manifest[MANIFEST])
+        finalize_manifest(parser, root, stage, MANIFEST_V2, new_paths_v2, old_paths_by_manifest[MANIFEST_V2],
+                          existing_tree_paths_by_manifest[MANIFEST_V2])
+
+        total = (sum(entry["bytes"] for entry in entries) + sum(entry["bytes"] for entry in entries_v2)
+                 + (root / MANIFEST).stat().st_size + (root / MANIFEST_V2).stat().st_size)
+        print(f"generated {len(entries) + len(entries_v2)} artifacts + 2 manifests, {total} bytes; seed={args.seed}")
     return 0
 
 

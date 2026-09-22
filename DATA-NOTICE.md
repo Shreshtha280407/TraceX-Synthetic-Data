@@ -35,3 +35,10 @@ Matching it must not expose another case's records, entities, observations,
 graph nodes, or details. Echo's conflicting candidate relationship requires
 review or rejection. Automatic identity merging, automatic cross-case linking,
 and automated guilt conclusions are prohibited in all cases.
+
+Operation Fulcrum ("case-fulcrum-dev", "case-fulcrum-val") is likewise a wholly
+fictional, synthetically generated label for a separate development/validation
+corpus. Its bridge identity's cross-cluster role is deliberately disputed and
+its alibi/sighting clue is deliberately contradictory; both require human
+review, never an automated merge or guilt conclusion. Its audio/visual sidecar
+files are authored metadata only and contain no rendered speech or video.

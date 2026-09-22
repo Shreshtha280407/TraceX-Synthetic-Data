@@ -149,3 +149,41 @@ profile, scripts, and documentation are tracked.
 All identifiers use conspicuous `SYN-*` forms. A small declared set of
 same-looking vehicle identifiers occurs across case boundaries solely to test
 isolation. It is never a confirmed cross-case link.
+
+## Operation Fulcrum (v2 graph-truth development/validation corpus)
+
+Operation Fulcrum is a small, separate, additive corpus (`manifests/operation-nightfall.v2.json`)
+giving the evaluation harness graph truth that Nightfall alone doesn't exercise: two
+entity clusters, one deliberately ambiguous bridge identity connecting them, a
+CALL → TRANSFER → VEHICLE MOVEMENT → MEETING evidentiary motif inside one documented
+time window, and a deliberately contradictory clue. It never touches Nightfall's v1
+files or hashes.
+
+```text
+manifests/operation-nightfall.v2.json
+operation-fulcrum/
+  case-fulcrum-dev/    # tune against this split
+  case-fulcrum-val/    # measure against this split
+expected-results/case-fulcrum-dev.json
+expected-results/case-fulcrum-val.json
+```
+
+Per Phase 7 governance, `case-fulcrum-dev` and `case-fulcrum-val` are for tuning and
+measurement; Operation Nightfall itself remains a frozen holdout and is never tuned on.
+Fulcrum's audio/visual sidecars are metadata-only (`media_present: false`) — no
+rendered WAV/MP4, since the story only needs to be baked into evidence content and
+media *metadata*, not synthesized media.
+
+Each Fulcrum case ships `entity_resolution_truth.json` as a documented pending
+placeholder (`pending_ingestion: true`, empty `entity_pairs`) — its real UUIDs can
+only come from TraceX's own entity layer after a live ingestion, so none are
+fabricated here. Once TraceX and this repository are both reachable:
+
+```bash
+python scripts/generate_entity_resolution_truth.py \
+  --case case-fulcrum-dev --root . --tracex-api "$TRACEX_API_URL"
+```
+
+`python scripts/generate_operation_nightfall.py --output-root . --force` builds both
+corpora in one pass, and `python scripts/verify_operation_nightfall.py --root .`
+checks both v1 and v2.

@@ -1,0 +1,46 @@
+{
+  "bridge_ambiguity": "Evidence conflicts on whether this identity is a genuine member of both clusters or a coincidental data-quality overlap; automatic cross-cluster linking is prohibited pending human review.",
+  "bridge_entity_id": "SYN-PER-FULD-BRIDGE",
+  "case_id": "case-fulcrum-dev",
+  "community_a": {
+    "entity_ids": [
+      "SYN-ACC-FULD-A01",
+      "SYN-ACC-FULD-A02",
+      "SYN-LOC-FULD-A01",
+      "SYN-LOC-FULD-A02",
+      "SYN-PER-FULD-A01",
+      "SYN-PER-FULD-A02",
+      "SYN-PER-FULD-A03",
+      "SYN-PER-FULD-A04",
+      "SYN-PER-FULD-BRIDGE",
+      "SYN-PHONE-FULD-A01",
+      "SYN-PHONE-FULD-A02",
+      "SYN-PHONE-FULD-A03",
+      "SYN-VEH-FULD-A01",
+      "SYN-VEH-FULD-A02"
+    ],
+    "label": "Cluster Alpha"
+  },
+  "community_b": {
+    "entity_ids": [
+      "SYN-ACC-FULD-B01",
+      "SYN-ACC-FULD-B02",
+      "SYN-LOC-FULD-B01",
+      "SYN-LOC-FULD-B02",
+      "SYN-PER-FULD-B01",
+      "SYN-PER-FULD-B02",
+      "SYN-PER-FULD-B03",
+      "SYN-PER-FULD-B04",
+      "SYN-PER-FULD-BRIDGE",
+      "SYN-PHONE-FULD-B01",
+      "SYN-PHONE-FULD-B02",
+      "SYN-PHONE-FULD-B03",
+      "SYN-VEH-FULD-B01",
+      "SYN-VEH-FULD-B02"
+    ],
+    "label": "Cluster Bravo"
+  },
+  "disposition": "review_required",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

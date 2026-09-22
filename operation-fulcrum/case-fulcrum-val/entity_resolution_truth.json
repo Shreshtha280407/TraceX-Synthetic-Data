@@ -1,0 +1,8 @@
+{
+  "blocked_reason": "Probed a live tracex-api instance: auth (register/login) and evidence upload work, but this build exposes no entity-resolution read surface. ExtractedEntityMention (the only entity-shaped object it produces) is documented as a raw, unresolved mention with no id field; there is no /entities or observation-listing endpoint for a client to read back resolved entities; and there is no case-creation endpoint at all (evidence upload 403s without pre-existing case membership, which nothing here can grant). This is a missing capability on TraceX's side, not a reachability problem.",
+  "case_id": "case-fulcrum-val",
+  "entity_pairs": [],
+  "pending_ingestion": true,
+  "schema_version": "entity_resolution_truth.v1",
+  "todo": "Once TraceX ships case creation and an entity-resolution read endpoint, run scripts/generate_entity_resolution_truth.py --case case-fulcrum-val --tracex-api $TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs."
+}

@@ -1,0 +1,196 @@
+{
+  "case_id": "case-fulcrum-dev",
+  "entities": [
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-A01",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-A01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-A02",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-A02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-A03",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-A03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-A04",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-A04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-BRIDGE",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-BRIDGE",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-B01",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-B01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-B02",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-B02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-B03",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-B03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PER-FULD-B04",
+      "entity_type": "PER",
+      "identity_key": "case-fulcrum-dev:SYN-PER-FULD-B04",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-VEH-FULD-A01",
+      "entity_type": "VEH",
+      "identity_key": "case-fulcrum-dev:SYN-VEH-FULD-A01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-VEH-FULD-A02",
+      "entity_type": "VEH",
+      "identity_key": "case-fulcrum-dev:SYN-VEH-FULD-A02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-VEH-FULD-B01",
+      "entity_type": "VEH",
+      "identity_key": "case-fulcrum-dev:SYN-VEH-FULD-B01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-VEH-FULD-B02",
+      "entity_type": "VEH",
+      "identity_key": "case-fulcrum-dev:SYN-VEH-FULD-B02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-ACC-FULD-A01",
+      "entity_type": "ACC",
+      "identity_key": "case-fulcrum-dev:SYN-ACC-FULD-A01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-ACC-FULD-A02",
+      "entity_type": "ACC",
+      "identity_key": "case-fulcrum-dev:SYN-ACC-FULD-A02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-ACC-FULD-B01",
+      "entity_type": "ACC",
+      "identity_key": "case-fulcrum-dev:SYN-ACC-FULD-B01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-ACC-FULD-B02",
+      "entity_type": "ACC",
+      "identity_key": "case-fulcrum-dev:SYN-ACC-FULD-B02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-A01",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-A01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-A02",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-A02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-A03",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-A03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-B01",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-B01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-B02",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-B02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-PHONE-FULD-B03",
+      "entity_type": "PHONE",
+      "identity_key": "case-fulcrum-dev:SYN-PHONE-FULD-B03",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-LOC-FULD-A01",
+      "entity_type": "LOC",
+      "identity_key": "case-fulcrum-dev:SYN-LOC-FULD-A01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-LOC-FULD-A02",
+      "entity_type": "LOC",
+      "identity_key": "case-fulcrum-dev:SYN-LOC-FULD-A02",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-LOC-FULD-B01",
+      "entity_type": "LOC",
+      "identity_key": "case-fulcrum-dev:SYN-LOC-FULD-B01",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-fulcrum-dev",
+      "entity_id": "SYN-LOC-FULD-B02",
+      "entity_type": "LOC",
+      "identity_key": "case-fulcrum-dev:SYN-LOC-FULD-B02",
+      "synthetic": true
+    }
+  ],
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

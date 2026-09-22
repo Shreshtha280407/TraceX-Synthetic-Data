@@ -1,0 +1,24 @@
+{
+  "case_id": "case-fulcrum-dev",
+  "claim": {
+    "assertion": "SYN-PER-FULD-A02 was at SYN-LOC-FULD-A01",
+    "entity_id": "SYN-PER-FULD-A02",
+    "location_id": "SYN-LOC-FULD-A01",
+    "record_id": "SYN-SOC-FULD-0002",
+    "source": "social_message",
+    "timestamp": "2032-01-01T05:01:40Z"
+  },
+  "conflicting_evidence": {
+    "assertion": "SYN-PER-FULD-A02 observed at SYN-LOC-FULD-B02",
+    "entity_id": "SYN-PER-FULD-A02",
+    "location_id": "SYN-LOC-FULD-B02",
+    "record_id": "SYN-SIGHT-FULD-002",
+    "source": "sighting",
+    "timestamp": "2032-01-01T05:01:40Z"
+  },
+  "contradiction_id": "SYN-CONTRA-FULD-01",
+  "disposition": "review_required",
+  "note": "Deliberately conflicting fixture clue for contradiction-detection testing; not a data error.",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

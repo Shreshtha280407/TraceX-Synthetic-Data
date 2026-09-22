@@ -1,0 +1,379 @@
+{
+  "automated_result_proves_guilt": false,
+  "automatic_cross_case_linking": false,
+  "automatic_identity_merge": false,
+  "base_corpus": "SYN-CORPUS-OPERATION-NIGHTFALL-V1",
+  "case_ids": [
+    "case-fulcrum-dev",
+    "case-fulcrum-val"
+  ],
+  "corpus_id": "SYN-CORPUS-OPERATION-FULCRUM-V1",
+  "files": [
+    {
+      "bytes": 10829,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "expected_result",
+      "path": "expected-results/case-fulcrum-dev.json",
+      "sha256": "2a29565de112a4882ca6d414a7336e63d5a64c35be45c896c74cce2ce1e8e60c"
+    },
+    {
+      "bytes": 547,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-fulcrum/case-fulcrum-dev/audio/turns.json",
+      "sha256": "02182e0665c44e39306169bd0778c3457c19b05772c7205be15e6df875842d12"
+    },
+    {
+      "bytes": 1883,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/briefing.pdf",
+      "sha256": "0a35de8aa78f12f69e0b104aa71e68ca7c6042b1bc239773d1dd0befff7a838f"
+    },
+    {
+      "bytes": 1157,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/briefing.txt",
+      "sha256": "90bf9b6ffa944f800e7a19006c647fe6ad56b34203e216f5bc4f21e3ffe7abd2"
+    },
+    {
+      "bytes": 1892,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/chronology.pdf",
+      "sha256": "02ec95063aad8217b6f4ce3b94da2ef2f70ae8c82aea863edaa8134d72058a84"
+    },
+    {
+      "bytes": 1161,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-dev/documents/chronology.txt",
+      "sha256": "b8fa7c9979afa3c6bedf833074170f7bd0fa1619b35ec520cad7d6fe641a6451"
+    },
+    {
+      "bytes": 978,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-fulcrum/case-fulcrum-dev/entity_resolution_truth.json",
+      "sha256": "1cf20cb751b992a8320693b01059da26d96fd0a24b86d73631661f6032d9d378"
+    },
+    {
+      "bytes": 1296,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/communities.json",
+      "sha256": "fb0312eb3436e819deb7e213776e41d3c63942161827c1da6a2da71c48522324"
+    },
+    {
+      "bytes": 5559,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/entities.json",
+      "sha256": "a7c5c7ef176c041effabb963b1f629675fc3b2df556748b438b2a84deaedc9ee"
+    },
+    {
+      "bytes": 3577,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/events.json",
+      "sha256": "b3317acc4713355f6ef517cf630fb82acaad5efb24d5326df47d264598110d84"
+    },
+    {
+      "bytes": 7194,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/evidence-register.json",
+      "sha256": "5faf36d55f4718f1b3d069cf4375c1dfcac5414c61957e5e3f29a4632ee0a7b2"
+    },
+    {
+      "bytes": 629,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-dev/metadata/motif.json",
+      "sha256": "561c09b31bd44684b449bd891f731064db91d76aae981cb9c00e4ed7ec966d69"
+    },
+    {
+      "bytes": 6258,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "social",
+      "path": "operation-fulcrum/case-fulcrum-dev/social/messages.json",
+      "sha256": "b7e674259563be85d15db36166fb2de5ed0732a70ba3202f9564853fac683629"
+    },
+    {
+      "bytes": 3546,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/cdr.csv",
+      "sha256": "a04ace7293347cd6360c2a6d51934a5795995a38017e93398ef007b8d4aba49c"
+    },
+    {
+      "bytes": 828,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/contradictions.json",
+      "sha256": "e3207536459696e380f8dff7088a8b65b2ad375c6ab7b25c5f3e2ce83980ccbd"
+    },
+    {
+      "bytes": 3330,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/sightings.json",
+      "sha256": "958c1ee4b45bc8625e85ad0c58732933384d31530dac1ff8a86f7a9cb73adfc6"
+    },
+    {
+      "bytes": 2756,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-dev/structured/transactions.csv",
+      "sha256": "c4c21e09b31499fea457dfcfcbb371fc5022da34c5cc68aaa105e74fbf3e7ac3"
+    },
+    {
+      "bytes": 474,
+      "case_id": "case-fulcrum-dev",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-dev.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-fulcrum/case-fulcrum-dev/visual/timeline.json",
+      "sha256": "b94fe6f299f756cc21e079126fa38a020e70586bc3cbc04f1ca1f669c554d15c"
+    },
+    {
+      "bytes": 10829,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "expected_result",
+      "path": "expected-results/case-fulcrum-val.json",
+      "sha256": "11849bb5bdc0ebbaf497631586f7d1e1119ee81c7f2daacdc7dec05fca11a4e4"
+    },
+    {
+      "bytes": 547,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "audio",
+      "path": "operation-fulcrum/case-fulcrum-val/audio/turns.json",
+      "sha256": "3f503e447bbe3d4c937f243b5d4fd9126918f78ca5e9799704d4d79f537d223d"
+    },
+    {
+      "bytes": 1883,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-val/documents/briefing.pdf",
+      "sha256": "2796e64edd17b9c976af6b51a47e5af6109a64b1c7e4145f15365ea0b067b2f6"
+    },
+    {
+      "bytes": 1157,
+      "case_id": "case-fulcrum-val",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-val/documents/briefing.txt",
+      "sha256": "f4bd698263299215171bb0e82e494a46ece0317bbcf7e9a2da3b696335273ffb"
+    },
+    {
+      "bytes": 1892,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/pdf",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-val/documents/chronology.pdf",
+      "sha256": "7fd42f362863c4878c61d4f747ba3df3343ee73f809eee263ef5c993f63dc093"
+    },
+    {
+      "bytes": 1161,
+      "case_id": "case-fulcrum-val",
+      "content_type": "text/plain",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "documents",
+      "path": "operation-fulcrum/case-fulcrum-val/documents/chronology.txt",
+      "sha256": "58a11fe2f6845abb9e3f63629ef4b88ab5c5bcb371db0b32b2df6509c8172955"
+    },
+    {
+      "bytes": 978,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-fulcrum/case-fulcrum-val/entity_resolution_truth.json",
+      "sha256": "1234da0662f8158030384a3f83957fc4eea0cb1464f928fe43dcf8322e2731a7"
+    },
+    {
+      "bytes": 1296,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-val/metadata/communities.json",
+      "sha256": "10f5e96b97d86ad164bce071078171a2c6009a0998f164bde259a7cc51e7a2d5"
+    },
+    {
+      "bytes": 5559,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-val/metadata/entities.json",
+      "sha256": "5d8767afba325bdd612769c350b8177e8ab60f2232a395f1bc51598896e7b2bd"
+    },
+    {
+      "bytes": 3577,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-val/metadata/events.json",
+      "sha256": "4cf66e14ee647b0391b5cc1ee6cfe0dfbd6713092d49385e7f88641c84e4f608"
+    },
+    {
+      "bytes": 7194,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-val/metadata/evidence-register.json",
+      "sha256": "1bf61989469be14a4e0d5415768311f61502bf114104c9458ca41b305e989e9b"
+    },
+    {
+      "bytes": 629,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-fulcrum/case-fulcrum-val/metadata/motif.json",
+      "sha256": "ccb23d7cd4c974860bf65a278c684870cd5be6ff94238736146baca08a78c0d4"
+    },
+    {
+      "bytes": 6258,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "social",
+      "path": "operation-fulcrum/case-fulcrum-val/social/messages.json",
+      "sha256": "96130bcc402ea071144150617130820a083c880a79e222d8879a453f877072b2"
+    },
+    {
+      "bytes": 3546,
+      "case_id": "case-fulcrum-val",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-val/structured/cdr.csv",
+      "sha256": "8673123425e33a7b3c435a5e1c3fc875a885166acce985c595e0b12a6a0273dd"
+    },
+    {
+      "bytes": 828,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-val/structured/contradictions.json",
+      "sha256": "8d9301ad42f862afab972ff5d16b45f0d002aacb4679003bfcb83d5a0f7e8d3b"
+    },
+    {
+      "bytes": 3330,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-val/structured/sightings.json",
+      "sha256": "9bb15e4a874d2358e913e02ff7a3c43f4ad7cb36f8ed0a5568b088aa9372e429"
+    },
+    {
+      "bytes": 2756,
+      "case_id": "case-fulcrum-val",
+      "content_type": "text/csv",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-fulcrum/case-fulcrum-val/structured/transactions.csv",
+      "sha256": "e579085a327dc01be3ae31d60a48e9453717dc4e0110c8dded26c347bcc944f0"
+    },
+    {
+      "bytes": 474,
+      "case_id": "case-fulcrum-val",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-fulcrum-val.json",
+      "generated_synthetic_data": true,
+      "modality": "visual",
+      "path": "operation-fulcrum/case-fulcrum-val/visual/timeline.json",
+      "sha256": "278874fdb437f2190834853f753f93cfa47aece756d8d5bce85e75b2a5e4a75f"
+    }
+  ],
+  "purpose": "development/validation graph-truth tuning corpus; never used for the Nightfall holdout evaluation",
+  "schema_version": "operation-nightfall.v2",
+  "seeds": {
+    "case-fulcrum-dev": 8242027,
+    "case-fulcrum-val": 8242028
+  }
+}
