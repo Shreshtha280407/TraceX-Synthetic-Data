@@ -2,13 +2,13 @@
   "case_id": "case-fulcrum-val",
   "records": [
     {
-      "author_id": "SYN-PER-FULV-BRIDGE",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-B01",
       "event_id": "SYN-EVENT-FULV-04",
       "location_id": "SYN-LOC-FULV-B01",
       "message": "Fictional handling meeting note: SYN-PER-FULV-A01 and SYN-PER-FULV-B01 met via the bridge; retain provenance, request human review.",
       "record_id": "SYN-SOC-FULV-0001",
+      "sender": "SYN-PER-FULV-BRIDGE",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -16,13 +16,13 @@
       "vehicle_id": "SYN-VEH-FULV-A01"
     },
     {
-      "author_id": "SYN-PER-FULV-A02",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A02",
       "event_id": "SYN-EVENT-FULV-07",
       "location_id": "SYN-LOC-FULV-A01",
       "message": "Fictional alibi note: SYN-PER-FULV-A02 states they were at SYN-LOC-FULV-A01 at this time.",
       "record_id": "SYN-SOC-FULV-0002",
+      "sender": "SYN-PER-FULV-A02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -30,13 +30,13 @@
       "vehicle_id": "SYN-VEH-FULV-A01"
     },
     {
-      "author_id": "SYN-PER-FULV-A01",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A01",
       "event_id": "SYN-EVENT-FULV-01",
       "location_id": "SYN-LOC-FULV-A01",
       "message": "Fictional handling note for SYN-VEH-FULV-A01; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0003",
+      "sender": "SYN-PER-FULV-A01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -44,13 +44,13 @@
       "vehicle_id": "SYN-VEH-FULV-A01"
     },
     {
-      "author_id": "SYN-PER-FULV-A02",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A02",
       "event_id": "SYN-EVENT-FULV-02",
       "location_id": "SYN-LOC-FULV-A02",
       "message": "Fictional handling note for SYN-VEH-FULV-A02; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0004",
+      "sender": "SYN-PER-FULV-A02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -58,13 +58,13 @@
       "vehicle_id": "SYN-VEH-FULV-A02"
     },
     {
-      "author_id": "SYN-PER-FULV-A03",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A03",
       "event_id": "SYN-EVENT-FULV-03",
       "location_id": "SYN-LOC-FULV-B01",
       "message": "Fictional handling note for SYN-VEH-FULV-B01; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0005",
+      "sender": "SYN-PER-FULV-A03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -72,13 +72,13 @@
       "vehicle_id": "SYN-VEH-FULV-B01"
     },
     {
-      "author_id": "SYN-PER-FULV-A04",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-B01",
       "event_id": "SYN-EVENT-FULV-04",
       "location_id": "SYN-LOC-FULV-B02",
       "message": "Fictional handling note for SYN-VEH-FULV-B02; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0006",
+      "sender": "SYN-PER-FULV-A04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -86,13 +86,13 @@
       "vehicle_id": "SYN-VEH-FULV-B02"
     },
     {
-      "author_id": "SYN-PER-FULV-BRIDGE",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-B02",
       "event_id": "SYN-EVENT-FULV-05",
       "location_id": "SYN-LOC-FULV-A01",
       "message": "Fictional handling note for SYN-VEH-FULV-A01; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0007",
+      "sender": "SYN-PER-FULV-BRIDGE",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -100,13 +100,13 @@
       "vehicle_id": "SYN-VEH-FULV-A01"
     },
     {
-      "author_id": "SYN-PER-FULV-B01",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-B03",
       "event_id": "SYN-EVENT-FULV-06",
       "location_id": "SYN-LOC-FULV-A02",
       "message": "Fictional handling note for SYN-VEH-FULV-A02; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0008",
+      "sender": "SYN-PER-FULV-B01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -114,13 +114,13 @@
       "vehicle_id": "SYN-VEH-FULV-A02"
     },
     {
-      "author_id": "SYN-PER-FULV-B02",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A01",
       "event_id": "SYN-EVENT-FULV-07",
       "location_id": "SYN-LOC-FULV-B01",
       "message": "Fictional handling note for SYN-VEH-FULV-B01; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0009",
+      "sender": "SYN-PER-FULV-B02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -128,13 +128,13 @@
       "vehicle_id": "SYN-VEH-FULV-B01"
     },
     {
-      "author_id": "SYN-PER-FULV-B03",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A02",
       "event_id": "SYN-EVENT-FULV-01",
       "location_id": "SYN-LOC-FULV-B02",
       "message": "Fictional handling note for SYN-VEH-FULV-B02; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0010",
+      "sender": "SYN-PER-FULV-B03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,
@@ -142,13 +142,13 @@
       "vehicle_id": "SYN-VEH-FULV-B02"
     },
     {
-      "author_id": "SYN-PER-FULV-B04",
       "case_id": "case-fulcrum-val",
       "device_id": "SYN-PHONE-FULV-A03",
       "event_id": "SYN-EVENT-FULV-02",
       "location_id": "SYN-LOC-FULV-A01",
       "message": "Fictional handling note for SYN-VEH-FULV-A01; retain provenance and request human review.",
       "record_id": "SYN-SOC-FULV-0011",
+      "sender": "SYN-PER-FULV-B04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-FULV-CHAT",
       "synthetic": true,

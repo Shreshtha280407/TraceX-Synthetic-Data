@@ -96,8 +96,8 @@
       "content_type": "application/json",
       "evidence_id": "SYN-EVID-COP-010",
       "expected_result_path": "expected-results/case-operation-copper.json",
-      "modality": "metadata",
-      "path": "operation-nightfall/case-operation-copper/metadata/entities.json",
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-copper/entity_resolution_truth.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -107,7 +107,7 @@
       "evidence_id": "SYN-EVID-COP-011",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "metadata",
-      "path": "operation-nightfall/case-operation-copper/metadata/events.json",
+      "path": "operation-nightfall/case-operation-copper/metadata/entities.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -117,7 +117,7 @@
       "evidence_id": "SYN-EVID-COP-012",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "metadata",
-      "path": "operation-nightfall/case-operation-copper/metadata/evidence-register.json",
+      "path": "operation-nightfall/case-operation-copper/metadata/events.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -125,6 +125,16 @@
       "case_id": "case-operation-copper",
       "content_type": "application/json",
       "evidence_id": "SYN-EVID-COP-013",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-copper/metadata/evidence-register.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-COP-014",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "social",
       "path": "operation-nightfall/case-operation-copper/social/messages.json",
@@ -134,7 +144,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-COP-014",
+      "evidence_id": "SYN-EVID-COP-015",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-copper/structured/cdr-metadata.json",
@@ -144,7 +154,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "text/csv",
-      "evidence_id": "SYN-EVID-COP-015",
+      "evidence_id": "SYN-EVID-COP-016",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-copper/structured/cdr.csv",
@@ -154,7 +164,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-COP-016",
+      "evidence_id": "SYN-EVID-COP-017",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-copper/structured/sightings.json",
@@ -164,7 +174,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "text/csv",
-      "evidence_id": "SYN-EVID-COP-017",
+      "evidence_id": "SYN-EVID-COP-018",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-copper/structured/transactions.csv",
@@ -174,7 +184,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "video/mp4",
-      "evidence_id": "SYN-EVID-COP-018",
+      "evidence_id": "SYN-EVID-COP-019",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/footage.mp4",
@@ -184,7 +194,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-COP-019",
+      "evidence_id": "SYN-EVID-COP-020",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/still-01.png",
@@ -194,7 +204,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-COP-020",
+      "evidence_id": "SYN-EVID-COP-021",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/still-02.png",
@@ -204,7 +214,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-COP-021",
+      "evidence_id": "SYN-EVID-COP-022",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/still-03.png",
@@ -214,7 +224,7 @@
     {
       "case_id": "case-operation-copper",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-COP-022",
+      "evidence_id": "SYN-EVID-COP-023",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/timeline.json",

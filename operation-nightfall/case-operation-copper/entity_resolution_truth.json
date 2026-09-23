@@ -1,0 +1,8 @@
+{
+  "blocked_reason": "Not yet run against a live tracex-api instance for this case.",
+  "case_id": "case-operation-copper",
+  "entity_pairs": [],
+  "pending_ingestion": true,
+  "schema_version": "entity_resolution_truth.v1",
+  "todo": "Run scripts/generate_nightfall_entity_resolution_truth.py --case case-operation-copper --tracex-api $TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs."
+}

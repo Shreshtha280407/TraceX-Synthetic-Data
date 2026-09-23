@@ -2,13 +2,13 @@
   "case_id": "case-operation-nightfall",
   "records": [
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0001",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -16,13 +16,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0002",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -30,13 +30,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0003",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -44,13 +44,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0004",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -58,13 +58,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0005",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -72,13 +72,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0006",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -86,13 +86,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0007",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -100,13 +100,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0008",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -114,13 +114,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0009",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -128,13 +128,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0010",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -142,13 +142,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0011",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -156,13 +156,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0012",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -170,13 +170,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0013",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -184,13 +184,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0014",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -198,13 +198,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0015",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -212,13 +212,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0016",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -226,13 +226,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0017",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -240,13 +240,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0018",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -254,13 +254,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0019",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -268,13 +268,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0020",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -282,13 +282,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0021",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -296,13 +296,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0022",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -310,13 +310,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0023",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -324,13 +324,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0024",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -338,13 +338,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0025",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -352,13 +352,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0026",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -366,13 +366,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0027",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -380,13 +380,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0028",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -394,13 +394,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0029",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -408,13 +408,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0030",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -422,13 +422,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0031",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -436,13 +436,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0032",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -450,13 +450,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0033",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -464,13 +464,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0034",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -478,13 +478,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0035",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -492,13 +492,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0036",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -506,13 +506,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0037",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -520,13 +520,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0038",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -534,13 +534,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0039",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -548,13 +548,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0040",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -562,13 +562,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0041",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -576,13 +576,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0042",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -590,13 +590,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0043",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -604,13 +604,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0044",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -618,13 +618,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0045",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -632,13 +632,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0046",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -646,13 +646,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0047",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -660,13 +660,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0048",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -674,13 +674,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0049",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -688,13 +688,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0050",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -702,13 +702,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-01",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-01",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0051",
+      "sender": "SYN-PER-NF-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -716,13 +716,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-02",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-02",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0052",
+      "sender": "SYN-PER-NF-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -730,13 +730,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-03",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-03",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0053",
+      "sender": "SYN-PER-NF-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -744,13 +744,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-04",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-04",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0054",
+      "sender": "SYN-PER-NF-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -758,13 +758,13 @@
       "vehicle_id": "SYN-VEH-NF-06"
     },
     {
-      "author_id": "SYN-PER-NF-05",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-01",
       "event_id": "SYN-EVENT-NF-05",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0055",
+      "sender": "SYN-PER-NF-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -772,13 +772,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-NF-06",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-02",
       "event_id": "SYN-EVENT-NF-06",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0056",
+      "sender": "SYN-PER-NF-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -786,13 +786,13 @@
       "vehicle_id": "SYN-VEH-NF-02"
     },
     {
-      "author_id": "SYN-PER-NF-07",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-03",
       "event_id": "SYN-EVENT-NF-07",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0057",
+      "sender": "SYN-PER-NF-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -800,13 +800,13 @@
       "vehicle_id": "SYN-VEH-NF-03"
     },
     {
-      "author_id": "SYN-PER-NF-08",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-04",
       "event_id": "SYN-EVENT-NF-08",
       "location_id": "SYN-LOC-NF-01",
       "message": "Fictional handling note for SYN-VEH-NF-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0058",
+      "sender": "SYN-PER-NF-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -814,13 +814,13 @@
       "vehicle_id": "SYN-VEH-NF-04"
     },
     {
-      "author_id": "SYN-PER-NF-09",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-05",
       "event_id": "SYN-EVENT-NF-09",
       "location_id": "SYN-LOC-NF-02",
       "message": "Fictional handling note for SYN-VEH-NF-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0059",
+      "sender": "SYN-PER-NF-09",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,
@@ -828,13 +828,13 @@
       "vehicle_id": "SYN-VEH-NF-05"
     },
     {
-      "author_id": "SYN-PER-NF-10",
       "case_id": "case-operation-nightfall",
       "device_id": "SYN-PHONE-NF-06",
       "event_id": "SYN-EVENT-NF-10",
       "location_id": "SYN-LOC-NF-03",
       "message": "Fictional handling note for SYN-VEH-NF-06; retain provenance and request human review.",
       "record_id": "SYN-SOC-NF-0060",
+      "sender": "SYN-PER-NF-10",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-NF-CHAT",
       "synthetic": true,

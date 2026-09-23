@@ -1,8 +1,72 @@
 {
-  "blocked_reason": "Probed a live tracex-api instance: auth (register/login) and evidence upload work, but this build exposes no entity-resolution read surface. ExtractedEntityMention (the only entity-shaped object it produces) is documented as a raw, unresolved mention with no id field; there is no /entities or observation-listing endpoint for a client to read back resolved entities; and there is no case-creation endpoint at all (evidence upload 403s without pre-existing case membership, which nothing here can grant). This is a missing capability on TraceX's side, not a reachability problem.",
   "case_id": "case-fulcrum-val",
-  "entity_pairs": [],
-  "pending_ingestion": true,
-  "schema_version": "entity_resolution_truth.v1",
-  "todo": "Once TraceX ships case creation and an entity-resolution read endpoint, run scripts/generate_entity_resolution_truth.py --case case-fulcrum-val --tracex-api $TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs."
+  "entity_pairs": [
+    {
+      "label": "same",
+      "left_entity_id": "fee79f72-5d65-542b-9925-0f3a3a5afce1",
+      "right_entity_id": "ae189c91-1b0a-5302-b0b9-c52d1fc5c233"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "fe2844ee-6e3a-5048-bf8e-cf16e948fd1f",
+      "right_entity_id": "b4ed088c-d2dd-5647-a8a2-6c47fb6efc4e"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "f5d88d87-2acc-5406-8720-c39b3943228e",
+      "right_entity_id": "f4e7c28f-3810-54bc-940f-40ef2e90ebb6"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "f1e60f02-bce5-5695-ae98-c8b679786db3",
+      "right_entity_id": "e77b1cf4-797d-55b5-9b4b-2905c6663eba"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "e8075377-ab99-55a8-8320-8c14761f3108",
+      "right_entity_id": "da8b6a67-7b6b-5f23-953d-592b403b9f13"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "e255feda-1718-57d4-ad87-0aa68233d791",
+      "right_entity_id": "bfcdbf7f-c86f-56b2-86cd-8a44bebe31ff"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "dd0feed6-99c5-5635-9192-5aa95f4f988e",
+      "right_entity_id": "73fc45be-0637-503f-819e-ab1e5e86dff4"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "ccdbe3dd-f4ca-5fad-b4c0-f8b6823c39f6",
+      "right_entity_id": "a3c2e2fe-4a83-55c3-a618-142ebce98892"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "c1dee908-67ab-5aa4-bf01-e1c9ad5cb26b",
+      "right_entity_id": "bab08219-fbbe-5fde-8b9f-d99b17d351dd"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "b8fdb2af-ba28-5bda-a5fc-3f8afce9cfaf",
+      "right_entity_id": "2091552e-13c5-5010-8dbc-782dfbe863d5"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "9c9e8eb6-16a4-5503-a62f-7b3306f97bf9",
+      "right_entity_id": "7ba6fdbc-524b-5bb4-a652-5e13bebc77cd"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "44a2a983-86ed-52c2-b4ee-ea0f81b1f3c4",
+      "right_entity_id": "2ae1892e-5f80-52c3-8384-04615d95a361"
+    },
+    {
+      "label": "different",
+      "left_entity_id": "fe2844ee-6e3a-5048-bf8e-cf16e948fd1f",
+      "right_entity_id": "c1dee908-67ab-5aa4-bf01-e1c9ad5cb26b"
+    }
+  ],
+  "pending_ingestion": false,
+  "schema_version": "entity_resolution_truth.v1"
 }

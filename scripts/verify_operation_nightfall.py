@@ -15,7 +15,7 @@ from pathlib import Path
 
 from generate_operation_nightfall import (
     CASES, SHARED, SPEAKERS, SAFE, MANIFEST, NOTICE, authored_files, checked_path,
-    content_type, digest, entities_for, envelope, expectation, provenance_records, run, scene_plan, speech_plan,
+    content_type, digest, entities_for, envelope, expectation, modality, provenance_records, run, scene_plan, speech_plan,
     FULCRUM_CASES, FULCRUM_SEEDS, FULCRUM_MOTIF_CHAIN, MANIFEST_V2, SYN_CORPUS_FULCRUM,
     fulcrum_authored_files, fulcrum_provenance_records,
 )
@@ -190,9 +190,11 @@ def verify(root, quiet=False):
         require(entry["content_type"] == content_type(relative), "wrong content type")
         require(entry["generated_synthetic_data"] is True, "missing synthetic marker")
         require(entry["expected_result_path"] == f"expected-results/{case}.json", "wrong expected result link")
-        modality = "expected_result" if relative.startswith("expected-results/") else Path(relative).parts[2]
-        require(entry["modality"] == modality, "wrong modality")
-        if path.suffix == ".json":
+        entry_modality = "expected_result" if relative.startswith("expected-results/") else modality(relative, None)
+        require(entry["modality"] == entry_modality, "wrong modality")
+        if path.suffix == ".json" and not relative.endswith("entity_resolution_truth.json"):
+            # entity_resolution_truth.json legitimately holds real Entity.entity_id UUIDs
+            # once ingested (ADR-025), not SYN-* placeholders; validated separately below.
             value = load(path)
             synthetic_fields(value, case)
         total += len(data)
@@ -203,7 +205,7 @@ def verify(root, quiet=False):
     for case_id, code in CASES.items():
         directory = root / "operation-nightfall" / case_id
         case_entries = per_case[case_id]
-        require({entry["modality"] for entry in case_entries} == {"documents", "structured", "social", "audio", "visual", "metadata", "expected_result"}, "case missing modality")
+        require({entry["modality"] for entry in case_entries} == {"documents", "structured", "social", "audio", "visual", "metadata", "expected_result", "entity_resolution_truth"}, "case missing modality")
         authored = authored_files(case_id, manifest["seed"])
         known_paths = set(authored) | {"audio/discussion.wav", "audio/transcript.txt", "audio/turns.json", "audio/speakers.rttm",
             "visual/footage.mp4", "visual/still-01.png", "visual/still-02.png", "visual/still-03.png", "metadata/evidence-register.json"}
@@ -213,8 +215,24 @@ def verify(root, quiet=False):
         require(load(directory / "metadata/evidence-register.json") == safe_register, "register differs from authored provenance assertions")
         require(load(root / f"expected-results/{case_id}.json") == safe_expected, "expected result differs from authored safe assertions")
         for relative, expected_bytes in authored.items():
+            if relative.endswith("entity_resolution_truth.json"):
+                # This file's own authored placeholder documents that it is meant to be
+                # overwritten later by generate_nightfall_entity_resolution_truth.py; its
+                # post-ingestion content is validated separately below.
+                continue
             path = directory / relative
             require(path.read_bytes() == expected_bytes, f"content deviates from closed fictional templates: {case_id}/{relative}")
+        truth = load(directory / "entity_resolution_truth.json")
+        require(truth["schema_version"] == "entity_resolution_truth.v1", "wrong entity_resolution_truth schema")
+        require(truth["case_id"] == case_id, "entity_resolution_truth case mismatch")
+        require(isinstance(truth["entity_pairs"], list), "entity_resolution_truth.entity_pairs must be a list")
+        if truth.get("pending_ingestion"):
+            require(truth["entity_pairs"] == [], "pending entity_resolution_truth must not invent pairs")
+        else:
+            for pair in truth["entity_pairs"]:
+                require(pair["label"] in {"same", "different"}, "bad entity_resolution_truth label")
+                require(isinstance(pair["left_entity_id"], str) and isinstance(pair["right_entity_id"], str),
+                        "bad entity_resolution_truth entity id")
         # A closed set of fields and authored text rejects injected real data/claims
         # and invented inference fields even if someone recomputes manifest hashes.
         entity_rows = load(directory / "metadata/entities.json")["entities"]
@@ -239,7 +257,7 @@ def verify(root, quiet=False):
         for event in events:
             require(set(event["entity_refs"]) <= ids, "foreign entity in event")
             require(datetime.fromisoformat(event["start"]) < datetime.fromisoformat(event["end"]), "invalid event time window")
-        ref_fields = {"person_id", "source_id", "target_id", "vehicle_context", "location_id", "device_id", "from_account", "to_account", "author_id", "vehicle_id"}
+        ref_fields = {"person_id", "source_id", "target_id", "vehicle_context", "location_id", "device_id", "from_account", "to_account", "sender", "vehicle_id"}
         for row in cdr + transactions + social:
             synthetic_fields(row, case_id)
             require(row["case_id"] == case_id, "foreign case in records")
@@ -339,19 +357,27 @@ def verify_v2(root, quiet=False):
         require(entry["content_type"] == content_type(relative), "wrong v2 content type")
         require(entry["generated_synthetic_data"] is True, "missing v2 synthetic marker")
         require(entry["expected_result_path"] == f"expected-results/{case}.json", "wrong v2 expected result link")
-        if path.suffix == ".json":
+        if path.suffix == ".json" and Path(relative).name != "entity_resolution_truth.json":
+            # entity_resolution_truth.json legitimately holds real Entity.entity_id UUIDs
+            # (ADR-025), not SYN-* placeholders; it has its own dedicated check below.
             synthetic_fields(load(path), case)
         total += len(data)
         per_case[case].append(entry)
     require(total < 100_000_000, f"v2 corpus exceeds 100 MB: {total}")
 
     ref_fields = {"person_id", "source_id", "target_id", "vehicle_context", "location_id", "device_id",
-                  "from_account", "to_account", "author_id", "vehicle_id"}
+                  "from_account", "to_account", "sender", "vehicle_id"}
     inventories = {}
     for case_id, code in FULCRUM_CASES.items():
         directory = root / "operation-fulcrum" / case_id
         files, meta = fulcrum_authored_files(case_id, FULCRUM_SEEDS[case_id])
         for relative, expected_bytes in files.items():
+            if relative.endswith("entity_resolution_truth.json"):
+                # This file's own authored placeholder documents that it is meant to be
+                # overwritten later by generate_entity_resolution_truth.py (ADR-025); its
+                # post-regeneration content is validated separately below, not against the
+                # frozen placeholder template.
+                continue
             require((directory / relative).read_bytes() == expected_bytes,
                     f"v2 content deviates from closed template: {case_id}/{relative}")
 

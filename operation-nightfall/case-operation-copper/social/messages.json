@@ -2,13 +2,13 @@
   "case_id": "case-operation-copper",
   "records": [
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0001",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -16,13 +16,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0002",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -30,13 +30,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0003",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -44,13 +44,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0004",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -58,13 +58,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0005",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -72,13 +72,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0006",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -86,13 +86,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0007",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -100,13 +100,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0008",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -114,13 +114,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0009",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -128,13 +128,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0010",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -142,13 +142,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0011",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -156,13 +156,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0012",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -170,13 +170,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0013",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -184,13 +184,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0014",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -198,13 +198,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0015",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -212,13 +212,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0016",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -226,13 +226,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0017",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -240,13 +240,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0018",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -254,13 +254,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0019",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -268,13 +268,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0020",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -282,13 +282,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0021",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -296,13 +296,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0022",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -310,13 +310,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0023",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -324,13 +324,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0024",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -338,13 +338,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0025",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -352,13 +352,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0026",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -366,13 +366,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0027",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -380,13 +380,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0028",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -394,13 +394,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0029",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -408,13 +408,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0030",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -422,13 +422,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0031",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -436,13 +436,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0032",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -450,13 +450,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0033",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -464,13 +464,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0034",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -478,13 +478,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0035",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -492,13 +492,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0036",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -506,13 +506,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0037",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -520,13 +520,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0038",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -534,13 +534,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0039",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -548,13 +548,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0040",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -562,13 +562,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0041",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -576,13 +576,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0042",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -590,13 +590,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0043",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -604,13 +604,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0044",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -618,13 +618,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0045",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -632,13 +632,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0046",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -646,13 +646,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0047",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -660,13 +660,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0048",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -674,13 +674,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0049",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -688,13 +688,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0050",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -702,13 +702,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-01",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0051",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -716,13 +716,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-02",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0052",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -730,13 +730,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-05",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-03",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0053",
+      "sender": "SYN-PER-COP-05",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -744,13 +744,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-06",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-04",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0054",
+      "sender": "SYN-PER-COP-06",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -758,13 +758,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-07",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-01",
       "event_id": "SYN-EVENT-COP-05",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0055",
+      "sender": "SYN-PER-COP-07",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -772,13 +772,13 @@
       "vehicle_id": "SYN-VEH-COP-05"
     },
     {
-      "author_id": "SYN-PER-COP-08",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-02",
       "event_id": "SYN-EVENT-COP-06",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-NF-1001; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0056",
+      "sender": "SYN-PER-COP-08",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -786,13 +786,13 @@
       "vehicle_id": "SYN-VEH-NF-1001"
     },
     {
-      "author_id": "SYN-PER-COP-01",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-03",
       "event_id": "SYN-EVENT-COP-07",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-02; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0057",
+      "sender": "SYN-PER-COP-01",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -800,13 +800,13 @@
       "vehicle_id": "SYN-VEH-COP-02"
     },
     {
-      "author_id": "SYN-PER-COP-02",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-04",
       "event_id": "SYN-EVENT-COP-08",
       "location_id": "SYN-LOC-COP-01",
       "message": "Fictional handling note for SYN-VEH-COP-03; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0058",
+      "sender": "SYN-PER-COP-02",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -814,13 +814,13 @@
       "vehicle_id": "SYN-VEH-COP-03"
     },
     {
-      "author_id": "SYN-PER-COP-03",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-05",
       "event_id": "SYN-EVENT-COP-09",
       "location_id": "SYN-LOC-COP-02",
       "message": "Fictional handling note for SYN-VEH-COP-04; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0059",
+      "sender": "SYN-PER-COP-03",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,
@@ -828,13 +828,13 @@
       "vehicle_id": "SYN-VEH-COP-04"
     },
     {
-      "author_id": "SYN-PER-COP-04",
       "case_id": "case-operation-copper",
       "device_id": "SYN-PHONE-COP-06",
       "event_id": "SYN-EVENT-COP-10",
       "location_id": "SYN-LOC-COP-03",
       "message": "Fictional handling note for SYN-VEH-COP-05; retain provenance and request human review.",
       "record_id": "SYN-SOC-COP-0060",
+      "sender": "SYN-PER-COP-04",
       "source": "offline_authored_fixture",
       "source_id": "SYN-SOURCE-COP-CHAT",
       "synthetic": true,

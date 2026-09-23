@@ -10,14 +10,14 @@
   "corpus_id": "SYN-CORPUS-OPERATION-NIGHTFALL-V1",
   "files": [
     {
-      "bytes": 15200,
+      "bytes": 15855,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "expected_result",
       "path": "expected-results/case-operation-nightfall.json",
-      "sha256": "27cb0c8e81cf68bde0c01eaefa5033aca476f6612a3fb311891e8296fb2ebd84"
+      "sha256": "2b23e719192df2a661c280994bc0bb79bf296807a7ffd097f331e862b3828a77"
     },
     {
       "bytes": 3572144,
@@ -120,24 +120,24 @@
       "sha256": "a18614b70848c32a150918bb66d2b0db1787e5b82ee17788af2c2a6561a08841"
     },
     {
-      "bytes": 9150,
+      "bytes": 9578,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-nightfall/metadata/evidence-register.json",
-      "sha256": "49a8b8662d8e6a086b1e2b18e10412989137f895cc673305eb9f269d2f39219b"
+      "sha256": "bb2a7962f5efa59ee64a00b93220d8f54d2cd304d6e45e5d625c2e4ddfaa8e16"
     },
     {
-      "bytes": 32624,
+      "bytes": 32444,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-nightfall/case-operation-nightfall/social/messages.json",
-      "sha256": "ed37bca8d88804cf7033bb02c4f3e310de41d587bce610d4936a1c9f427a4c9f"
+      "sha256": "0673206c1b09f693ec1906a83e8b2b597273f21b5a62a3e036f8e4e50d20f0dc"
     },
     {
       "bytes": 384,
@@ -230,14 +230,14 @@
       "sha256": "1bb03ad6c125505fdb82f99af6bac898c8e0c5102035449ab20eb10127e2a7a0"
     },
     {
-      "bytes": 15065,
+      "bytes": 15714,
       "case_id": "case-operation-copper",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "generated_synthetic_data": true,
       "modality": "expected_result",
       "path": "expected-results/case-operation-copper.json",
-      "sha256": "e89b69565c8d242307adc7ecc9099ae8e8a8d2245d1251c4272b6f411f6f3116"
+      "sha256": "0b78a4142bb6320baae61954b4948299305bbb8159d94eeb400a8f88b2327762"
     },
     {
       "bytes": 3572144,
@@ -340,24 +340,24 @@
       "sha256": "77ed7b73a1c5e53ede950d76210a0ebda38fc12b52517ad6da9c884c22e86470"
     },
     {
-      "bytes": 8971,
+      "bytes": 9391,
       "case_id": "case-operation-copper",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-copper/metadata/evidence-register.json",
-      "sha256": "16bf0c15e679520b0c922dc36d0c526d0f184d2d8feca76f6d35ee6276721ca9"
+      "sha256": "a9727773fc1eb9e76d19189b28dcf4a5dd5cb1402fbb9a93c00508cc5c410c36"
     },
     {
-      "bytes": 32905,
+      "bytes": 32725,
       "case_id": "case-operation-copper",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-nightfall/case-operation-copper/social/messages.json",
-      "sha256": "80054cd994b53ac308b8cf31a45394b39d5edd085bb71898bc935ee83fc09acd"
+      "sha256": "3ee3c850184a00cc04b6086f71828b9e11d75fce398da36f8b1ac82de11d24a4"
     },
     {
       "bytes": 364,
@@ -400,14 +400,14 @@
       "sha256": "eea0968b98a3e35eaf3492c0dfa8a2f02f15b7e79d7365a7b58ec74c0243d42f"
     },
     {
-      "bytes": 66466,
+      "bytes": 66403,
       "case_id": "case-operation-copper",
       "content_type": "video/mp4",
       "expected_result_path": "expected-results/case-operation-copper.json",
       "generated_synthetic_data": true,
       "modality": "visual",
       "path": "operation-nightfall/case-operation-copper/visual/footage.mp4",
-      "sha256": "bb97b8f4392830036fcf21f6823d86b8ffbb6e194de591fe16e69b5f7a2b75b6"
+      "sha256": "1fbbb4ed82230348cebcc51a14c0e80771d1d5037430bfbbb7172df9a59b8ca3"
     },
     {
       "bytes": 45200,
@@ -450,14 +450,14 @@
       "sha256": "4d191ba129e4fe76887b633ab7b0c454e6eaa5cc7741b2d6dac03ed8cfbe8034"
     },
     {
-      "bytes": 15013,
+      "bytes": 15640,
       "case_id": "case-operation-echo",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-echo.json",
       "generated_synthetic_data": true,
       "modality": "expected_result",
       "path": "expected-results/case-operation-echo.json",
-      "sha256": "2a25e4adb41fdf7c1e21e0078c5aa584f3d731807e9601999b3187a56d30f141"
+      "sha256": "490ef88eb8d0d09a731869ce6498ab855a21e02e60bf1e0f1ffe9be3641f6ead"
     },
     {
       "bytes": 3572144,
@@ -560,24 +560,24 @@
       "sha256": "91f11f7c29b76dca768a48e806917ea7fe35b05bb884ac06235840a59f345cc5"
     },
     {
-      "bytes": 9264,
+      "bytes": 9679,
       "case_id": "case-operation-echo",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-echo.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-echo/metadata/evidence-register.json",
-      "sha256": "10878e4fc198ce486f12119c8172bfc36291faaa10a4698b581d66c383a70cd5"
+      "sha256": "d6eab31764b523c50646dcf0ef2e55d7f62fdc9cb81047b271afda747e5dd31e"
     },
     {
-      "bytes": 33239,
+      "bytes": 33059,
       "case_id": "case-operation-echo",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-echo.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-nightfall/case-operation-echo/social/messages.json",
-      "sha256": "7ab2488a62ffef0fb159d84bde016dc6051475f3f962e4531951f12d3c522898"
+      "sha256": "174f01a327e3a38740f3fcd86537f262e7f338915411f7ced8a07e0e22e11601"
     },
     {
       "bytes": 866,
@@ -678,6 +678,36 @@
       "modality": "visual",
       "path": "operation-nightfall/case-operation-echo/visual/timeline.json",
       "sha256": "b0a6e0077078c97ed079ef1a5ce586324613f1e1070afde07ca6fb0ed5c966d2"
+    },
+    {
+      "bytes": 146,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-nightfall/entity_resolution_truth.json",
+      "sha256": "d250bb4afb5f60015dbabbcb88bcbb0b8f8abf839fb3e83e2b4efa1befd7cd1b"
+    },
+    {
+      "bytes": 408,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-copper/entity_resolution_truth.json",
+      "sha256": "2d38d7b3232ffe184392b1d25f76a9a21550a19dcd8dd56710de0f26ef061842"
+    },
+    {
+      "bytes": 404,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-echo/entity_resolution_truth.json",
+      "sha256": "041541d5c3cfc2b33b245f56ca20f786a9f1dc209981e6897864011b14892e0d"
     }
   ],
   "purpose": "controlled fictional acceptance testing only",
@@ -685,7 +715,7 @@
   "seed": 8242026,
   "toolchain": {
     "espeak_ng": "eSpeak NG text-to-speech: 1.52.0  Data at: /usr/share/espeak-ng-data",
-    "ffmpeg": "ffmpeg version n8.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffmpeg": "ffmpeg version n9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
     "font_name": "NotoSansMono-Regular.ttf",
     "font_sha256": "65b5e2b2c4a1fba9ae8be1f026cb35b03dcb8886d9b2a4147054fde12f7e767d"
   }

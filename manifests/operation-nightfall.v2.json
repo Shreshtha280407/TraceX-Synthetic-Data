@@ -70,14 +70,14 @@
       "sha256": "b8fa7c9979afa3c6bedf833074170f7bd0fa1619b35ec520cad7d6fe641a6451"
     },
     {
-      "bytes": 978,
+      "bytes": 2277,
       "case_id": "case-fulcrum-dev",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-fulcrum-dev.json",
       "generated_synthetic_data": true,
       "modality": "entity_resolution_truth",
       "path": "operation-fulcrum/case-fulcrum-dev/entity_resolution_truth.json",
-      "sha256": "1cf20cb751b992a8320693b01059da26d96fd0a24b86d73631661f6032d9d378"
+      "sha256": "3fd574c96e98eca1da8b8d0140b641b5c98bf986cf90bd7716b2bcc85aa9e6e6"
     },
     {
       "bytes": 1296,
@@ -130,24 +130,24 @@
       "sha256": "561c09b31bd44684b449bd891f731064db91d76aae981cb9c00e4ed7ec966d69"
     },
     {
-      "bytes": 6258,
+      "bytes": 6225,
       "case_id": "case-fulcrum-dev",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-fulcrum-dev.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-fulcrum/case-fulcrum-dev/social/messages.json",
-      "sha256": "b7e674259563be85d15db36166fb2de5ed0732a70ba3202f9564853fac683629"
+      "sha256": "37250bdd43ff78b6e589f13a2ecbff1bcf79e2a89637ec886dd8417965d87dc5"
     },
     {
-      "bytes": 3546,
+      "bytes": 3554,
       "case_id": "case-fulcrum-dev",
       "content_type": "text/csv",
       "expected_result_path": "expected-results/case-fulcrum-dev.json",
       "generated_synthetic_data": true,
       "modality": "structured",
       "path": "operation-fulcrum/case-fulcrum-dev/structured/cdr.csv",
-      "sha256": "a04ace7293347cd6360c2a6d51934a5795995a38017e93398ef007b8d4aba49c"
+      "sha256": "a87295d11626b43018c44305e0facf117cdd1e5bc7b24f9f3ed72fffb0d00064"
     },
     {
       "bytes": 828,
@@ -250,14 +250,14 @@
       "sha256": "58a11fe2f6845abb9e3f63629ef4b88ab5c5bcb371db0b32b2df6509c8172955"
     },
     {
-      "bytes": 978,
+      "bytes": 2277,
       "case_id": "case-fulcrum-val",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-fulcrum-val.json",
       "generated_synthetic_data": true,
       "modality": "entity_resolution_truth",
       "path": "operation-fulcrum/case-fulcrum-val/entity_resolution_truth.json",
-      "sha256": "1234da0662f8158030384a3f83957fc4eea0cb1464f928fe43dcf8322e2731a7"
+      "sha256": "96208f8d9d783135d3625e30a29661501691cab4fe4e18d7b1f58a2854c9cb6d"
     },
     {
       "bytes": 1296,
@@ -310,24 +310,24 @@
       "sha256": "ccb23d7cd4c974860bf65a278c684870cd5be6ff94238736146baca08a78c0d4"
     },
     {
-      "bytes": 6258,
+      "bytes": 6225,
       "case_id": "case-fulcrum-val",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-fulcrum-val.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-fulcrum/case-fulcrum-val/social/messages.json",
-      "sha256": "96130bcc402ea071144150617130820a083c880a79e222d8879a453f877072b2"
+      "sha256": "ffd3d126ade9d6b2c1d4a249cbda7e55ac66a5037dd5fc7b58b06baf6c4d0b7a"
     },
     {
-      "bytes": 3546,
+      "bytes": 3554,
       "case_id": "case-fulcrum-val",
       "content_type": "text/csv",
       "expected_result_path": "expected-results/case-fulcrum-val.json",
       "generated_synthetic_data": true,
       "modality": "structured",
       "path": "operation-fulcrum/case-fulcrum-val/structured/cdr.csv",
-      "sha256": "8673123425e33a7b3c435a5e1c3fc875a885166acce985c595e0b12a6a0273dd"
+      "sha256": "35db9029ac0e752ab28b332f322f198cf0221dae0f6da2878cbd9e7faab8c476"
     },
     {
       "bytes": 828,

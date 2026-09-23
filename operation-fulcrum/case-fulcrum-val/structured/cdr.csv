@@ -1,4 +1,4 @@
-case_id,record_id,person_id,source_id,target_id,vehicle_context,location_id,event_id,timestamp,duration_seconds,synthetic,source,disposition
+case_id,record_id,person_id,caller_number,callee_number,vehicle_context,location_id,event_id,timestamp,duration_seconds,synthetic,source,disposition
 case-fulcrum-val,SYN-CDR-FULV-0001,SYN-PER-FULV-BRIDGE,SYN-PHONE-FULV-A01,SYN-PHONE-FULV-B01,SYN-VEH-FULV-A01,SYN-LOC-FULV-A01,SYN-EVENT-FULV-01,2032-02-01T00:00:00Z,180,true,offline_authored_fixture,review_required
 case-fulcrum-val,SYN-CDR-FULV-0002,SYN-PER-FULV-A01,SYN-PHONE-FULV-A01,SYN-PHONE-FULV-A02,SYN-VEH-FULV-A01,SYN-LOC-FULV-A01,SYN-EVENT-FULV-01,2032-02-01T00:00:10Z,43,true,offline_authored_fixture,review_required
 case-fulcrum-val,SYN-CDR-FULV-0003,SYN-PER-FULV-A02,SYN-PHONE-FULV-A02,SYN-PHONE-FULV-A03,SYN-VEH-FULV-A02,SYN-LOC-FULV-A02,SYN-EVENT-FULV-02,2032-02-01T00:10:23Z,44,true,offline_authored_fixture,review_required

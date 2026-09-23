@@ -190,7 +190,7 @@ def authored_files(case_id, seed):
                                  source="offline_authored_fixture", disposition="review_required"))
     for i in range(60):
         social.append(envelope(case_id, record_id=f"SYN-SOC-{code}-{i+1:04d}",
-                               author_id=entities["PER"][i % len(entities["PER"])],
+                               sender=entities["PER"][i % len(entities["PER"])],
                                device_id=entities["PHONE"][i % 6], vehicle_id=entities["VEH"][i % len(entities["VEH"])],
                                location_id=entities["LOC"][i % 3], event_id=events[i % 10]["event_id"],
                                timestamp=time_at(case_id, (i % 10)*900+(i//10)*60+10), source_id=f"SYN-SOURCE-{code}-CHAT",
@@ -218,6 +218,15 @@ def authored_files(case_id, seed):
             "signal": "superficially similar O/0 alias text", "conflict": "distinct case-local persons, simultaneous incompatible location contexts",
             "disposition": "review_required", "automatic_merge_allowed": False,
         }]))
+    add("entity_resolution_truth.json", {
+        "schema_version": "entity_resolution_truth.v1",
+        "case_id": case_id,
+        "pending_ingestion": True,
+        "blocked_reason": "Not yet run against a live tracex-api instance for this case.",
+        "todo": f"Run scripts/generate_nightfall_entity_resolution_truth.py --case {case_id} "
+                "--tracex-api $TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs.",
+        "entity_pairs": [],
+    })
     return files
 
 
@@ -327,12 +336,20 @@ def expectation(case_id, path):
             "perfect_asr_or_diarization_required": False, **SAFE}
 
 
+def modality(path, expected_path):
+    if path == expected_path:
+        return "expected_result"
+    if path.endswith("entity_resolution_truth.json"):
+        return "entity_resolution_truth"
+    return Path(path).parts[2]
+
+
 def provenance_records(case_id, paths):
     """Authored register and expected results; no inference is performed here."""
     expected_path = f"expected-results/{case_id}.json"
     paths = sorted(paths)
     entries = [{"path": path, "case_id": case_id, "evidence_id": f"SYN-EVID-{CASES[case_id]}-{i+1:03d}",
-                "modality": "expected_result" if path == expected_path else Path(path).parts[2],
+                "modality": modality(path, expected_path),
                 "content_type": content_type(path), "synthetic": True,
                 "source": "offline_procedural_generator", "expected_result_path": expected_path}
                for i, path in enumerate(paths)]
@@ -518,7 +535,7 @@ def fulcrum_authored_files(case_id, seed):
     evidence_record_id = f"SYN-SIGHT-{code}-002"
 
     cdr = [dict(case_id=case_id, record_id=f"SYN-CDR-{code}-0001", person_id=bridge_id,
-                source_id=phone_a[0], target_id=phone_b[0], vehicle_context=veh_a[0], location_id=loc_a[0],
+                caller_number=phone_a[0], callee_number=phone_b[0], vehicle_context=veh_a[0], location_id=loc_a[0],
                 event_id=call_event["event_id"], timestamp=call_event["start"], duration_seconds=180,
                 synthetic="true", source="offline_authored_fixture", disposition="review_required")]
     transactions = [dict(case_id=case_id, record_id=f"SYN-TXN-{code}-0001", person_id=bridge_id,
@@ -531,12 +548,12 @@ def fulcrum_authored_files(case_id, seed):
                  dict(case_id=case_id, record_id=evidence_record_id, vehicle_id=veh_a[0], person_id=claim_person,
                       location_id=conflict_location, event_id=alibi_event["event_id"], timestamp=contradiction_timestamp,
                       synthetic=True, source="offline_authored_fixture", disposition="review_required")]
-    social = [envelope(case_id, record_id=f"SYN-SOC-{code}-0001", author_id=bridge_id, device_id=phone_b[0],
+    social = [envelope(case_id, record_id=f"SYN-SOC-{code}-0001", sender=bridge_id, device_id=phone_b[0],
                         vehicle_id=veh_a[0], location_id=loc_b[0], event_id=meeting_event["event_id"],
                         timestamp=meeting_event["start"], source_id=f"SYN-SOURCE-{code}-CHAT",
                         message=f"Fictional handling meeting note: {per_a[0]} and {per_b[0]} met via the bridge; "
                                 "retain provenance, request human review."),
-              envelope(case_id, record_id=claim_record_id, author_id=claim_person, device_id=phone_a[1],
+              envelope(case_id, record_id=claim_record_id, sender=claim_person, device_id=phone_a[1],
                        vehicle_id=veh_a[0], location_id=claim_location, event_id=alibi_event["event_id"],
                        timestamp=contradiction_timestamp, source_id=f"SYN-SOURCE-{code}-CHAT",
                        message=f"Fictional alibi note: {claim_person} states they were at {claim_location} "
@@ -548,7 +565,7 @@ def fulcrum_authored_files(case_id, seed):
         idx = i % len(events)
         cdr.append(dict(case_id=case_id, record_id=f"SYN-CDR-{code}-{i+2:04d}",
             person_id=persons_all[i % len(persons_all)],
-            source_id=phones_all[i % len(phones_all)], target_id=phones_all[(i + 1) % len(phones_all)],
+            caller_number=phones_all[i % len(phones_all)], callee_number=phones_all[(i + 1) % len(phones_all)],
             vehicle_context=vehicles_all[i % len(vehicles_all)], location_id=locations_all[i % len(locations_all)],
             event_id=events[idx]["event_id"], timestamp=fulcrum_time_at(case_id, starts[idx] + 10 + (i * 13) % 250),
             duration_seconds=15 + (i + seed) % 40, synthetic="true", source="offline_authored_fixture",
@@ -572,7 +589,7 @@ def fulcrum_authored_files(case_id, seed):
     for i in range(9):
         idx = i % len(events)
         social.append(envelope(case_id, record_id=f"SYN-SOC-{code}-{i+3:04d}",
-            author_id=persons_all[i % len(persons_all)], device_id=phones_all[i % len(phones_all)],
+            sender=persons_all[i % len(persons_all)], device_id=phones_all[i % len(phones_all)],
             vehicle_id=vehicles_all[i % len(vehicles_all)], location_id=locations_all[i % len(locations_all)],
             event_id=events[idx]["event_id"], timestamp=fulcrum_time_at(case_id, starts[idx] + 40 + (i * 23) % 220),
             source_id=f"SYN-SOURCE-{code}-CHAT",
