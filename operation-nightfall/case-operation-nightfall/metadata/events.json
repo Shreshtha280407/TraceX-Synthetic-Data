@@ -180,6 +180,107 @@
       "source": "offline_authored_fixture",
       "start": "2031-01-01T02:15:00Z",
       "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional graph-truth bridge-candidate motif event (P99)",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:33:44Z",
+      "entity_refs": [
+        "SYN-PER-NF-BRIDGE",
+        "SYN-PHONE-NF-01",
+        "SYN-PHONE-NF-04"
+      ],
+      "event_id": "SYN-EVENT-NF-11",
+      "event_type": "call",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:30:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional graph-truth bridge-candidate motif event (P99)",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:37:29Z",
+      "entity_refs": [
+        "SYN-PER-NF-BRIDGE",
+        "SYN-ACC-NF-01",
+        "SYN-ACC-NF-03"
+      ],
+      "event_id": "SYN-EVENT-NF-12",
+      "event_type": "transfer",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:33:45Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional graph-truth bridge-candidate motif event (P99)",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:41:14Z",
+      "entity_refs": [
+        "SYN-PER-NF-BRIDGE",
+        "SYN-VEH-NF-02",
+        "SYN-LOC-NF-03"
+      ],
+      "event_id": "SYN-EVENT-NF-13",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:37:30Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional graph-truth bridge-candidate motif event (P99)",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:44:59Z",
+      "entity_refs": [
+        "SYN-PER-NF-BRIDGE",
+        "SYN-PER-NF-01",
+        "SYN-PER-NF-06",
+        "SYN-LOC-NF-03"
+      ],
+      "event_id": "SYN-EVENT-NF-14",
+      "event_type": "handling_meeting",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:41:15Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional within-cluster texture event",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:49:59Z",
+      "entity_refs": [
+        "SYN-PER-NF-02",
+        "SYN-PER-NF-03",
+        "SYN-PHONE-NF-01",
+        "SYN-VEH-NF-02",
+        "SYN-LOC-NF-01"
+      ],
+      "event_id": "SYN-EVENT-NF-15",
+      "event_type": "message",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:45:00Z",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "claim": "fictional within-cluster texture event",
+      "disposition": "review_required",
+      "end": "2031-01-01T22:54:59Z",
+      "entity_refs": [
+        "SYN-PER-NF-07",
+        "SYN-PER-NF-08",
+        "SYN-PHONE-NF-04",
+        "SYN-VEH-NF-04",
+        "SYN-LOC-NF-02"
+      ],
+      "event_id": "SYN-EVENT-NF-16",
+      "event_type": "sighting",
+      "source": "offline_authored_fixture",
+      "start": "2031-01-01T22:50:00Z",
+      "synthetic": true
     }
   ],
   "seed": 8242026,

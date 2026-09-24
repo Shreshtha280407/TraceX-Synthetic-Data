@@ -73,6 +73,20 @@
     },
     {
       "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-BRIDGE",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-BRIDGE",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "entity_id": "SYN-PER-NF-BRIDGE-ALT",
+      "entity_type": "PER",
+      "identity_key": "case-operation-nightfall:SYN-PER-NF-BRIDGE-ALT",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
       "entity_id": "SYN-VEH-NF-1001",
       "entity_type": "VEH",
       "identity_key": "case-operation-nightfall:SYN-VEH-NF-1001",

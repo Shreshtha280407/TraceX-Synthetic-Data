@@ -10,14 +10,14 @@
   "corpus_id": "SYN-CORPUS-OPERATION-NIGHTFALL-V1",
   "files": [
     {
-      "bytes": 15855,
+      "bytes": 17810,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "expected_result",
       "path": "expected-results/case-operation-nightfall.json",
-      "sha256": "2b23e719192df2a661c280994bc0bb79bf296807a7ffd097f331e862b3828a77"
+      "sha256": "2ae53b3eb95ac393354d2f12bf4264f842dcdc08e8cbc8462dabc147c833bf7e"
     },
     {
       "bytes": 3572144,
@@ -60,84 +60,114 @@
       "sha256": "ea26e4211e1092648fc53509cbb72258f2c2fdebe52736822fb776df40f3835d"
     },
     {
-      "bytes": 1606,
+      "bytes": 2765,
       "case_id": "case-operation-nightfall",
       "content_type": "application/pdf",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "documents",
       "path": "operation-nightfall/case-operation-nightfall/documents/briefing.pdf",
-      "sha256": "0654ec910f08291ec981d7c8d11081e317b37e73c1f74a27b5f8db826717848c"
+      "sha256": "598dfe543ab4ea4a3a6ee0f140ba0fc8265b7d98542979411cfcd2842c052144"
     },
     {
-      "bytes": 897,
+      "bytes": 1938,
       "case_id": "case-operation-nightfall",
       "content_type": "text/plain",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "documents",
       "path": "operation-nightfall/case-operation-nightfall/documents/briefing.txt",
-      "sha256": "e216495f2d0b9214f8d5a5cffd9c68fb28f17e0c958d61e47d278fd8e7897b28"
+      "sha256": "ab1b901b36ebed32279e13536549cfd13586e3d4fa33ef266050cfc28e137178"
     },
     {
-      "bytes": 2654,
+      "bytes": 3674,
       "case_id": "case-operation-nightfall",
       "content_type": "application/pdf",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "documents",
       "path": "operation-nightfall/case-operation-nightfall/documents/chronology.pdf",
-      "sha256": "7523c0048564d93d37eeeb09ebd82d68d37582bb3543d4cb71c0779969531744"
+      "sha256": "b103497941ec044d1d4711a026fd86811d2e890af90d9ebf70e72e9a0056854e"
     },
     {
-      "bytes": 1801,
+      "bytes": 2701,
       "case_id": "case-operation-nightfall",
       "content_type": "text/plain",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "documents",
       "path": "operation-nightfall/case-operation-nightfall/documents/chronology.txt",
-      "sha256": "54671318f5bbb963362cd17b0cab47dec00e7a39ed805db8328b55c78f946276"
+      "sha256": "d234cc21e520f8409c16907a3526158bf65f30c1d8a91cdb64524cb5587a1739"
     },
     {
-      "bytes": 7047,
+      "bytes": 2357,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-nightfall/entity_resolution_truth.json",
+      "sha256": "44c7a51a49153684f14f020cfb8a33a15eb9a6db3f4c562f25b7d413e84b028c"
+    },
+    {
+      "bytes": 1540,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/communities.json",
+      "sha256": "335a62d5a18aedb6f774e375cc1731aa4ab4018cb0b57aaf39ea9d78ab4cd876"
+    },
+    {
+      "bytes": 7491,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-nightfall/metadata/entities.json",
-      "sha256": "db86b59da3ce7991de92238ceb0fa5a07345ebf1658f1340b1ba5d1efa49be3a"
+      "sha256": "d41aa197261d608219d47dbcc7c95751c347dfe26f145cf4fafee560dad466c5"
     },
     {
-      "bytes": 5472,
+      "bytes": 8540,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-nightfall/metadata/events.json",
-      "sha256": "a18614b70848c32a150918bb66d2b0db1787e5b82ee17788af2c2a6561a08841"
+      "sha256": "7310b5e95a0b008baed7afc5e6dc1e7ebaac8ef7cf60145e844190859e7b2aac"
     },
     {
-      "bytes": 9578,
+      "bytes": 10809,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "metadata",
       "path": "operation-nightfall/case-operation-nightfall/metadata/evidence-register.json",
-      "sha256": "bb2a7962f5efa59ee64a00b93220d8f54d2cd304d6e45e5d625c2e4ddfaa8e16"
+      "sha256": "11557c841f12cb9289f2f4e901cd0b769bbc56235db3e18a7860eddc8d9d055a"
     },
     {
-      "bytes": 32444,
+      "bytes": 661,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/motif.json",
+      "sha256": "268f93daf264383ec2d4654c4dc4148c3bbefaee07de2ffd49049760f9daa909"
+    },
+    {
+      "bytes": 37522,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "social",
       "path": "operation-nightfall/case-operation-nightfall/social/messages.json",
-      "sha256": "0673206c1b09f693ec1906a83e8b2b597273f21b5a62a3e036f8e4e50d20f0dc"
+      "sha256": "fa7f1fced4691ba4a33c18f2ef744d12eb7bdaffe2a5f5805e0493b95cfae2ec"
     },
     {
       "bytes": 384,
@@ -150,34 +180,44 @@
       "sha256": "53e24c451c2f6f41738979daad09cba892a73ecb906bae940fa6e50d6062d351"
     },
     {
-      "bytes": 24301,
+      "bytes": 25713,
       "case_id": "case-operation-nightfall",
       "content_type": "text/csv",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/cdr.csv",
-      "sha256": "adca33044763d66d980bd46d977019e5c078fc4ebb2127bf8c7805658c52a38c"
+      "sha256": "ef3a78a861d8e7d4f6fe2d08f9151bbaec947da5c7f119bbeaa88a6d1c27e35c"
     },
     {
-      "bytes": 6592,
+      "bytes": 806,
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "generated_synthetic_data": true,
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/contradictions.json",
+      "sha256": "df2d5cebba2f241a6d42dc956eb66b4974d158c62ca34f98240cd188534ccd5b"
+    },
+    {
+      "bytes": 8972,
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/sightings.json",
-      "sha256": "ef3a09f7ed492ceea4f49335a95e078a145c67e03a6a0e9c0f4cccbb7f87e4b3"
+      "sha256": "a1ede18e72f92816875806d79ba1d2c2690ca96ebd51609a2b1f77c229e1bbc7"
     },
     {
-      "bytes": 18712,
+      "bytes": 19747,
       "case_id": "case-operation-nightfall",
       "content_type": "text/csv",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "generated_synthetic_data": true,
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/transactions.csv",
-      "sha256": "c50af19f08a3e3153e32d435b5997684163c7612867dde902d6066ec8b2ed7f8"
+      "sha256": "eb0608a6ceee0c9af70ad2d1a3954173b6c28a1c36897027937e6a0ee9d2aa7c"
     },
     {
       "bytes": 63527,
@@ -318,6 +358,16 @@
       "modality": "documents",
       "path": "operation-nightfall/case-operation-copper/documents/chronology.txt",
       "sha256": "63527d6e7172764c7b42f7135b479344511ed2329d73dc66889358275cdd6535"
+    },
+    {
+      "bytes": 408,
+      "case_id": "case-operation-copper",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-copper.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-copper/entity_resolution_truth.json",
+      "sha256": "2d38d7b3232ffe184392b1d25f76a9a21550a19dcd8dd56710de0f26ef061842"
     },
     {
       "bytes": 6295,
@@ -540,6 +590,16 @@
       "sha256": "e125f35c16acf56fff00e158d476c90719580b609848c61bc06b2a3a7b35ca06"
     },
     {
+      "bytes": 404,
+      "case_id": "case-operation-echo",
+      "content_type": "application/json",
+      "expected_result_path": "expected-results/case-operation-echo.json",
+      "generated_synthetic_data": true,
+      "modality": "entity_resolution_truth",
+      "path": "operation-nightfall/case-operation-echo/entity_resolution_truth.json",
+      "sha256": "041541d5c3cfc2b33b245f56ca20f786a9f1dc209981e6897864011b14892e0d"
+    },
+    {
       "bytes": 6231,
       "case_id": "case-operation-echo",
       "content_type": "application/json",
@@ -678,36 +738,6 @@
       "modality": "visual",
       "path": "operation-nightfall/case-operation-echo/visual/timeline.json",
       "sha256": "b0a6e0077078c97ed079ef1a5ce586324613f1e1070afde07ca6fb0ed5c966d2"
-    },
-    {
-      "bytes": 146,
-      "case_id": "case-operation-nightfall",
-      "content_type": "application/json",
-      "expected_result_path": "expected-results/case-operation-nightfall.json",
-      "generated_synthetic_data": true,
-      "modality": "entity_resolution_truth",
-      "path": "operation-nightfall/case-operation-nightfall/entity_resolution_truth.json",
-      "sha256": "d250bb4afb5f60015dbabbcb88bcbb0b8f8abf839fb3e83e2b4efa1befd7cd1b"
-    },
-    {
-      "bytes": 408,
-      "case_id": "case-operation-copper",
-      "content_type": "application/json",
-      "expected_result_path": "expected-results/case-operation-copper.json",
-      "generated_synthetic_data": true,
-      "modality": "entity_resolution_truth",
-      "path": "operation-nightfall/case-operation-copper/entity_resolution_truth.json",
-      "sha256": "2d38d7b3232ffe184392b1d25f76a9a21550a19dcd8dd56710de0f26ef061842"
-    },
-    {
-      "bytes": 404,
-      "case_id": "case-operation-echo",
-      "content_type": "application/json",
-      "expected_result_path": "expected-results/case-operation-echo.json",
-      "generated_synthetic_data": true,
-      "modality": "entity_resolution_truth",
-      "path": "operation-nightfall/case-operation-echo/entity_resolution_truth.json",
-      "sha256": "041541d5c3cfc2b33b245f56ca20f786a9f1dc209981e6897864011b14892e0d"
     }
   ],
   "purpose": "controlled fictional acceptance testing only",

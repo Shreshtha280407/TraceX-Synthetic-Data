@@ -1,0 +1,24 @@
+{
+  "case_id": "case-operation-nightfall",
+  "claim": {
+    "assertion": "SYN-PER-NF-02 was at SYN-LOC-NF-01",
+    "entity_id": "SYN-PER-NF-02",
+    "location_id": "SYN-LOC-NF-01",
+    "record_id": "SYN-SOC-NF-0062",
+    "source": "social_message",
+    "timestamp": "2031-01-01T22:42:00Z"
+  },
+  "conflicting_evidence": {
+    "assertion": "SYN-PER-NF-02 observed at SYN-LOC-NF-03",
+    "entity_id": "SYN-PER-NF-02",
+    "location_id": "SYN-LOC-NF-03",
+    "record_id": "SYN-SIGHT-NF-020",
+    "source": "sighting",
+    "timestamp": "2031-01-01T22:42:00Z"
+  },
+  "contradiction_id": "SYN-CONTRA-NF-01",
+  "disposition": "review_required",
+  "note": "Deliberately conflicting fixture clue for contradiction-detection testing; not a data error.",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

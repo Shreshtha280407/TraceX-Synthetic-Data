@@ -1,0 +1,23 @@
+{
+  "case_id": "case-operation-nightfall",
+  "chain": [
+    "call",
+    "transfer",
+    "sighting",
+    "handling_meeting"
+  ],
+  "event_ids": [
+    "SYN-EVENT-NF-11",
+    "SYN-EVENT-NF-12",
+    "SYN-EVENT-NF-13",
+    "SYN-EVENT-NF-14"
+  ],
+  "motif_id": "SYN-MOTIF-NF-01",
+  "narrative": "A call between the two clusters precedes a fund transfer, a vehicle movement, and a handling meeting, all inside one documented window near the convergence location, chained through the ambiguous P99 bridge identity.",
+  "source": "offline_authored_fixture",
+  "synthetic": true,
+  "window": {
+    "end": "2031-01-01T22:45:00Z",
+    "start": "2031-01-01T22:30:00Z"
+  }
+}

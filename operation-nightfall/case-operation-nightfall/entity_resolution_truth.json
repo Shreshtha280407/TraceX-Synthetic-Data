@@ -1,6 +1,53 @@
 {
   "case_id": "case-operation-nightfall",
-  "entity_pairs": [],
+  "entity_pairs": [
+    {
+      "label": "same",
+      "left_entity_id": "fed2be28-2028-5dab-afa6-e42c9782b6d3",
+      "right_entity_id": "d9e9aaec-e5fe-5541-aa72-e345b36dc7fa"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "fead0404-4b4e-5062-8175-1beb868d8fcb",
+      "right_entity_id": "f833d085-2db9-5580-8478-404f56a506d7"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "fe1ed6a5-ac55-5012-b66f-b9e07726c634",
+      "right_entity_id": "fdc67f23-49e1-5860-8650-b03d0b61e3f3"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "fd6b9e78-b3a4-55d7-9b77-c4b740b8c1a0",
+      "right_entity_id": "ed32b416-b358-5e35-a80e-9cc8da81ee06"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "fd14d697-9cca-5946-82b8-8745f8e65802",
+      "right_entity_id": "e069dcca-467b-59c8-b7ea-81019df756e9"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "f045fc9b-5e2e-589d-a35b-40c4fb97f691",
+      "right_entity_id": "ebd67dcf-e3da-53be-aa0d-2f934c0d95d0"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "e30773e8-bbc5-570b-8306-23f1f015acd0",
+      "right_entity_id": "5c2189f2-4fd2-513a-8647-f15c773ee701"
+    },
+    {
+      "label": "same",
+      "left_entity_id": "d9b01f74-f6a7-5cb0-8f1e-ce79ce2a56b1",
+      "right_entity_id": "b3b80e14-0b29-5f3f-99a3-7b0b2e4960c5"
+    },
+    {
+      "label": "different",
+      "left_entity_id": "fead0404-4b4e-5062-8175-1beb868d8fcb",
+      "right_entity_id": "fed2be28-2028-5dab-afa6-e42c9782b6d3"
+    }
+  ],
   "pending_ingestion": false,
-  "schema_version": "entity_resolution_truth.v1"
+  "schema_version": "entity_resolution_truth.v1",
+  "coverage_note": "SYN-PHONE-NF-* excluded from this run's coverage (in addition to the always-out-of-scope SYN-PER-*/SYN-LOC-* tokens): structured/cdr.csv -- the only evidence carrying phone numbers -- fails real ingestion. cdr_generic_v1 requires caller_number/callee_number columns; this corpus's cdr.csv (unchanged baseline, shared with case-operation-copper/case-operation-echo) has always used source_id/target_id. Confirmed via live testing this session; not fixed here because fixing it would change Copper/Echo, an explicit stop condition for the session that authored this bridge/community/motif content. entity_pairs above cover only SYN-ACC-NF-*/SYN-VEH-NF-* (all real, live-confirmed UUIDs -- never fabricated)."
 }

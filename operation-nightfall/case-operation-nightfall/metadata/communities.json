@@ -1,0 +1,47 @@
+{
+  "bridge_alias_variant": "SYN-PER-NF-BRIDGE-ALT",
+  "bridge_ambiguity": "Community B's own records reference this identity by a near-miss alias variant, not the identical token Community A's records use -- evidence conflicts on whether this is a genuine member of both clusters (an alias variant of the same person) or a coincidental data-quality overlap; automatic cross-cluster linking is prohibited pending human review. This is the master plan's P99 bridge-candidate role (sections 10, 17.2, 18.3, 22).",
+  "bridge_entity_id": "SYN-PER-NF-BRIDGE",
+  "case_id": "case-operation-nightfall",
+  "community_a": {
+    "entity_ids": [
+      "SYN-ACC-NF-01",
+      "SYN-ACC-NF-02",
+      "SYN-LOC-NF-01",
+      "SYN-PER-NF-01",
+      "SYN-PER-NF-02",
+      "SYN-PER-NF-03",
+      "SYN-PER-NF-04",
+      "SYN-PER-NF-05",
+      "SYN-PER-NF-BRIDGE",
+      "SYN-PHONE-NF-01",
+      "SYN-PHONE-NF-02",
+      "SYN-PHONE-NF-03",
+      "SYN-VEH-NF-02",
+      "SYN-VEH-NF-03"
+    ],
+    "label": "Cluster Nightfall-North"
+  },
+  "community_b": {
+    "entity_ids": [
+      "SYN-ACC-NF-03",
+      "SYN-ACC-NF-04",
+      "SYN-LOC-NF-02",
+      "SYN-PER-NF-06",
+      "SYN-PER-NF-07",
+      "SYN-PER-NF-08",
+      "SYN-PER-NF-09",
+      "SYN-PER-NF-10",
+      "SYN-PER-NF-BRIDGE-ALT",
+      "SYN-PHONE-NF-04",
+      "SYN-PHONE-NF-05",
+      "SYN-PHONE-NF-06",
+      "SYN-VEH-NF-04",
+      "SYN-VEH-NF-05"
+    ],
+    "label": "Cluster Nightfall-South"
+  },
+  "disposition": "review_required",
+  "source": "offline_authored_fixture",
+  "synthetic": true
+}

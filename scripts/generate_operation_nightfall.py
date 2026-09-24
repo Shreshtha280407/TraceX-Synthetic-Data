@@ -130,6 +130,206 @@ def scene_plan(case_id):
                      still_path=f"visual/still-{i+1:02d}.png") for i in range(3)]
 
 
+NIGHTFALL_BRIDGE_WINDOW_START = 22 * 3600 + 30 * 60  # 22:30:00 on the case's own day
+NIGHTFALL_BRIDGE_WINDOW_END = 22 * 3600 + 45 * 60    # 22:45:00
+
+
+def nightfall_bridge_content(case_id, entities, seed):
+    """Master plan sections 10/17.2/18.3/22: two communities of Nightfall's own
+    existing entities, bridged by one ambiguous person referenced by a
+    canonical alias in Cluster Nightfall-North's own records and a near-miss
+    alias variant in Cluster Nightfall-South's own records (the plan's 'P99'
+    bridge-candidate review label -- see `bridge_alias_variant` below for why
+    it is a near-miss, not identical, token), a call -> transfer -> vehicle
+    movement -> handling meeting motif inside one documented 22:30-22:45
+    window, and one contradictory clue. Structurally mirrors
+    fulcrum_authored_files()'s community/motif/contradiction pattern, scaled
+    onto Nightfall's existing roster instead of a dedicated corpus, with one
+    deliberate, live-tested improvement on the bridge mechanism itself (see
+    `bridge_alias_variant`). NF-only -- never called for Copper/Echo, and
+    never mutates `entities` itself, so the baseline 120/90/60/18 records
+    stay byte-identical."""
+    code = CASES[case_id]
+    per, veh, phone, acc, loc = (entities[k] for k in ("PER", "VEH", "PHONE", "ACC", "LOC"))
+    bridge_id = f"SYN-PER-{code}-BRIDGE"
+    # Live-tested finding (this session): a literal identical alias on both
+    # sides never reaches "candidate" -- TraceX's Tier 1/2 exact/normalized-
+    # alias blocking collapses two descriptors sharing the exact same alias
+    # text into one representative *before* Tier 3 ever compares them,
+    # confirmed by directly checking Fulcrum's own live entity-candidates
+    # (0 of its 27-30 real candidates ever involve its own bridge entity,
+    # despite two live bridge-alias observations existing). A genuinely
+    # reviewable candidate needs a near-miss, not an exact, alias match --
+    # exactly Operation Echo's own already-proven pattern (SYN-ALIAS-ECHO-
+    # 01O vs -010): same idea, reused here for the bridge instead of
+    # inventing a new mechanism.
+    bridge_alias_variant = f"SYN-PER-{code}-BRIDGE-ALT"
+    per_a, per_b = per[0:5], per[5:10]
+    veh_a, veh_b = veh[1:3], veh[3:5]
+    phone_a, phone_b = phone[0:3], phone[3:6]
+    acc_a, acc_b = acc[0:2], acc[2:4]
+    loc_a, loc_b, convergence_loc = loc[0], loc[1], loc[2]
+    community_a_ids = sorted(set(per_a + [bridge_id] + veh_a + phone_a + acc_a + [loc_a]))
+    community_b_ids = sorted(set(per_b + [bridge_alias_variant] + veh_b + phone_b + acc_b + [loc_b]))
+
+    motif_specs = [
+        ("call", NIGHTFALL_BRIDGE_WINDOW_START + 0, [bridge_id, phone_a[0], phone_b[0]]),
+        ("transfer", NIGHTFALL_BRIDGE_WINDOW_START + 225, [bridge_id, acc_a[0], acc_b[0]]),
+        ("sighting", NIGHTFALL_BRIDGE_WINDOW_START + 450, [bridge_id, veh_a[0], convergence_loc]),
+        ("handling_meeting", NIGHTFALL_BRIDGE_WINDOW_START + 675, [bridge_id, per_a[0], per_b[0], convergence_loc]),
+    ]
+    motif_events = [envelope(case_id, event_id=f"SYN-EVENT-{code}-{11+i:02d}",
+                              start=time_at(case_id, start), end=time_at(case_id, start + 224),
+                              event_type=event_type, entity_refs=refs, disposition="review_required",
+                              claim="fictional graph-truth bridge-candidate motif event (P99)")
+                    for i, (event_type, start, refs) in enumerate(motif_specs)]
+    call_event, transfer_event, sighting_event, meeting_event = motif_events
+    motif_id = f"SYN-MOTIF-{code}-01"
+
+    texture_a_start, texture_b_start = NIGHTFALL_BRIDGE_WINDOW_END, NIGHTFALL_BRIDGE_WINDOW_END + 300
+    texture_a_event = envelope(case_id, event_id=f"SYN-EVENT-{code}-15",
+        start=time_at(case_id, texture_a_start), end=time_at(case_id, texture_a_start + 299),
+        event_type="message", entity_refs=[per_a[1], per_a[2], phone_a[0], veh_a[0], loc_a],
+        disposition="review_required", claim="fictional within-cluster texture event")
+    texture_b_event = envelope(case_id, event_id=f"SYN-EVENT-{code}-16",
+        start=time_at(case_id, texture_b_start), end=time_at(case_id, texture_b_start + 299),
+        event_type="sighting", entity_refs=[per_b[1], per_b[2], phone_b[0], veh_b[0], loc_b],
+        disposition="review_required", claim="fictional within-cluster texture event")
+    events = motif_events + [texture_a_event, texture_b_event]
+
+    cdr = [dict(case_id=case_id, record_id=f"SYN-CDR-{code}-0121", person_id=bridge_id,
+                source_id=phone_a[0], target_id=phone_b[0], vehicle_context=veh_a[0], location_id=loc_a,
+                event_id=call_event["event_id"], timestamp=call_event["start"], duration_seconds=180,
+                synthetic="true", source="offline_authored_fixture", disposition="review_required")]
+    transactions = [dict(case_id=case_id, record_id=f"SYN-TXN-{code}-0091", person_id=bridge_id,
+                          from_account=acc_a[0], to_account=acc_b[0], device_id=phone_a[0], vehicle_context=veh_b[0],
+                          event_id=transfer_event["event_id"], timestamp=transfer_event["start"], amount="500.00",
+                          currency="SYN", synthetic="true", source="offline_authored_fixture", disposition="review_required")]
+    sightings = [dict(case_id=case_id, record_id=f"SYN-SIGHT-{code}-019", vehicle_id=veh_a[0], person_id=bridge_id,
+                       location_id=convergence_loc, event_id=sighting_event["event_id"], timestamp=sighting_event["start"],
+                       synthetic=True, source="offline_authored_fixture", disposition="review_required")]
+    social = [envelope(case_id, record_id=f"SYN-SOC-{code}-0061", sender=bridge_id, device_id=phone_b[0],
+                        vehicle_id=veh_a[0], location_id=convergence_loc, event_id=meeting_event["event_id"],
+                        timestamp=meeting_event["start"], source_id=f"SYN-SOURCE-{code}-CHAT",
+                        message=f"Fictional handling meeting note: {per_a[0]} and {per_b[0]} met via the bridge; "
+                                "retain provenance, request human review."),
+              envelope(case_id, record_id=f"SYN-SOC-{code}-0069", sender=bridge_alias_variant, device_id=phone_b[1],
+                        vehicle_id=veh_b[0], location_id=convergence_loc,
+                        event_id=meeting_event["event_id"],
+                        timestamp=time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_START + 690),
+                        source_id=f"SYN-SOURCE-{code}-CHAT",
+                        message=f"Fictional handling meeting note near {convergence_loc}: possible alias "
+                                f"variance between {bridge_id} and {bridge_alias_variant} in this record; "
+                                "retain provenance, request human review.")]
+
+    contradiction_id = f"SYN-CONTRA-{code}-01"
+    claim_person, claim_location = per_a[1], loc_a
+    contradiction_timestamp = time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_START + 720)
+    claim_record_id, evidence_record_id = f"SYN-SOC-{code}-0062", f"SYN-SIGHT-{code}-020"
+    social.append(envelope(case_id, record_id=claim_record_id, sender=claim_person, device_id=phone_a[1],
+        vehicle_id=veh_a[0], location_id=claim_location, event_id=meeting_event["event_id"],
+        timestamp=contradiction_timestamp, source_id=f"SYN-SOURCE-{code}-CHAT",
+        message=f"Fictional alibi note: {claim_person} states they were at {claim_location} at this time."))
+    sightings.append(dict(case_id=case_id, record_id=evidence_record_id, vehicle_id=veh_a[0], person_id=claim_person,
+        location_id=convergence_loc, event_id=meeting_event["event_id"], timestamp=contradiction_timestamp,
+        synthetic=True, source="offline_authored_fixture", disposition="review_required"))
+
+    for i in range(3):
+        cdr.append(dict(case_id=case_id, record_id=f"SYN-CDR-{code}-{122+i:04d}", person_id=per_a[i % 5],
+            source_id=phone_a[i % 3], target_id=phone_a[(i + 1) % 3], vehicle_context=veh_a[i % 2], location_id=loc_a,
+            event_id=texture_a_event["event_id"], timestamp=time_at(case_id, texture_a_start + 5 + i * 30),
+            duration_seconds=15 + (i + seed) % 20, synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(3):
+        cdr.append(dict(case_id=case_id, record_id=f"SYN-CDR-{code}-{125+i:04d}", person_id=per_b[i % 5],
+            source_id=phone_b[i % 3], target_id=phone_b[(i + 1) % 3], vehicle_context=veh_b[i % 2], location_id=loc_b,
+            event_id=texture_b_event["event_id"], timestamp=time_at(case_id, texture_b_start + 5 + i * 30),
+            duration_seconds=15 + (i + seed) % 20, synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(2):
+        transactions.append(dict(case_id=case_id, record_id=f"SYN-TXN-{code}-{92+i:04d}", person_id=per_a[i % 5],
+            from_account=acc_a[i % 2], to_account=acc_a[(i + 1) % 2], device_id=phone_a[i % 3], vehicle_context=veh_a[i % 2],
+            event_id=texture_a_event["event_id"], timestamp=time_at(case_id, texture_a_start + 10 + i * 30),
+            amount=f"{10 + (i + seed) % 40}.75", currency="SYN", synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(2):
+        transactions.append(dict(case_id=case_id, record_id=f"SYN-TXN-{code}-{94+i:04d}", person_id=per_b[i % 5],
+            from_account=acc_b[i % 2], to_account=acc_b[(i + 1) % 2], device_id=phone_b[i % 3], vehicle_context=veh_b[i % 2],
+            event_id=texture_b_event["event_id"], timestamp=time_at(case_id, texture_b_start + 10 + i * 30),
+            amount=f"{10 + (i + seed) % 40}.75", currency="SYN", synthetic="true", source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(2):
+        sightings.append(dict(case_id=case_id, record_id=f"SYN-SIGHT-{code}-{21+i:03d}", vehicle_id=veh_a[i % 2],
+            person_id=per_a[i % 5], location_id=loc_a, event_id=texture_a_event["event_id"],
+            timestamp=time_at(case_id, texture_a_start + 15 + i * 30), synthetic=True, source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(2):
+        sightings.append(dict(case_id=case_id, record_id=f"SYN-SIGHT-{code}-{23+i:03d}", vehicle_id=veh_b[i % 2],
+            person_id=per_b[i % 5], location_id=loc_b, event_id=texture_b_event["event_id"],
+            timestamp=time_at(case_id, texture_b_start + 15 + i * 30), synthetic=True, source="offline_authored_fixture",
+            disposition="review_required"))
+    for i in range(3):
+        social.append(envelope(case_id, record_id=f"SYN-SOC-{code}-{63+i:04d}", sender=per_a[i % 5],
+            device_id=phone_a[i % 3], vehicle_id=veh_a[i % 2], location_id=loc_a, event_id=texture_a_event["event_id"],
+            timestamp=time_at(case_id, texture_a_start + 20 + i * 30), source_id=f"SYN-SOURCE-{code}-CHAT",
+            message=f"Fictional within-cluster handling note for {veh_a[i % 2]}; retain provenance and "
+                    "request human review."))
+    for i in range(3):
+        social.append(envelope(case_id, record_id=f"SYN-SOC-{code}-{66+i:04d}", sender=per_b[i % 5],
+            device_id=phone_b[i % 3], vehicle_id=veh_b[i % 2], location_id=loc_b, event_id=texture_b_event["event_id"],
+            timestamp=time_at(case_id, texture_b_start + 20 + i * 30), source_id=f"SYN-SOURCE-{code}-CHAT",
+            message=f"Fictional within-cluster handling note for {veh_b[i % 2]}; retain provenance and "
+                    "request human review."))
+
+    files = {
+        "metadata/communities.json": envelope(case_id,
+            community_a={"label": "Cluster Nightfall-North", "entity_ids": community_a_ids},
+            community_b={"label": "Cluster Nightfall-South", "entity_ids": community_b_ids},
+            bridge_entity_id=bridge_id, bridge_alias_variant=bridge_alias_variant,
+            disposition="review_required",
+            bridge_ambiguity="Community B's own records reference this identity by a near-miss alias "
+                             "variant, not the identical token Community A's records use -- evidence "
+                             "conflicts on whether this is a genuine member of both clusters (an alias "
+                             "variant of the same person) or a coincidental data-quality overlap; "
+                             "automatic cross-cluster linking is prohibited pending human review. This is "
+                             "the master plan's P99 bridge-candidate role (sections 10, 17.2, 18.3, 22)."),
+        "metadata/motif.json": envelope(case_id, motif_id=motif_id, chain=FULCRUM_MOTIF_CHAIN,
+            event_ids=[e["event_id"] for e in motif_events],
+            window={"start": time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_START),
+                    "end": time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_END)},
+            narrative="A call between the two clusters precedes a fund transfer, a vehicle movement, and a "
+                      "handling meeting, all inside one documented window near the convergence location, "
+                      "chained through the ambiguous P99 bridge identity."),
+        "structured/contradictions.json": envelope(case_id, contradiction_id=contradiction_id,
+            claim={"source": "social_message", "record_id": claim_record_id, "entity_id": claim_person,
+                   "location_id": claim_location, "timestamp": contradiction_timestamp,
+                   "assertion": f"{claim_person} was at {claim_location}"},
+            conflicting_evidence={"source": "sighting", "record_id": evidence_record_id, "entity_id": claim_person,
+                   "location_id": convergence_loc, "timestamp": contradiction_timestamp,
+                   "assertion": f"{claim_person} observed at {convergence_loc}"},
+            disposition="review_required",
+            note="Deliberately conflicting fixture clue for contradiction-detection testing; not a data error."),
+    }
+
+    note_lines = [
+        f"Cluster Nightfall-North: {', '.join(community_a_ids)}",
+        f"Cluster Nightfall-South: {', '.join(community_b_ids)}",
+        f"Bridge identity (P99 bridge-candidate role): {bridge_id} in Cluster Nightfall-North's own "
+        f"records, referenced as the near-miss alias variant {bridge_alias_variant} in Cluster "
+        "Nightfall-South's own records (ambiguous cross-cluster role; review_required).",
+        f"Motif {motif_id}: call -> transfer -> vehicle movement -> handling meeting, window "
+        f"{time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_START)} to {time_at(case_id, NIGHTFALL_BRIDGE_WINDOW_END)}, "
+        f"converging near {convergence_loc}.",
+        f"Contradiction {contradiction_id}: {claim_person} reported at two conflicting locations at the same "
+        "time; human review required.",
+    ]
+
+    return dict(bridge_id=bridge_id, bridge_alias_variant=bridge_alias_variant, events=events, cdr=cdr,
+                transactions=transactions, sightings=sightings, social=social, files=files,
+                note_lines=note_lines, motif_id=motif_id, contradiction_id=contradiction_id,
+                community_a_ids=community_a_ids, community_b_ids=community_b_ids)
+
+
 def authored_files(case_id, seed):
     """Closed vocabulary authored input templates, never worker/model outputs."""
     code = CASES[case_id]
@@ -138,9 +338,14 @@ def authored_files(case_id, seed):
     def add(path, data):
         files[path] = data if isinstance(data, bytes) else encoded(data)
 
+    nf_bridge = nightfall_bridge_content(case_id, entities, seed) if code == "NF" else None
+    entity_roster = entities if nf_bridge is None else {
+        **entities,
+        "PER": entities["PER"] + [nf_bridge["bridge_id"], nf_bridge["bridge_alias_variant"]],
+    }
     entity_rows = [dict(entity_id=identifier, entity_type=kind, synthetic=True,
                         case_id=case_id, identity_key=f"{case_id}:{identifier}")
-                   for kind, values in entities.items() for identifier in values]
+                   for kind, values in entity_roster.items() for identifier in values]
     add("metadata/entities.json", envelope(case_id, entities=entity_rows, speakers=[
         {"speaker_id": speaker, "scope": "case_local_audio_role", "voice": voice,
          "identity_key": f"{case_id}:{speaker}"} for speaker, voice in SPEAKERS.items()]))
@@ -151,6 +356,8 @@ def authored_files(case_id, seed):
                               event_type=["call", "transfer", "sighting", "handling_meeting", "message"][i % 5],
                               entity_refs=[values[i % len(values)] for values in entities.values()],
                               disposition="review_required", claim="fictional evidence handling association only"))
+    if nf_bridge is not None:
+        events.extend(nf_bridge["events"])
     add("metadata/events.json", envelope(case_id, events=events, seed=seed))
     entity_lines = [f"{kind}: {', '.join(values)}" for kind, values in entities.items()]
     note = [NOTICE, f"Case {case_id}. Fictional evidence handling exercise.",
@@ -167,6 +374,8 @@ def authored_files(case_id, seed):
     if code == "ECHO":
         note.extend(["Similar alias tokens refer to distinct persons at conflicting locations.",
                      "The candidate link must remain review_required or be rejected. Never merge."])
+    if nf_bridge is not None:
+        note.extend(nf_bridge["note_lines"])
     for name, lines in (("briefing", note), ("chronology", chronology)):
         add(f"documents/{name}.txt", ("\n".join(lines) + "\n").encode())
         add(f"documents/{name}.pdf", pdf_data(lines))
@@ -195,6 +404,10 @@ def authored_files(case_id, seed):
                                location_id=entities["LOC"][i % 3], event_id=events[i % 10]["event_id"],
                                timestamp=time_at(case_id, (i % 10)*900+(i//10)*60+10), source_id=f"SYN-SOURCE-{code}-CHAT",
                                message=f"Fictional handling note for {entities['VEH'][i % len(entities['VEH'])]}; retain provenance and request human review."))
+    if nf_bridge is not None:
+        cdr.extend(nf_bridge["cdr"])
+        transactions.extend(nf_bridge["transactions"])
+        social.extend(nf_bridge["social"])
     add("structured/cdr.csv", csv_data(cdr))
     add("structured/transactions.csv", csv_data(transactions))
     add("social/messages.json", envelope(case_id, records=social))
@@ -205,6 +418,8 @@ def authored_files(case_id, seed):
                          person_id=entities["PER"][i % len(entities["PER"])],
                          location_id=entities["LOC"][i % 3], timestamp=time_at(case_id, i*9),
                          disposition="review_required") for i in range(18)]
+    if nf_bridge is not None:
+        sightings.extend(nf_bridge["sightings"])
     add("structured/sightings.json", envelope(case_id, records=sightings))
     add("visual/timeline.json", envelope(case_id, duration_seconds=27, width=1280, height=720,
         video_path="visual/footage.mp4", banner=BANNER, annotation_origin="authored scene schedule; not model detection output",
@@ -227,6 +442,9 @@ def authored_files(case_id, seed):
                 "--tracex-api $TRACEX_API_URL; do not hand-fill entity_pairs with invented UUIDs.",
         "entity_pairs": [],
     })
+    if nf_bridge is not None:
+        for path, data in nf_bridge["files"].items():
+            add(path, data)
     return files
 
 
@@ -770,7 +988,7 @@ def main():
             for path in sorted([p for p in directory.rglob("*") if p.is_file()] + [expected]):
                 relative = path.relative_to(stage).as_posix()
                 entries.append(dict(path=relative, case_id=case_id,
-                    modality="expected_result" if path == expected else path.relative_to(directory).parts[0],
+                    modality=modality(relative, f"expected-results/{case_id}.json"),
                     content_type=content_type(path), bytes=path.stat().st_size,
                     sha256=digest(path.read_bytes()), generated_synthetic_data=True,
                     expected_result_path=f"expected-results/{case_id}.json"))

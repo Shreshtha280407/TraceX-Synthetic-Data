@@ -3,21 +3,25 @@
 ingestion run -- the Nightfall-specific counterpart to
 `generate_entity_resolution_truth.py` (Fulcrum dev/validation).
 
-Nightfall (ADR-016, the one true holdout) has no `communities.json`/
-`bridge_entity_id`/motif design at all -- confirmed by reading its actual
-metadata before writing this script: every one of its 30 entities (10 PER,
-6 VEH, 6 PHONE, 5 ACC, 3 LOC) is a single, distinct identity, one token
-each. There is no pair of tokens anywhere in Nightfall's own design that
-secretly refer to the same identity -- the only cross-entity relationship
-in the whole corpus is `SYN-VEH-NF-1001`, deliberately shared with Operation
-Copper to test cross-case isolation, not intra-case identity resolution
-(see `expected-results/case-operation-nightfall.json`'s own
-`isolation_rule`). So unlike Fulcrum's `build_pairs`, this script writes
-`entity_pairs: []` once ingestion completes -- an honest reflection of the
-corpus's own design, not a lowered bar and not a fabricated "different"
-assertion either. `--evaluate` will correctly report every metric as
-`null` for a truth file with zero pairs (nothing to score a prediction
-against) -- also honest, not a bug.
+UPDATED (master plan sections 10/17.2/18.3/22, the P99 bridge-candidate
+content-authoring pass): Nightfall now DOES carry a `metadata/
+communities.json`/`bridge_entity_id`/`metadata/motif.json` design, scaled
+onto its own existing roster -- see `nightfall_bridge_content()` in
+`generate_operation_nightfall.py`. The docstring paragraph this replaced
+("every entity is a single, distinct identity, no communities.json at
+all") described the corpus honestly at the time it was written, but is no
+longer accurate; kept only as history in git blame, not restated here.
+
+Reuses Fulcrum's own generic `fetch_resolved_mentions`/`build_pairs`
+helpers unchanged (they already take `known_tokens`/`bridge_id`/community
+rosters as plain arguments, nothing Fulcrum-specific) -- same `SYN-PER-*`/
+`SYN-LOC-*` out-of-scope boundary applies identically here: TraceX's
+entity-resolution pipeline never treats a raw person/location identifier
+as identity-bearing, so the bridge candidate's own cross-community
+ambiguity is demonstrated by directly inspecting the real entity-
+resolution candidates for this case (Part D's live-proof step), never by
+this truth file's PHONE/ACC/VEH-only `entity_pairs` mechanism -- exactly
+the same honest limitation Fulcrum's own script already documents.
 
     python scripts/generate_nightfall_entity_resolution_truth.py \
         --root . --tracex-api "$TRACEX_API_URL"
@@ -60,9 +64,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from generate_entity_resolution_truth import (  # noqa: E402
+    OUT_OF_SCOPE_TOKEN_PREFIXES,
     TraceXCapabilityMissing,
     TruthGenerationIncomplete,
+    build_pairs,
     create_or_join_case,
+    fetch_resolved_mentions,
     register_and_login,
     resolve_entities_via_intelligence_worker,
     upload_evidence,
@@ -73,6 +80,8 @@ NIGHTFALL_CASE = "case-operation-nightfall"
 MANIFEST_V1_PATH = "manifests/operation-nightfall.v1.json"
 
 #: Deliberate subset -- see module docstring's "Evidence upload scope".
+#: `structured/contradictions.json` maps the same way Fulcrum's own script
+#: maps it (`structured_json`, the generic JSON-evidence fallback).
 SOURCE_TYPE_BY_DIRECTORY = {"documents": "document"}
 SOURCE_TYPE_BY_PATH_SUFFIX = {
     "social/messages.json": "chat",
@@ -80,6 +89,7 @@ SOURCE_TYPE_BY_PATH_SUFFIX = {
     "structured/transactions.csv": "financial",
     "structured/sightings.json": "structured_json",
     "structured/cdr-metadata.json": "structured_json",
+    "structured/contradictions.json": "structured_json",
     "visual/timeline.json": "structured_json",
 }
 #: Explicitly not uploaded -- see module docstring. `speakers.rttm`/
@@ -152,6 +162,21 @@ def main():
     case_dir = root / "operation-nightfall" / NIGHTFALL_CASE
     truth_path = case_dir / "entity_resolution_truth.json"
     truth = json.loads(truth_path.read_text())
+    communities_path = case_dir / "metadata/communities.json"
+    communities = json.loads(communities_path.read_text()) if communities_path.is_file() else None
+    known_tokens = set()
+    if communities is not None:
+        all_tokens = {communities["bridge_entity_id"]}
+        all_tokens.update(communities["community_a"]["entity_ids"])
+        all_tokens.update(communities["community_b"]["entity_ids"])
+        known_tokens = {t for t in all_tokens if not any(t.startswith(p) for p in OUT_OF_SCOPE_TOKEN_PREFIXES)}
+        out_of_scope = sorted(all_tokens - known_tokens)
+        if out_of_scope:
+            print(
+                f"{len(out_of_scope)} SYN-PER-*/SYN-LOC-* token(s) excluded from the 100%-coverage "
+                f"requirement (deliberate, documented boundary -- see OUT_OF_SCOPE_TOKEN_PREFIXES): "
+                f"{out_of_scope}"
+            )
     tracex_root = root.parent / "TraceX"
 
     try:
@@ -165,20 +190,26 @@ def main():
         wait_for_jobs_to_complete(args.tracex_api, token, case_id, job_ids, tracex_root=tracex_root)
         print("running entity-resolution (intelligence_worker.py --resolve-entities)...")
         resolve_entities_via_intelligence_worker(case_id, tracex_root=tracex_root)
+        grouped = fetch_resolved_mentions(args.tracex_api, token, case_id, known_tokens) if known_tokens else {}
     except urllib.error.URLError as error:
         parser.error(f"could not reach TraceX at {args.tracex_api}: {error}")
     except (TraceXCapabilityMissing, TruthGenerationIncomplete) as error:
         parser.error(str(error))
 
     print(f"TraceX case UUID for {NIGHTFALL_CASE}: {case_id}")
-    truth["entity_pairs"] = []
+    if communities is not None:
+        truth["entity_pairs"] = build_pairs(grouped, communities["bridge_entity_id"],
+            communities["community_a"]["entity_ids"], communities["community_b"]["entity_ids"])
+    else:
+        truth["entity_pairs"] = []
     truth["pending_ingestion"] = False
     truth.pop("blocked_reason", None)
     truth.pop("todo", None)
     new_bytes = (json.dumps(truth, sort_keys=True, indent=2, ensure_ascii=False) + "\n").encode()
     truth_path.write_bytes(new_bytes)
     update_manifest_entry_for_truth_file(root, truth_path, new_bytes)
-    print(f"wrote entity_resolution_truth.json for {NIGHTFALL_CASE} (entity_pairs: [], by design -- see module docstring)")
+    print(f"wrote {len(truth['entity_pairs'])} entity_resolution_truth pairs for {NIGHTFALL_CASE} "
+          f"(case UUID {case_id})")
     return 0
 
 

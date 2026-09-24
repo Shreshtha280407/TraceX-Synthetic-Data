@@ -269,6 +269,53 @@ def verify(root, quiet=False):
             moment = datetime.fromisoformat(row["timestamp"])
             require(datetime.fromisoformat(event["start"]) <= moment <= datetime.fromisoformat(event["end"]), "record outside referenced event")
 
+        if code == "NF":
+            communities = load(directory / "metadata/communities.json")
+            a_ids = set(communities["community_a"]["entity_ids"])
+            b_ids = set(communities["community_b"]["entity_ids"])
+            bridge = communities["bridge_entity_id"]
+            bridge_variant = communities["bridge_alias_variant"]
+            require(a_ids <= ids and b_ids <= ids, "Nightfall community roster references unknown entity")
+            # The bridge is deliberately NOT a shared literal token (see
+            # nightfall_bridge_content()'s own docstring): Community A's own
+            # records use `bridge`, Community B's own records use the
+            # near-miss `bridge_variant` -- an identical alias on both sides
+            # would be Tier 1/2-blocked together before Tier 3 ever sees it
+            # as ambiguous, never producing a reviewable candidate at all.
+            require(a_ids.isdisjoint(b_ids), "Nightfall communities must be fully disjoint (bridge excluded)")
+            require(bridge in a_ids and bridge_variant in b_ids,
+                    "Nightfall bridge/bridge-variant not in their expected communities")
+            require(bridge == f"SYN-PER-{code}-BRIDGE", "Nightfall bridge entity naming mismatch")
+            require(bridge_variant == f"SYN-PER-{code}-BRIDGE-ALT",
+                    "Nightfall bridge alias variant naming mismatch")
+
+            motif = load(directory / "metadata/motif.json")
+            require(motif["chain"] == FULCRUM_MOTIF_CHAIN, "wrong Nightfall motif chain")
+            window_start = datetime.fromisoformat(motif["window"]["start"])
+            window_end = datetime.fromisoformat(motif["window"]["end"])
+            require(window_start < window_end, "invalid Nightfall motif window")
+            motif_events = [event_map[event_id] for event_id in motif["event_ids"]]
+            require([e["event_type"] for e in motif_events] == FULCRUM_MOTIF_CHAIN,
+                    "Nightfall motif events out of chain order")
+            motif_starts = [datetime.fromisoformat(e["start"]) for e in motif_events]
+            motif_ends = [datetime.fromisoformat(e["end"]) for e in motif_events]
+            require(all(window_start <= s < e <= window_end for s, e in zip(motif_starts, motif_ends)),
+                    "Nightfall motif event lands outside its one documented time window")
+            require(motif_starts == sorted(motif_starts), "Nightfall motif events are not in chronological order")
+
+            sightings_nf = load(directory / "structured/sightings.json")["records"]
+            contradiction = load(directory / "structured/contradictions.json")
+            require(contradiction["disposition"] == "review_required", "unsafe Nightfall contradiction disposition")
+            claim, conflict = contradiction["claim"], contradiction["conflicting_evidence"]
+            require(claim["entity_id"] == conflict["entity_id"], "Nightfall contradiction does not share a common entity")
+            require(claim["location_id"] != conflict["location_id"], "Nightfall contradiction locations must differ")
+            require(claim["timestamp"] == conflict["timestamp"], "Nightfall contradiction must overlap in time")
+            require({claim["entity_id"], claim["location_id"], conflict["location_id"]} <= ids,
+                    "Nightfall contradiction references an unknown entity")
+            require(claim["record_id"] in {r["record_id"] for r in social}, "Nightfall contradiction claim record missing")
+            require(conflict["record_id"] in {r["record_id"] for r in sightings_nf},
+                    "Nightfall contradiction evidence record missing")
+
         require(len(list((directory / "visual").glob("*.png"))) >= 2, "missing stills")
         audio_duration = verify_audio(directory, case_id)
         video_duration = verify_visual(directory, case_id)

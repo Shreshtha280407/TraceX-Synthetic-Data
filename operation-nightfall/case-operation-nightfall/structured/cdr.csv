@@ -119,3 +119,10 @@ case-operation-nightfall,SYN-CDR-NF-0117,SYN-PER-NF-07,SYN-PHONE-NF-03,SYN-PHONE
 case-operation-nightfall,SYN-CDR-NF-0118,SYN-PER-NF-08,SYN-PHONE-NF-04,SYN-PHONE-NF-05,SYN-VEH-NF-04,SYN-LOC-NF-01,SYN-EVENT-NF-08,2031-01-01T01:56:00Z,15,true,offline_authored_fixture,review_required
 case-operation-nightfall,SYN-CDR-NF-0119,SYN-PER-NF-09,SYN-PHONE-NF-05,SYN-PHONE-NF-06,SYN-VEH-NF-05,SYN-LOC-NF-02,SYN-EVENT-NF-09,2031-01-01T02:11:00Z,16,true,offline_authored_fixture,review_required
 case-operation-nightfall,SYN-CDR-NF-0120,SYN-PER-NF-10,SYN-PHONE-NF-06,SYN-PHONE-NF-01,SYN-VEH-NF-06,SYN-LOC-NF-03,SYN-EVENT-NF-10,2031-01-01T02:26:00Z,17,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0121,SYN-PER-NF-BRIDGE,SYN-PHONE-NF-01,SYN-PHONE-NF-04,SYN-VEH-NF-02,SYN-LOC-NF-01,SYN-EVENT-NF-11,2031-01-01T22:30:00Z,180,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0122,SYN-PER-NF-01,SYN-PHONE-NF-01,SYN-PHONE-NF-02,SYN-VEH-NF-02,SYN-LOC-NF-01,SYN-EVENT-NF-15,2031-01-01T22:45:05Z,21,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0123,SYN-PER-NF-02,SYN-PHONE-NF-02,SYN-PHONE-NF-03,SYN-VEH-NF-03,SYN-LOC-NF-01,SYN-EVENT-NF-15,2031-01-01T22:45:35Z,22,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0124,SYN-PER-NF-03,SYN-PHONE-NF-03,SYN-PHONE-NF-01,SYN-VEH-NF-02,SYN-LOC-NF-01,SYN-EVENT-NF-15,2031-01-01T22:46:05Z,23,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0125,SYN-PER-NF-06,SYN-PHONE-NF-04,SYN-PHONE-NF-05,SYN-VEH-NF-04,SYN-LOC-NF-02,SYN-EVENT-NF-16,2031-01-01T22:50:05Z,21,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0126,SYN-PER-NF-07,SYN-PHONE-NF-05,SYN-PHONE-NF-06,SYN-VEH-NF-05,SYN-LOC-NF-02,SYN-EVENT-NF-16,2031-01-01T22:50:35Z,22,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-CDR-NF-0127,SYN-PER-NF-08,SYN-PHONE-NF-06,SYN-PHONE-NF-04,SYN-VEH-NF-04,SYN-LOC-NF-02,SYN-EVENT-NF-16,2031-01-01T22:51:05Z,23,true,offline_authored_fixture,review_required

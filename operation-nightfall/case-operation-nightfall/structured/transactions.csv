@@ -89,3 +89,8 @@ case-operation-nightfall,SYN-TXN-NF-0087,SYN-PER-NF-07,SYN-ACC-NF-02,SYN-ACC-NF-
 case-operation-nightfall,SYN-TXN-NF-0088,SYN-PER-NF-08,SYN-ACC-NF-03,SYN-ACC-NF-04,SYN-PHONE-NF-04,SYN-VEH-NF-04,SYN-EVENT-NF-08,2031-01-01T01:53:05Z,43.25,SYN,true,offline_authored_fixture,review_required
 case-operation-nightfall,SYN-TXN-NF-0089,SYN-PER-NF-09,SYN-ACC-NF-04,SYN-ACC-NF-05,SYN-PHONE-NF-05,SYN-VEH-NF-05,SYN-EVENT-NF-09,2031-01-01T02:08:05Z,44.25,SYN,true,offline_authored_fixture,review_required
 case-operation-nightfall,SYN-TXN-NF-0090,SYN-PER-NF-10,SYN-ACC-NF-05,SYN-ACC-NF-01,SYN-PHONE-NF-06,SYN-VEH-NF-06,SYN-EVENT-NF-10,2031-01-01T02:23:05Z,45.25,SYN,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-TXN-NF-0091,SYN-PER-NF-BRIDGE,SYN-ACC-NF-01,SYN-ACC-NF-03,SYN-PHONE-NF-01,SYN-VEH-NF-04,SYN-EVENT-NF-12,2031-01-01T22:33:45Z,500.00,SYN,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-TXN-NF-0092,SYN-PER-NF-01,SYN-ACC-NF-01,SYN-ACC-NF-02,SYN-PHONE-NF-01,SYN-VEH-NF-02,SYN-EVENT-NF-15,2031-01-01T22:45:10Z,36.75,SYN,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-TXN-NF-0093,SYN-PER-NF-02,SYN-ACC-NF-02,SYN-ACC-NF-01,SYN-PHONE-NF-02,SYN-VEH-NF-03,SYN-EVENT-NF-15,2031-01-01T22:45:40Z,37.75,SYN,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-TXN-NF-0094,SYN-PER-NF-06,SYN-ACC-NF-03,SYN-ACC-NF-04,SYN-PHONE-NF-04,SYN-VEH-NF-04,SYN-EVENT-NF-16,2031-01-01T22:50:10Z,36.75,SYN,true,offline_authored_fixture,review_required
+case-operation-nightfall,SYN-TXN-NF-0095,SYN-PER-NF-07,SYN-ACC-NF-04,SYN-ACC-NF-03,SYN-PHONE-NF-05,SYN-VEH-NF-05,SYN-EVENT-NF-16,2031-01-01T22:50:40Z,37.75,SYN,true,offline_authored_fixture,review_required

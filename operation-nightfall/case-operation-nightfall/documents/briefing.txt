@@ -9,3 +9,8 @@ LOC: SYN-LOC-NF-01, SYN-LOC-NF-02, SYN-LOC-NF-03
 CDR, transactions, social, audio and illustrated scenes refer to this inventory.
 Entity identity is keyed by case ID plus synthetic identifier.
 No automated relationship is a guilt conclusion.
+Cluster Nightfall-North: SYN-ACC-NF-01, SYN-ACC-NF-02, SYN-LOC-NF-01, SYN-PER-NF-01, SYN-PER-NF-02, SYN-PER-NF-03, SYN-PER-NF-04, SYN-PER-NF-05, SYN-PER-NF-BRIDGE, SYN-PHONE-NF-01, SYN-PHONE-NF-02, SYN-PHONE-NF-03, SYN-VEH-NF-02, SYN-VEH-NF-03
+Cluster Nightfall-South: SYN-ACC-NF-03, SYN-ACC-NF-04, SYN-LOC-NF-02, SYN-PER-NF-06, SYN-PER-NF-07, SYN-PER-NF-08, SYN-PER-NF-09, SYN-PER-NF-10, SYN-PER-NF-BRIDGE-ALT, SYN-PHONE-NF-04, SYN-PHONE-NF-05, SYN-PHONE-NF-06, SYN-VEH-NF-04, SYN-VEH-NF-05
+Bridge identity (P99 bridge-candidate role): SYN-PER-NF-BRIDGE in Cluster Nightfall-North's own records, referenced as the near-miss alias variant SYN-PER-NF-BRIDGE-ALT in Cluster Nightfall-South's own records (ambiguous cross-cluster role; review_required).
+Motif SYN-MOTIF-NF-01: call -> transfer -> vehicle movement -> handling meeting, window 2031-01-01T22:30:00Z to 2031-01-01T22:45:00Z, converging near SYN-LOC-NF-03.
+Contradiction SYN-CONTRA-NF-01: SYN-PER-NF-02 reported at two conflicting locations at the same time; human review required.

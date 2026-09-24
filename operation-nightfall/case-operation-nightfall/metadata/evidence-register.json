@@ -107,7 +107,7 @@
       "evidence_id": "SYN-EVID-NF-011",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "metadata",
-      "path": "operation-nightfall/case-operation-nightfall/metadata/entities.json",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/communities.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -117,7 +117,7 @@
       "evidence_id": "SYN-EVID-NF-012",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "metadata",
-      "path": "operation-nightfall/case-operation-nightfall/metadata/events.json",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/entities.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -127,7 +127,7 @@
       "evidence_id": "SYN-EVID-NF-013",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "metadata",
-      "path": "operation-nightfall/case-operation-nightfall/metadata/evidence-register.json",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/events.json",
       "source": "offline_procedural_generator",
       "synthetic": true
     },
@@ -135,6 +135,26 @@
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
       "evidence_id": "SYN-EVID-NF-014",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/evidence-register.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-NF-015",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "modality": "metadata",
+      "path": "operation-nightfall/case-operation-nightfall/metadata/motif.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-NF-016",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "social",
       "path": "operation-nightfall/case-operation-nightfall/social/messages.json",
@@ -144,7 +164,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-NF-015",
+      "evidence_id": "SYN-EVID-NF-017",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/cdr-metadata.json",
@@ -154,7 +174,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "text/csv",
-      "evidence_id": "SYN-EVID-NF-016",
+      "evidence_id": "SYN-EVID-NF-018",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/cdr.csv",
@@ -164,7 +184,17 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-NF-017",
+      "evidence_id": "SYN-EVID-NF-019",
+      "expected_result_path": "expected-results/case-operation-nightfall.json",
+      "modality": "structured",
+      "path": "operation-nightfall/case-operation-nightfall/structured/contradictions.json",
+      "source": "offline_procedural_generator",
+      "synthetic": true
+    },
+    {
+      "case_id": "case-operation-nightfall",
+      "content_type": "application/json",
+      "evidence_id": "SYN-EVID-NF-020",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/sightings.json",
@@ -174,7 +204,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "text/csv",
-      "evidence_id": "SYN-EVID-NF-018",
+      "evidence_id": "SYN-EVID-NF-021",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "structured",
       "path": "operation-nightfall/case-operation-nightfall/structured/transactions.csv",
@@ -184,7 +214,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "video/mp4",
-      "evidence_id": "SYN-EVID-NF-019",
+      "evidence_id": "SYN-EVID-NF-022",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-nightfall/visual/footage.mp4",
@@ -194,7 +224,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-NF-020",
+      "evidence_id": "SYN-EVID-NF-023",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-nightfall/visual/still-01.png",
@@ -204,7 +234,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-NF-021",
+      "evidence_id": "SYN-EVID-NF-024",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-nightfall/visual/still-02.png",
@@ -214,7 +244,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "image/png",
-      "evidence_id": "SYN-EVID-NF-022",
+      "evidence_id": "SYN-EVID-NF-025",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-nightfall/visual/still-03.png",
@@ -224,7 +254,7 @@
     {
       "case_id": "case-operation-nightfall",
       "content_type": "application/json",
-      "evidence_id": "SYN-EVID-NF-023",
+      "evidence_id": "SYN-EVID-NF-026",
       "expected_result_path": "expected-results/case-operation-nightfall.json",
       "modality": "visual",
       "path": "operation-nightfall/case-operation-nightfall/visual/timeline.json",
